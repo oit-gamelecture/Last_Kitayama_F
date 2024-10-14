@@ -19,21 +19,21 @@ public class enemymovement : MonoBehaviour
         boxCol = GetComponent<BoxCollider>();
         fall = false;
         help = false;
-
+        enemyanimator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
-        if (fall == false)
+        if (fall == false)//îÒì]ì|éû
         {
             Vector3 direction = (movetarget.position - transform.position).normalized;
             transform.position = Vector3.MoveTowards(transform.position, movetarget.position, speed * Time.deltaTime);
         }
 
-        if (fall == true)
+        if (fall == true)//ì]ì|éû
         {
-            boxCol.enabled = false;
+            boxCol.enabled = false;//Ç±Ç±Ç≈ìñÇΩÇËîªíËÇè¡Ç∑
             StartCoroutine(Down());
         }
 
@@ -51,9 +51,11 @@ public class enemymovement : MonoBehaviour
 
     void OnCollisionStay(Collision collision)
     {
-        if (collision.gameObject.CompareTag("character"))
+        if (collision.gameObject.CompareTag("Player"))
         {
             fall = true;
+            enemyanimator.CrossFade("Fall", 0);
+            Debug.Log("Collision with player detected");
         }
     }
 }
