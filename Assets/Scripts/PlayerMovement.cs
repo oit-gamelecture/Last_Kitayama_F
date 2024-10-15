@@ -18,12 +18,12 @@ public class PlayerMovement : MonoBehaviour
     {
         transform.Translate(Vector3.forward * Time.deltaTime * moveSpeed);
 
-        if(Input.GetKey(KeyCode.A))
+        if(Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
         {
             transform.Translate(Vector3.left * Time.deltaTime * leftRightSpeed);
         }
 
-        if(Input.GetKey(KeyCode.D))
+        if(Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
         {
             transform.Translate(Vector3.left * Time.deltaTime * leftRightSpeed * -1);
         }
