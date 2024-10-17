@@ -1,6 +1,5 @@
-using Microsoft.Win32.SafeHandles;
+
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class enemymovement : MonoBehaviour
@@ -8,11 +7,12 @@ public class enemymovement : MonoBehaviour
     public Animator enemyanimator;
     public bool fall;
     public bool help;
-    public Vector3 targetPosition;
     public float speed = 3.0f;
     public float downspeed = -0.6f;
-    [SerializeField] Transform movetarget;
+
+    [SerializeField] private float moveDirectionZ = 1.0f; // Z²‚ÌˆÚ“®•ûŒüi1: ‘Oi, -1: Œã‘Şj
     BoxCollider boxCol;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -25,18 +25,23 @@ public class enemymovement : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        if (fall == false)//”ñ“]“|
+        if (!fall) // ”ñ“]“|
         {
-            Vector3 direction = (movetarget.position - transform.position).normalized;
-            transform.position = Vector3.MoveTowards(transform.position, movetarget.position, speed * Time.deltaTime);
+            MoveEnemy();
         }
-
-        if (fall == true)//“]“|
+        else // “]“|
         {
-            boxCol.enabled = false;//‚±‚±‚Å“–‚½‚è”»’è‚ğÁ‚·
+            boxCol.enabled = false; // “–‚½‚è”»’è‚ğÁ‚·
             StartCoroutine(Down());
         }
+    }
 
+    // “G‚ÌˆÚ“®ˆ—
+    void MoveEnemy()
+    {
+        // Z²•ûŒü‚ÉˆÚ“® (1‚Å‘OiA-1‚ÅŒã‘Ş)
+        Vector3 movement = new Vector3(0, 0, moveDirectionZ) * speed * Time.deltaTime;
+        transform.Translate(movement, Space.World);
     }
 
     IEnumerator Down()
