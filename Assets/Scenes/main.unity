@@ -5106,7 +5106,7 @@ Transform:
   m_GameObject: {fileID: 1031197564}
   serializedVersion: 2
   m_LocalRotation: {x: 0.08715578, y: -0, z: -0, w: 0.9961947}
-  m_LocalPosition: {x: 0, y: 1.78, z: -1.62}
+  m_LocalPosition: {x: 0, y: 1.95, z: -2.21}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6300,6 +6300,10 @@ PrefabInstance:
       objectReference: {fileID: 9100000, guid: dce856de4b6955348a92c27e45d2b3ac, type: 2}
     - target: {fileID: 5866666021909216657, guid: 75916f735b2fe014e9dfa3b043e648d1, type: 3}
       propertyPath: m_UpdateMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5866666021909216657, guid: 75916f735b2fe014e9dfa3b043e648d1, type: 3}
+      propertyPath: m_CullingMode
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -8164,14 +8168,14 @@ CapsuleCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.09629041
-  m_Height: 1.275887
+  m_Radius: 0.13602945
+  m_Height: 1.0366069
   m_Direction: 1
-  m_Center: {x: -0.0068947077, y: 0.9737656, z: -0.026397854}
+  m_Center: {x: 0.00246096, y: 1.0934062, z: -0.026397856}
 --- !u!54 &1851284369
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -8198,12 +8202,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 122
-  m_CollisionDetection: 0
---- !u!95 &1851284370 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 5866666021909216657, guid: 75916f735b2fe014e9dfa3b043e648d1, type: 3}
-  m_PrefabInstance: {fileID: 1314259384}
-  m_PrefabAsset: {fileID: 0}
+  m_CollisionDetection: 1
 --- !u!114 &1851284371
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8218,7 +8217,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 3
   leftRightSpeed: 4
-  animator: {fileID: 1851284370}
   blackOverlay: {fileID: 748281277}
   delayBeforeHiding: 3.3
 --- !u!4 &1851284372 stripped

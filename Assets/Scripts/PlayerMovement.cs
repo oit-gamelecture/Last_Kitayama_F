@@ -8,9 +8,10 @@ public class PlayerMovement : MonoBehaviour
     public float moveSpeed = 3.0f;
     public float leftRightSpeed = 4.0f;
     Rigidbody rb;
-    public Animator animator;
+    private Animator animator;
 
     private bool canMove = false;
+    private bool isFalling = false;
 
     public Image blackOverlay; 
     public float delayBeforeHiding = 3.3f;
@@ -18,6 +19,7 @@ public class PlayerMovement : MonoBehaviour
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
+        animator = GetComponent<Animator>();
 
         Color color = blackOverlay.color;
         color.a = 0.5f; 
@@ -46,6 +48,16 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("enemy") && !isFalling)
+        {
+            isFalling = true;
+            animator.SetTrigger("Falling");
+            StartCoroutine(HandleFalling());
+        }
+    }
+
     private IEnumerator EnableMovementAfterDelay(float delay)
     {
         yield return new WaitForSeconds(delay);
@@ -61,4 +73,26 @@ public class PlayerMovement : MonoBehaviour
         blackOverlay.gameObject.SetActive(false); 
     }
 
+    private IEnumerator HandleFalling()
+    {
+        yield return new WaitForSeconds(1f); 
+
+        Vector3 reverseDirection = transform.forward; 
+        float moveDuration = 1.5f; 
+        float elapsedTime = 0f;
+
+        animator.SetTrigger("GetUp");
+        transform.position = new Vector3(transform.position.x, 0f, transform.position.z);
+        
+        while (elapsedTime < moveDuration)
+        {
+            
+            transform.Translate(reverseDirection * Time.deltaTime * moveSpeed);
+            elapsedTime += Time.deltaTime;
+            yield return null;
+        }
+        
+        animator.SetTrigger("Walk");
+        isFalling = false; 
+    }
 }
