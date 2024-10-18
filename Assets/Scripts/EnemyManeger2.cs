@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyManager : MonoBehaviour
+public class EnemyManager2 : MonoBehaviour
 {
     public Transform Target; // プレイヤーの参照
     public GameObject[] obstacles; // 障害物のプレハブ
@@ -13,8 +13,8 @@ public class EnemyManager : MonoBehaviour
     private float nextObstacleTime; // 次の障害物生成時間
 
     public float obstacleDistance = 40f; // プレイヤーから障害物を生成する距離
-    private float minX = -0.2f; // X座標の最小値
-    private float maxX = 3.0f;  // X座標の最大値
+    private float minX = -3.0f; // X座標の最小値
+    private float maxX = 0.2f;  // X座標の最大値
 
     private float timer = 0f; // タイマー
 

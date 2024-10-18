@@ -1,60 +1,64 @@
-using Microsoft.Win32.SafeHandles;
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class NoSumahoMove : MonoBehaviour
 {
-    public Animator enemyanimator;
-    public bool fall;
-    public bool help;
-    public Vector3 targetPosition;
-    public float speed = 3.0f;
-    public float downspeed = -0.6f;
-    [SerializeField] Transform movetarget;
-    BoxCollider boxCol;
-    // Start is called before the first frame update
+    public Animator enemyanimator;  // 敵のアニメーションコントローラー
+    public float speed = 3.0f;      // 移動速度
+    public float downspeed = -0.6f; // 転倒時の後退速度
+
+    [SerializeField] private float moveDirectionZ = 1.0f; // Z軸の移動方向 (1: 前進, -1: 後退)
+    private BoxCollider boxCol; // 当たり判定用のBoxCollider
+    private bool isFalling = false; // 転倒フラグ
+
     void Start()
     {
-        boxCol = GetComponent<BoxCollider>();
-        fall = false;
-        help = false;
-        enemyanimator = GetComponent<Animator>();
+        boxCol = GetComponent<BoxCollider>();           // BoxColliderの取得
+        enemyanimator = GetComponent<Animator>();        // Animatorの取得
+
+        enemyanimator.SetBool("IsWalking", true); // 歩くアニメーションを開始
     }
 
-    // Update is called once per frame
     void FixedUpdate()
     {
-        if (fall == false)//非転倒時
+        if (!isFalling)
         {
-            Vector3 direction = (movetarget.position - transform.position).normalized;
-            transform.position = Vector3.MoveTowards(transform.position, movetarget.position, speed * Time.deltaTime);
+            MoveEnemy(); // 移動処理
         }
-
-        if (fall == true)//転倒時
-        {
-            boxCol.enabled = false;//ここで当たり判定を消す
-            StartCoroutine(Down());
-        }
-
     }
 
+    // 敵の移動処理
+    void MoveEnemy()
+    {
+        Vector3 movement = new Vector3(0, 0, moveDirectionZ) * speed * Time.deltaTime;
+        transform.Translate(movement, Space.World);
+    }
+
+    // 転倒時の処理
     IEnumerator Down()
     {
-        enemyanimator.SetTrigger("Fall");
+        enemyanimator.SetBool("IsWalking", false); // 歩くアニメーションを停止
+        enemyanimator.SetTrigger("Fall"); // 転倒アニメーションを再生
+        boxCol.enabled = false; // 当たり判定を無効化
+
+        // 転倒後の後退
         transform.Translate(Vector3.back * downspeed * Time.deltaTime, Space.World);
         yield return new WaitForSeconds(0.8f);
+
+        // 移動停止と消去処理
         downspeed = 0;
         yield return new WaitForSeconds(5.0f);
-        Destroy(this.gameObject);
+        Destroy(gameObject); // オブジェクトを削除
     }
 
+    // プレイヤーとの接触時の処理
     void OnCollisionStay(Collision collision)
     {
-        if (collision.gameObject.CompareTag("Player"))
+        if (collision.gameObject.CompareTag("Player") && !isFalling)
         {
-            fall = true;
-            enemyanimator.CrossFade("Fall", 0);
+            isFalling = true; // 転倒フラグを立てる
+            enemyanimator.CrossFade("Fall", 0); // 転倒アニメーションの再生
+            StartCoroutine(Down()); // 転倒処理の開始
             Debug.Log("Collision with player detected");
         }
     }
