@@ -1426,7 +1426,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: acc91f0db393d2047ac49f6165478f13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Target: {fileID: 0}
+  Target: {fileID: 1851284372}
   obstacles:
   - {fileID: 8911535555146750889, guid: 4cd15d7be702c1845a7106bd70f5f334, type: 3}
   - {fileID: 8911535555146750889, guid: 81ad6a4db4fa2314e91acabd0de799c5, type: 3}
@@ -2297,8 +2297,8 @@ RectTransform:
   m_Children:
   - {fileID: 1892172338}
   - {fileID: 652189312}
-  - {fileID: 237365678}
   - {fileID: 748281276}
+  - {fileID: 237365678}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -3588,7 +3588,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.27450982}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
