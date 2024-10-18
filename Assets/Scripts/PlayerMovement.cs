@@ -12,6 +12,7 @@ public class PlayerMovement : MonoBehaviour
 
     private bool canMove = false;
     private bool isFalling = false;
+    private bool isWalking = false;
 
     public Image blackOverlay; 
     public float delayBeforeHiding = 3.3f;
@@ -34,7 +35,7 @@ public class PlayerMovement : MonoBehaviour
     {
         transform.Translate(Vector3.forward * Time.deltaTime * moveSpeed);
 
-        if (canMove)
+        if (canMove && isWalking)
         {
             if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
             {
@@ -62,6 +63,7 @@ public class PlayerMovement : MonoBehaviour
     {
         yield return new WaitForSeconds(delay);
         canMove = true;
+        isWalking = true;
     }
 
     private IEnumerator HideOverlayAfterDelay(float delay)
@@ -75,6 +77,7 @@ public class PlayerMovement : MonoBehaviour
 
     private IEnumerator HandleFalling()
     {
+        isWalking = false;
         yield return new WaitForSeconds(1f); 
 
         Vector3 reverseDirection = transform.forward; 
@@ -93,6 +96,7 @@ public class PlayerMovement : MonoBehaviour
         }
         
         animator.SetTrigger("Walk");
+        isWalking = true;
         isFalling = false; 
     }
 }
