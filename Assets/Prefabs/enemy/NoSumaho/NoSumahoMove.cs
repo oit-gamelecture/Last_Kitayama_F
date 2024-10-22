@@ -5,10 +5,10 @@ public class NoSumahoMove : MonoBehaviour
 {
     public Animator enemyanimator;  // 敵のアニメーションコントローラー
     public float speed = 3.0f;      // 移動速度
-    public float downspeed = -0.6f; // 転倒時の後退速度
+    public float downspeed = -2.0f; // 転倒時の高速後退速度
 
     [SerializeField] private float moveDirectionZ = 1.0f; // Z軸の移動方向 (1: 前進, -1: 後退)
-    private BoxCollider boxCol; // 当たり判定用のBoxCollider
+    private BoxCollider boxCol;  // 当たり判定用のBoxCollider
     private bool isFalling = false; // 転倒フラグ
 
     void Start()
@@ -23,7 +23,7 @@ public class NoSumahoMove : MonoBehaviour
     {
         if (!isFalling)
         {
-            MoveEnemy(); // 移動処理
+            MoveEnemy(); // 通常移動処理
         }
     }
 
@@ -34,32 +34,37 @@ public class NoSumahoMove : MonoBehaviour
         transform.Translate(movement, Space.World);
     }
 
-    // 転倒時の処理
+    // 転倒時の処理（後退とアニメーションのスムーズな切り替え）
     IEnumerator Down()
     {
-        enemyanimator.SetBool("IsWalking", false); // 歩くアニメーションを停止
-        enemyanimator.SetTrigger("Fall"); // 転倒アニメーションを再生
+        enemyanimator.SetBool("IsWalking", false); // 歩くアニメーション停止
+        enemyanimator.SetTrigger("Fall"); // 転倒アニメーション再生
         boxCol.enabled = false; // 当たり判定を無効化
 
-        // 転倒後の後退
-        transform.Translate(Vector3.back * downspeed * Time.deltaTime, Space.World);
-        yield return new WaitForSeconds(0.8f);
+        float elapsedTime = 0f;
+        float retreatDuration = 0.5f; // 後退する時間を少し長く調整
+        float fastRetreatSpeed = 8.0f; // 瞬間的な高速後退速度
 
-        // 移動停止と消去処理
-        downspeed = 0;
-        yield return new WaitForSeconds(5.0f);
-        Destroy(gameObject); // オブジェクトを削除
+        // 高速で短時間後退する処理
+        while (elapsedTime < retreatDuration)
+        {
+            transform.Translate(Vector3.back * fastRetreatSpeed * Time.deltaTime, Space.World);
+            elapsedTime += Time.deltaTime;
+            yield return null;
+        }
+
+        downspeed = 0; // 後退を停止
+        
     }
 
     // プレイヤーとの接触時の処理
-    void OnCollisionStay(Collision collision)
+    void OnTriggerEnter(Collider other)
     {
-        if (collision.gameObject.CompareTag("Player") && !isFalling)
+        if (other.CompareTag("Player") && !isFalling)
         {
             isFalling = true; // 転倒フラグを立てる
-            enemyanimator.CrossFade("Fall", 0); // 転倒アニメーションの再生
+            Debug.Log("fall");
             StartCoroutine(Down()); // 転倒処理の開始
-            Debug.Log("Collision with player detected");
         }
     }
 }
