@@ -31,27 +31,35 @@ public class PlayerMovement : MonoBehaviour
         StartCoroutine(HideOverlayAfterDelay(delayBeforeHiding));
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
-        transform.Translate(Vector3.forward * Time.deltaTime * moveSpeed);
-
-        if (canMove && isWalking)
+        if (canMove)
         {
-            if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
-            {
-                transform.Translate(Vector3.left * Time.deltaTime * leftRightSpeed);
-            }
+            // ëOï˚à⁄ìÆ
+            Vector3 moveDirection = transform.forward * moveSpeed;
+            rb.velocity = new Vector3(moveDirection.x, rb.velocity.y, moveDirection.z);
 
-            if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
+            // ç∂âEà⁄ìÆ
+            if (isWalking)
             {
-                transform.Translate(Vector3.left * Time.deltaTime * leftRightSpeed * -1);
+                if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
+                {
+                    Vector3 leftDirection = -transform.right * leftRightSpeed * Time.fixedDeltaTime;
+                    rb.MovePosition(rb.position + leftDirection);
+                }
+
+                if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
+                {
+                    Vector3 rightDirection = transform.right * leftRightSpeed * Time.fixedDeltaTime;
+                    rb.MovePosition(rb.position + rightDirection);
+                }
             }
         }
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void OnCollisionEnter(Collision collision)
     {
-        if (other.CompareTag("enemy") && !isFalling)
+        if (collision.collider.CompareTag("enemy") && !isFalling)
         {
             isFalling = true;
             animator.SetTrigger("Falling");
