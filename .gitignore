@@ -70,3 +70,1473 @@ crashlytics-build.properties
 # Temporary auto-generated Android Assets
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
+Assets/Download Assets/TaichiCharacterPack.meta
+Assets/Download Assets/TaichiCharacterPack/Readme.txt
+Assets/Download Assets/TaichiCharacterPack/Readme.txt.meta
+Assets/Download Assets/TaichiCharacterPack/Releasenote.txt
+Assets/Download Assets/TaichiCharacterPack/Releasenote.txt.meta
+Assets/Download Assets/TaichiCharacterPack/Resources.meta
+Assets/Download Assets/TaichiCharacterPack/Shaders.meta
+Assets/Download Assets/TaichiCharacterPack/TwinViewer.meta
+Assets/Download Assets/TaichiCharacterPack/Viewer.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Puppet.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Puppet/Materials.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Puppet/Models Legacy.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Puppet/Textures.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Puppet/Materials/puppet_00.mat
+Assets/Download Assets/TaichiCharacterPack/Resources/Puppet/Materials/puppet_00.mat.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Puppet/Materials/puppet00_e_00.mat
+Assets/Download Assets/TaichiCharacterPack/Resources/Puppet/Materials/puppet00_e_00.mat.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Puppet/Models Legacy/puppet_00_h.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Puppet/Models Legacy/puppet_00_h.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Puppet/Textures/puppet_00.png
+Assets/Download Assets/TaichiCharacterPack/Resources/Puppet/Textures/puppet_00.png.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Legacy.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Mecanim.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Textures.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@back_20.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@back_20.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@back_20_p.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@back_20_p.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@backstep_10.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@backstep_10.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@backstep_10_p.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@backstep_10_p.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@crawl_10.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@crawl_10.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@crossarms_00.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@crossarms_00.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@crouch_20.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@crouch_20.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@crouchdown_10.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@crouchdown_10.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@crouchidle_10.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@crouchidle_10.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@crouchturn_10.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@crouchturn_10.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@crouchup_10.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@crouchup_10.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@crouchwalk_10.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@crouchwalk_10.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@damage_20.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@damage_20.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@damage_21.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@damage_21.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@damage_22.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@damage_22.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@damage_23.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@damage_23.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@damage_24.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@damage_24.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@damage_25.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@damage_25.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@down_20.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@down_20.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@down_20_p.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@down_20_p.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@down_21.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@down_21.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@down_22.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@down_22.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@down_23.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@down_23.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@embar_00.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@embar_00.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@embar_01.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@embar_01.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@forward_20.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@forward_20.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@forward_20_p.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@forward_20_p.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@forwardroll_10.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@forwardroll_10.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@forwardroll_10_p.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@forwardroll_10_p.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@getup_20.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@getup_20.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@getup_20_p.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@getup_20_p.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@greet_00.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@greet_00.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@greet_01.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@greet_01.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@greet_02.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@greet_02.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@greet_03.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@greet_03.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@greet_04.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@greet_04.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@guard_20.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@guard_20.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@guard_21.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@guard_21.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@handshake_00.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@handshake_00.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@hughip_00.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@hughip_00.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@hugshoulder_00.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@hugshoulder_00.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@hugshouldersit_00.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@hugshouldersit_00.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@idle_00.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@idle_00.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@idle_01.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@idle_01.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@idle_10.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@idle_10.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@idle_11.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@idle_11.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@idle_20.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@idle_20.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@jump_10.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@jump_10.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@jump_10_a.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@jump_10_a.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@jump_10_b.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@jump_10_b.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@jump_10_c.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@jump_10_c.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@jump_11.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@jump_11.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@jump_11_a.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@jump_11_a.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@jump_11_b.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@jump_11_b.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@jump_11_c.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@jump_11_c.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@jump_12.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@jump_12.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@jump_12_a.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@jump_12_a.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@jump_12_b.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@jump_12_b.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@jump_12_c.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@jump_12_c.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@jump_13.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@jump_13.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@jump_13_a.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@jump_13_a.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@jump_13_b.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@jump_13_b.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@jump_13_c.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@jump_13_c.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@jump_20.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@jump_20.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@jump_20_a.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@jump_20_a.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@jump_20_b.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@jump_20_b.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@jump_20_c.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@jump_20_c.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@kick_20.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@kick_20.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@kick_21.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@kick_21.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@kick_22.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@kick_22.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@kick_23.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@kick_23.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@kick_24.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@kick_24.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@kick_25.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@kick_25.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@kiss_00.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@kiss_00.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@liedown_00.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@liedown_00.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@liedown_01.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@liedown_01.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@liedown_02.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@liedown_02.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@liedown_03.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@liedown_03.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@liedown_04.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@liedown_04.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@liedown_05.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@liedown_05.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@liedown_06.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@liedown_06.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@lookdown_00.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@lookdown_00.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@nod_00.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@nod_00.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@nod_01.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@nod_01.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@offerhug_00.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@offerhug_00.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@pathead_00.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@pathead_00.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@pickup_10.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@pickup_10.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@pose_00.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@pose_00.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@pose_01.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@pose_01.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@pose_02.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@pose_02.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@pose_03.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@pose_03.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@punch_20.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@punch_20.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@punch_21.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@punch_21.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@punch_22.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@punch_22.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@punch_23.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@punch_23.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@reachout_00.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@reachout_00.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@refuse_00.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@refuse_00.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@refuse_01.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@refuse_01.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@run_00.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@run_00.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@runend_00.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@runend_00.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@salute_00.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@salute_00.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@scratchhead_00.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@scratchhead_00.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@sidestep_10.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@sidestep_10.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@sidestep_10_p.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@sidestep_10_p.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@sidestep_11.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@sidestep_11.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@sidestep_11_p.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@sidestep_11_p.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@sit_00.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@sit_00.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@sit_01.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@sit_01.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@sit_02.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@sit_02.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@sit_03.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@sit_03.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@sit_04.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@sit_04.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@sit_05.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@sit_05.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@sit_06.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@sit_06.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@special_20.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@special_20.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@special_20_p.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@special_20_p.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@special_21.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@special_21.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@sprint_00.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@sprint_00.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@storepower_20.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@storepower_20.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@thinking_00.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@thinking_00.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@throw_20.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@throw_20.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@throw_20_p.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@throw_20_p.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@thrown_20.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@thrown_20.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@thrown_20_p.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@thrown_20_p.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@tstance_00.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@tstance_00.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@turn_10.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@turn_10.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@walk_00.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@walk_00.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@wink_00.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Legacy/m01@wink_00.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@back_20.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@back_20.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@back_20_p.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@back_20_p.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@backstep_10.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@backstep_10.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@backstep_10_p.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@backstep_10_p.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@crawl_10.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@crawl_10.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@crossarms_00.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@crossarms_00.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@crouch_20.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@crouch_20.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@crouchdown_10.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@crouchdown_10.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@crouchidle_10.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@crouchidle_10.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@crouchturn_10.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@crouchturn_10.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@crouchup_10.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@crouchup_10.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@crouchwalk_10.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@crouchwalk_10.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@damage_20.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@damage_20.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@damage_21.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@damage_21.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@damage_22.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@damage_22.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@damage_23.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@damage_23.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@damage_24.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@damage_24.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@damage_25.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@damage_25.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@down_20.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@down_20.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@down_20_p.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@down_20_p.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@down_21.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@down_21.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@down_22.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@down_22.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@down_23.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@down_23.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@embar_00.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@embar_00.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@embar_01.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@embar_01.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@forward_20.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@forward_20.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@forward_20_p.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@forward_20_p.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@forwardroll_10.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@forwardroll_10.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@forwardroll_10_p.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@forwardroll_10_p.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@getup_20.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@getup_20.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@getup_20_p.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@getup_20_p.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@greet_00.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@greet_00.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@greet_01.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@greet_01.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@greet_02.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@greet_02.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@greet_03.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@greet_03.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@greet_04.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@greet_04.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@guard_20.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@guard_20.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@guard_21.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@guard_21.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@handshake_00.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@handshake_00.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@hughip_00.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@hughip_00.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@hugshoulder_00.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@hugshoulder_00.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@hugshouldersit_00.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@hugshouldersit_00.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@idle_00.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@idle_00.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@idle_01.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@idle_01.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@idle_10.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@idle_10.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@idle_11.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@idle_11.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@idle_20.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@idle_20.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@jump_10.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@jump_10.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@jump_10_a.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@jump_10_a.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@jump_10_b.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@jump_10_b.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@jump_10_c.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@jump_10_c.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@jump_11.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@jump_11.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@jump_11_a.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@jump_11_a.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@jump_11_b.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@jump_11_b.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@jump_11_c.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@jump_11_c.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@jump_12.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@jump_12.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@jump_12_a.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@jump_12_a.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@jump_12_b.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@jump_12_b.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@jump_12_c.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@jump_12_c.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@jump_13.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@jump_13.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@jump_13_a.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@jump_13_a.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@jump_13_b.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@jump_13_b.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@jump_13_c.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@jump_13_c.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@jump_20.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@jump_20.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@jump_20_a.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@jump_20_a.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@jump_20_b.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@jump_20_b.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@jump_20_c.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@jump_20_c.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@kick_20.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@kick_20.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@kick_21.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@kick_21.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@kick_22.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@kick_22.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@kick_23.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@kick_23.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@kick_24.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@kick_24.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@kick_25.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@kick_25.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@kiss_00.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@kiss_00.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@liedown_00.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@liedown_00.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@liedown_01.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@liedown_01.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@liedown_02.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@liedown_02.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@liedown_03.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@liedown_03.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@liedown_04.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@liedown_04.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@liedown_05.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@liedown_05.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@liedown_06.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@liedown_06.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@lookdown_00.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@lookdown_00.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@nod_00.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@nod_00.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@nod_01.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@nod_01.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@offerhug_00.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@offerhug_00.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@pathead_00.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@pathead_00.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@pickup_10.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@pickup_10.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@pose_00.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@pose_00.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@pose_01.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@pose_01.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@pose_02.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@pose_02.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@pose_03.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@pose_03.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@punch_20.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@punch_20.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@punch_21.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@punch_21.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@punch_22.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@punch_22.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@punch_23.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@punch_23.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@reachout_00.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@reachout_00.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@refuse_00.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@refuse_00.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@refuse_01.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@refuse_01.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@run_00.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@run_00.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@runend_00.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@runend_00.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@salute_00.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@salute_00.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@scratchhead_00.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@scratchhead_00.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@sidestep_10.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@sidestep_10.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@sidestep_10_p.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@sidestep_10_p.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@sidestep_11.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@sidestep_11.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@sidestep_11_p.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@sidestep_11_p.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@sit_00.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@sit_00.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@sit_01.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@sit_01.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@sit_02.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@sit_02.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@sit_03.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@sit_03.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@sit_04.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@sit_04.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@sit_05.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@sit_05.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@sit_06.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@sit_06.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@special_20.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@special_20.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@special_20_p.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@special_20_p.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@special_21.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@special_21.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@sprint_00.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@sprint_00.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@storepower_20.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@storepower_20.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@thinking_00.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@thinking_00.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@throw_20.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@throw_20.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@throw_20_p.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@throw_20_p.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@thrown_20.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@thrown_20.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@thrown_20_p.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@thrown_20_p.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@tstance_00.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@tstance_00.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@turn_10.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@turn_10.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@walk_00.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@walk_00.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@wink_00.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Animations Mecanim/m01@wink_00.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_apron_00_h_c.mat
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_apron_00_h_c.mat.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_apron_00_h_s.mat
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_apron_00_h_s.mat.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_apron_00_l_c.mat
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_apron_00_l_c.mat.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_apron_00_l_s.mat
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_apron_00_l_s.mat.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_apron_00_m_c.mat
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_apron_00_m_c.mat.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_apron_00_m_s.mat
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_apron_00_m_s.mat.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_bathtowel_00_h_c.mat
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_bathtowel_00_h_c.mat.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_bathtowel_00_h_s.mat
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_bathtowel_00_h_s.mat.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_bathtowel_00_l_c.mat
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_bathtowel_00_l_c.mat.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_bathtowel_00_l_s.mat
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_bathtowel_00_l_s.mat.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_bathtowel_00_m_c.mat
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_bathtowel_00_m_c.mat.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_bathtowel_00_m_s.mat
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_bathtowel_00_m_s.mat.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_blazer_000_h_c.mat
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_blazer_000_h_c.mat.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_blazer_000_h_s.mat
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_blazer_000_h_s.mat.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_blazer_000_l_c.mat
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_blazer_000_l_c.mat.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_blazer_000_l_s.mat
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_blazer_000_l_s.mat.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_blazer_000_m_c.mat
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_blazer_000_m_c.mat.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_blazer_000_m_s.mat
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_blazer_000_m_s.mat.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_blazer_100_h_c.mat
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_blazer_100_h_c.mat.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_blazer_100_h_s.mat
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_blazer_100_h_s.mat.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_blazer_100_l_c.mat
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_blazer_100_l_c.mat.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_blazer_100_l_s.mat
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_blazer_100_l_s.mat.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_blazer_100_m_c.mat
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_blazer_100_m_c.mat.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_blazer_100_m_s.mat
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_blazer_100_m_s.mat.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_casualwear_00_h_c.mat
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_casualwear_00_h_c.mat.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_casualwear_00_h_s.mat
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_casualwear_00_h_s.mat.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_casualwear_00_l_c.mat
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_casualwear_00_l_c.mat.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_casualwear_00_l_s.mat
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_casualwear_00_l_s.mat.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_casualwear_00_m_c.mat
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_casualwear_00_m_c.mat.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_casualwear_00_m_s.mat
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_casualwear_00_m_s.mat.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_casualwear_01_h_c.mat
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_casualwear_01_h_c.mat.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_casualwear_01_h_s.mat
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_casualwear_01_h_s.mat.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_casualwear_01_l_c.mat
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_casualwear_01_l_c.mat.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_casualwear_01_l_s.mat
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_casualwear_01_l_s.mat.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_casualwear_01_m_c.mat
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_casualwear_01_m_c.mat.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_casualwear_01_m_s.mat
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_casualwear_01_m_s.mat.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_face_00_h.mat
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_face_00_h.mat.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_face_00_l.mat
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_face_00_l.mat.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_face_00_m.mat
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_face_00_m.mat.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_hair_00_h.mat
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_hair_00_h.mat.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_hair_00_l.mat
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_hair_00_l.mat.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_hair_00_m.mat
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_hair_00_m.mat.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_jersey_00_h_c.mat
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_jersey_00_h_c.mat.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_jersey_00_h_s.mat
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_jersey_00_h_s.mat.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_jersey_00_l_c.mat
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_jersey_00_l_c.mat.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_jersey_00_l_s.mat
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_jersey_00_l_s.mat.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_jersey_00_m_c.mat
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_jersey_00_m_c.mat.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_jersey_00_m_s.mat
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_jersey_00_m_s.mat.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_naked_00_h_s.mat
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_naked_00_h_s.mat.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_naked_00_l_s.mat
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_naked_00_l_s.mat.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_naked_00_m_s.mat
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_naked_00_m_s.mat.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_schoolwear_000_h_c.mat
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_schoolwear_000_h_c.mat.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_schoolwear_000_h_s.mat
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_schoolwear_000_h_s.mat.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_schoolwear_000_l_c.mat
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_schoolwear_000_l_c.mat.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_schoolwear_000_l_s.mat
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_schoolwear_000_l_s.mat.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_schoolwear_000_m_c.mat
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_schoolwear_000_m_c.mat.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_schoolwear_000_m_s.mat
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_schoolwear_000_m_s.mat.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_schoolwear_100_h_c.mat
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_schoolwear_100_h_c.mat.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_schoolwear_100_h_s.mat
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_schoolwear_100_h_s.mat.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_schoolwear_100_l_c.mat
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_schoolwear_100_l_c.mat.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_schoolwear_100_l_s.mat
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_schoolwear_100_l_s.mat.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_schoolwear_100_m_c.mat
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_schoolwear_100_m_c.mat.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_schoolwear_100_m_s.mat
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_schoolwear_100_m_s.mat.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_schoolwear_200_h_c.mat
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_schoolwear_200_h_c.mat.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_schoolwear_200_h_s.mat
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_schoolwear_200_h_s.mat.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_schoolwear_200_l_c.mat
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_schoolwear_200_l_c.mat.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_schoolwear_200_l_s.mat
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_schoolwear_200_l_s.mat.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_schoolwear_200_m_c.mat
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_schoolwear_200_m_c.mat.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_schoolwear_200_m_s.mat
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_schoolwear_200_m_s.mat.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_schoolwear_300_h_c.mat
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_schoolwear_300_h_c.mat.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_schoolwear_300_h_s.mat
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_schoolwear_300_h_s.mat.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_schoolwear_300_l_c.mat
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_schoolwear_300_l_c.mat.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_schoolwear_300_l_s.mat
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_schoolwear_300_l_s.mat.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_schoolwear_300_m_c.mat
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_schoolwear_300_m_c.mat.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_schoolwear_300_m_s.mat
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_schoolwear_300_m_s.mat.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_schoolwear_400_h_c.mat
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_schoolwear_400_h_c.mat.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_schoolwear_400_h_s.mat
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_schoolwear_400_h_s.mat.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_schoolwear_400_l_c.mat
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_schoolwear_400_l_c.mat.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_schoolwear_400_l_s.mat
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_schoolwear_400_l_s.mat.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_schoolwear_400_m_c.mat
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_schoolwear_400_m_c.mat.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_schoolwear_400_m_s.mat
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_schoolwear_400_m_s.mat.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_schoolwear_410_h_c.mat
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_schoolwear_410_h_c.mat.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_schoolwear_410_h_s.mat
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_schoolwear_410_h_s.mat.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_schoolwear_410_l_c.mat
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_schoolwear_410_l_c.mat.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_schoolwear_410_l_s.mat
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_schoolwear_410_l_s.mat.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_schoolwear_410_m_c.mat
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_schoolwear_410_m_c.mat.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_schoolwear_410_m_s.mat
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_schoolwear_410_m_s.mat.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_schoolwear_420_h_c.mat
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_schoolwear_420_h_c.mat.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_schoolwear_420_h_s.mat
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_schoolwear_420_h_s.mat.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_schoolwear_420_l_c.mat
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_schoolwear_420_l_c.mat.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_schoolwear_420_l_s.mat
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_schoolwear_420_l_s.mat.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_schoolwear_420_m_c.mat
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_schoolwear_420_m_c.mat.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_schoolwear_420_m_s.mat
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_schoolwear_420_m_s.mat.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_swimwear_00_h_c.mat
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_swimwear_00_h_c.mat.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_swimwear_00_h_s.mat
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_swimwear_00_h_s.mat.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_swimwear_00_l_c.mat
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_swimwear_00_l_c.mat.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_swimwear_00_l_s.mat
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_swimwear_00_l_s.mat.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_swimwear_00_m_c.mat
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_swimwear_00_m_c.mat.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_swimwear_00_m_s.mat
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Materials/m01_swimwear_00_m_s.mat.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Legacy/m01_apron_00_h.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Legacy/m01_apron_00_h.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Legacy/m01_apron_00_l.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Legacy/m01_apron_00_l.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Legacy/m01_apron_00_m.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Legacy/m01_apron_00_m.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Legacy/m01_bathtowel_00_h.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Legacy/m01_bathtowel_00_h.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Legacy/m01_bathtowel_00_l.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Legacy/m01_bathtowel_00_l.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Legacy/m01_bathtowel_00_m.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Legacy/m01_bathtowel_00_m.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Legacy/m01_blazer_000_h.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Legacy/m01_blazer_000_h.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Legacy/m01_blazer_000_l.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Legacy/m01_blazer_000_l.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Legacy/m01_blazer_000_m.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Legacy/m01_blazer_000_m.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Legacy/m01_blazer_100_h.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Legacy/m01_blazer_100_h.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Legacy/m01_blazer_100_l.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Legacy/m01_blazer_100_l.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Legacy/m01_blazer_100_m.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Legacy/m01_blazer_100_m.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Legacy/m01_casualwear_00_h.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Legacy/m01_casualwear_00_h.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Legacy/m01_casualwear_00_l.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Legacy/m01_casualwear_00_l.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Legacy/m01_casualwear_00_m.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Legacy/m01_casualwear_00_m.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Legacy/m01_casualwear_01_h.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Legacy/m01_casualwear_01_h.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Legacy/m01_casualwear_01_l.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Legacy/m01_casualwear_01_l.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Legacy/m01_casualwear_01_m.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Legacy/m01_casualwear_01_m.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Legacy/m01_jersey_00_h.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Legacy/m01_jersey_00_h.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Legacy/m01_jersey_00_l.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Legacy/m01_jersey_00_l.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Legacy/m01_jersey_00_m.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Legacy/m01_jersey_00_m.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Legacy/m01_naked_00_h.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Legacy/m01_naked_00_h.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Legacy/m01_naked_00_l.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Legacy/m01_naked_00_l.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Legacy/m01_naked_00_m.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Legacy/m01_naked_00_m.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Legacy/m01_schoolwear_000_h.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Legacy/m01_schoolwear_000_h.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Legacy/m01_schoolwear_000_l.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Legacy/m01_schoolwear_000_l.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Legacy/m01_schoolwear_000_m.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Legacy/m01_schoolwear_000_m.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Legacy/m01_schoolwear_100_h.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Legacy/m01_schoolwear_100_h.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Legacy/m01_schoolwear_100_l.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Legacy/m01_schoolwear_100_l.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Legacy/m01_schoolwear_100_m.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Legacy/m01_schoolwear_100_m.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Legacy/m01_schoolwear_200_h.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Legacy/m01_schoolwear_200_h.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Legacy/m01_schoolwear_200_l.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Legacy/m01_schoolwear_200_l.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Legacy/m01_schoolwear_200_m.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Legacy/m01_schoolwear_200_m.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Legacy/m01_schoolwear_300_h.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Legacy/m01_schoolwear_300_h.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Legacy/m01_schoolwear_300_l.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Legacy/m01_schoolwear_300_l.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Legacy/m01_schoolwear_300_m.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Legacy/m01_schoolwear_300_m.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Legacy/m01_schoolwear_400_h.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Legacy/m01_schoolwear_400_h.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Legacy/m01_schoolwear_400_l.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Legacy/m01_schoolwear_400_l.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Legacy/m01_schoolwear_400_m.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Legacy/m01_schoolwear_400_m.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Legacy/m01_schoolwear_410_h.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Legacy/m01_schoolwear_410_h.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Legacy/m01_schoolwear_410_l.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Legacy/m01_schoolwear_410_l.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Legacy/m01_schoolwear_410_m.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Legacy/m01_schoolwear_410_m.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Legacy/m01_schoolwear_420_h.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Legacy/m01_schoolwear_420_h.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Legacy/m01_schoolwear_420_l.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Legacy/m01_schoolwear_420_l.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Legacy/m01_schoolwear_420_m.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Legacy/m01_schoolwear_420_m.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Legacy/m01_swimwear_00_h.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Legacy/m01_swimwear_00_h.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Legacy/m01_swimwear_00_l.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Legacy/m01_swimwear_00_l.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Legacy/m01_swimwear_00_m.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Legacy/m01_swimwear_00_m.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Mecanim/m01_apron_00_h.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Mecanim/m01_apron_00_h.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Mecanim/m01_apron_00_l.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Mecanim/m01_apron_00_l.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Mecanim/m01_apron_00_m.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Mecanim/m01_apron_00_m.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Mecanim/m01_bathtowel_00_h.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Mecanim/m01_bathtowel_00_h.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Mecanim/m01_bathtowel_00_l.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Mecanim/m01_bathtowel_00_l.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Mecanim/m01_bathtowel_00_m.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Mecanim/m01_bathtowel_00_m.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Mecanim/m01_blazer_000_h.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Mecanim/m01_blazer_000_h.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Mecanim/m01_blazer_000_l.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Mecanim/m01_blazer_000_l.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Mecanim/m01_blazer_000_m.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Mecanim/m01_blazer_000_m.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Mecanim/m01_blazer_100_h.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Mecanim/m01_blazer_100_h.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Mecanim/m01_blazer_100_l.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Mecanim/m01_blazer_100_l.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Mecanim/m01_blazer_100_m.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Mecanim/m01_blazer_100_m.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Mecanim/m01_casualwear_00_h.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Mecanim/m01_casualwear_00_h.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Mecanim/m01_casualwear_00_l.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Mecanim/m01_casualwear_00_l.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Mecanim/m01_casualwear_00_m.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Mecanim/m01_casualwear_00_m.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Mecanim/m01_casualwear_01_h.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Mecanim/m01_casualwear_01_h.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Mecanim/m01_casualwear_01_l.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Mecanim/m01_casualwear_01_l.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Mecanim/m01_casualwear_01_m.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Mecanim/m01_casualwear_01_m.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Mecanim/m01_jersey_00_h.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Mecanim/m01_jersey_00_h.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Mecanim/m01_jersey_00_l.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Mecanim/m01_jersey_00_l.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Mecanim/m01_jersey_00_m.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Mecanim/m01_jersey_00_m.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Mecanim/m01_naked_00_h.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Mecanim/m01_naked_00_h.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Mecanim/m01_naked_00_l.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Mecanim/m01_naked_00_l.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Mecanim/m01_naked_00_m.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Mecanim/m01_naked_00_m.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Mecanim/m01_schoolwear_000_h.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Mecanim/m01_schoolwear_000_h.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Mecanim/m01_schoolwear_000_l.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Mecanim/m01_schoolwear_000_l.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Mecanim/m01_schoolwear_000_m.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Mecanim/m01_schoolwear_000_m.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Mecanim/m01_schoolwear_100_h.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Mecanim/m01_schoolwear_100_h.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Mecanim/m01_schoolwear_100_l.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Mecanim/m01_schoolwear_100_l.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Mecanim/m01_schoolwear_100_m.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Mecanim/m01_schoolwear_100_m.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Mecanim/m01_schoolwear_200_h.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Mecanim/m01_schoolwear_200_h.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Mecanim/m01_schoolwear_200_l.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Mecanim/m01_schoolwear_200_l.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Mecanim/m01_schoolwear_200_m.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Mecanim/m01_schoolwear_200_m.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Mecanim/m01_schoolwear_300_h.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Mecanim/m01_schoolwear_300_h.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Mecanim/m01_schoolwear_300_l.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Mecanim/m01_schoolwear_300_l.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Mecanim/m01_schoolwear_300_m.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Mecanim/m01_schoolwear_300_m.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Mecanim/m01_schoolwear_400_h.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Mecanim/m01_schoolwear_400_h.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Mecanim/m01_schoolwear_400_l.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Mecanim/m01_schoolwear_400_l.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Mecanim/m01_schoolwear_400_m.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Mecanim/m01_schoolwear_400_m.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Mecanim/m01_schoolwear_410_h.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Mecanim/m01_schoolwear_410_h.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Mecanim/m01_schoolwear_410_l.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Mecanim/m01_schoolwear_410_l.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Mecanim/m01_schoolwear_410_m.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Mecanim/m01_schoolwear_410_m.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Mecanim/m01_schoolwear_420_h.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Mecanim/m01_schoolwear_420_h.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Mecanim/m01_schoolwear_420_l.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Mecanim/m01_schoolwear_420_l.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Mecanim/m01_schoolwear_420_m.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Mecanim/m01_schoolwear_420_m.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Mecanim/m01_swimwear_00_h.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Mecanim/m01_swimwear_00_h.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Mecanim/m01_swimwear_00_l.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Mecanim/m01_swimwear_00_l.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Mecanim/m01_swimwear_00_m.fbx
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Models Mecanim/m01_swimwear_00_m.fbx.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Textures/m01_apron_00_h.png
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Textures/m01_apron_00_h.png.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Textures/m01_apron_00_l.png
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Textures/m01_apron_00_l.png.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Textures/m01_apron_00_m.png
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Textures/m01_apron_00_m.png.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Textures/m01_bathtowel_00_h.png
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Textures/m01_bathtowel_00_h.png.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Textures/m01_bathtowel_00_l.png
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Textures/m01_bathtowel_00_l.png.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Textures/m01_bathtowel_00_m.png
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Textures/m01_bathtowel_00_m.png.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Textures/m01_blazer_000_h.png
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Textures/m01_blazer_000_h.png.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Textures/m01_blazer_000_l.png
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Textures/m01_blazer_000_l.png.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Textures/m01_blazer_000_m.png
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Textures/m01_blazer_000_m.png.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Textures/m01_blazer_100_h.png
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Textures/m01_blazer_100_h.png.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Textures/m01_blazer_100_l.png
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Textures/m01_blazer_100_l.png.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Textures/m01_blazer_100_m.png
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Textures/m01_blazer_100_m.png.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Textures/m01_casualwear_00_h.png
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Textures/m01_casualwear_00_h.png.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Textures/m01_casualwear_00_l.png
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Textures/m01_casualwear_00_l.png.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Textures/m01_casualwear_00_m.png
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Textures/m01_casualwear_00_m.png.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Textures/m01_casualwear_01_h.png
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Textures/m01_casualwear_01_h.png.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Textures/m01_casualwear_01_l.png
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Textures/m01_casualwear_01_l.png.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Textures/m01_casualwear_01_m.png
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Textures/m01_casualwear_01_m.png.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Textures/m01_face_00_h.png
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Textures/m01_face_00_h.png.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Textures/m01_face_00_l.png
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Textures/m01_face_00_l.png.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Textures/m01_face_00_m.png
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Textures/m01_face_00_m.png.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Textures/m01_face_010_l.png
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Textures/m01_face_010_l.png.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Textures/m01_face_010_m.png
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Textures/m01_face_010_m.png.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Textures/m01_face_020_l.png
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Textures/m01_face_020_l.png.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Textures/m01_face_020_m.png
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Textures/m01_face_020_m.png.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Textures/m01_face_030_l.png
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Textures/m01_face_030_l.png.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Textures/m01_face_030_m.png
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Textures/m01_face_030_m.png.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Textures/m01_face_040_l.png
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Textures/m01_face_040_l.png.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Textures/m01_face_040_m.png
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Textures/m01_face_040_m.png.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Textures/m01_face_050_l.png
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Textures/m01_face_050_l.png.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Textures/m01_face_050_m.png
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Textures/m01_face_050_m.png.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Textures/m01_face_060_l.png
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Textures/m01_face_060_l.png.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Textures/m01_face_060_m.png
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Textures/m01_face_060_m.png.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Textures/m01_face_070_l.png
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Textures/m01_face_070_l.png.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Textures/m01_face_070_m.png
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Textures/m01_face_070_m.png.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Textures/m01_gymclothes_00_h.png
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Textures/m01_gymclothes_00_h.png.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Textures/m01_gymclothes_00_l.png
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Textures/m01_gymclothes_00_l.png.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Textures/m01_gymclothes_00_m.png
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Textures/m01_gymclothes_00_m.png.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Textures/m01_jersey_00_h.png
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Textures/m01_jersey_00_h.png.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Textures/m01_jersey_00_l.png
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Textures/m01_jersey_00_l.png.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Textures/m01_jersey_00_m.png
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Textures/m01_jersey_00_m.png.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Textures/m01_naked_00_h.png
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Textures/m01_naked_00_h.png.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Textures/m01_naked_00_l.png
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Textures/m01_naked_00_l.png.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Textures/m01_naked_00_m.png
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Textures/m01_naked_00_m.png.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Textures/m01_schoolwear_000_h.png
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Textures/m01_schoolwear_000_h.png.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Textures/m01_schoolwear_000_l.png
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Textures/m01_schoolwear_000_l.png.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Textures/m01_schoolwear_000_m.png
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Textures/m01_schoolwear_000_m.png.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Textures/m01_schoolwear_100_h.png
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Textures/m01_schoolwear_100_h.png.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Textures/m01_schoolwear_100_l.png
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Textures/m01_schoolwear_100_l.png.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Textures/m01_schoolwear_100_m.png
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Textures/m01_schoolwear_100_m.png.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Textures/m01_schoolwear_200_h.png
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Textures/m01_schoolwear_200_h.png.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Textures/m01_schoolwear_200_l.png
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Textures/m01_schoolwear_200_l.png.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Textures/m01_schoolwear_200_m.png
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Textures/m01_schoolwear_200_m.png.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Textures/m01_schoolwear_300_h.png
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Textures/m01_schoolwear_300_h.png.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Textures/m01_schoolwear_300_l.png
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Textures/m01_schoolwear_300_l.png.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Textures/m01_schoolwear_300_m.png
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Textures/m01_schoolwear_300_m.png.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Textures/m01_schoolwear_400_h.png
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Textures/m01_schoolwear_400_h.png.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Textures/m01_schoolwear_400_l.png
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Textures/m01_schoolwear_400_l.png.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Textures/m01_schoolwear_400_m.png
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Textures/m01_schoolwear_400_m.png.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Textures/m01_schoolwear_410_h.png
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Textures/m01_schoolwear_410_h.png.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Textures/m01_schoolwear_410_l.png
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Textures/m01_schoolwear_410_l.png.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Textures/m01_schoolwear_410_m.png
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Textures/m01_schoolwear_410_m.png.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Textures/m01_schoolwear_420_h.png
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Textures/m01_schoolwear_420_h.png.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Textures/m01_schoolwear_420_l.png
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Textures/m01_schoolwear_420_l.png.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Textures/m01_schoolwear_420_m.png
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Textures/m01_schoolwear_420_m.png.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Textures/m01_swimwear_00_h.png
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Textures/m01_swimwear_00_h.png.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Textures/m01_swimwear_00_l.png
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Textures/m01_swimwear_00_l.png.meta
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Textures/m01_swimwear_00_m.png
+Assets/Download Assets/TaichiCharacterPack/Resources/Taichi/Textures/m01_swimwear_00_m.png.meta
+Assets/Download Assets/TaichiCharacterPack/Shaders/circle_b3.png
+Assets/Download Assets/TaichiCharacterPack/Shaders/circle_b3.png.meta
+Assets/Download Assets/TaichiCharacterPack/Shaders/toon_cutoff.shader
+Assets/Download Assets/TaichiCharacterPack/Shaders/toon_cutoff.shader.meta
+Assets/Download Assets/TaichiCharacterPack/Shaders/toon_hair.shader
+Assets/Download Assets/TaichiCharacterPack/Shaders/toon_hair.shader.meta
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/GUI.meta
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/Resources.meta
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/Scripts.meta
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/twin_viewer.unity
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/twin_viewer.unity.meta
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/twin_viewerSettings.lighting
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/twin_viewerSettings.lighting.meta
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/GUI/bar_slider.png
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/GUI/bar_slider.png.meta
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/GUI/base_camera.png
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/GUI/base_camera.png.meta
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/GUI/base_header.png
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/GUI/base_header.png.meta
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/GUI/btn_slider.png
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/GUI/btn_slider.png.meta
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/GUI/btn01_cos.png
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/GUI/btn01_cos.png.meta
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/GUI/btn02_motion.png
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/GUI/btn02_motion.png.meta
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/GUI/btn02_motion_2.png
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/GUI/btn02_motion_2.png.meta
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/GUI/btn02_motion_2_on.png
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/GUI/btn02_motion_2_on.png.meta
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/GUI/btn02_motion_on.png
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/GUI/btn02_motion_on.png.meta
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/GUI/btn03_bg.png
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/GUI/btn03_bg.png.meta
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/GUI/btn04_model.png
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/GUI/btn04_model.png.meta
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/GUI/btn05_cam-pan.png
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/GUI/btn05_cam-pan.png.meta
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/GUI/btn05_cam-pan_on.png
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/GUI/btn05_cam-pan_on.png.meta
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/GUI/btn05_cam-reset.png
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/GUI/btn05_cam-reset.png.meta
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/GUI/btn05_cam-reset_on.png
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/GUI/btn05_cam-reset_on.png.meta
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/GUI/btn05_cam-rotate.png
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/GUI/btn05_cam-rotate.png.meta
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/GUI/btn05_cam-rotate_on.png
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/GUI/btn05_cam-rotate_on.png.meta
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/GUI/btn05_cam-sansyou.png
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/GUI/btn05_cam-sansyou.png.meta
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/GUI/btn05_cam-sansyou_on.png
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/GUI/btn05_cam-sansyou_on.png.meta
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/GUI/btn05_cam-zoom.png
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/GUI/btn05_cam-zoom.png.meta
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/GUI/btn05_cam-zoom_on.png
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/GUI/btn05_cam-zoom_on.png.meta
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/GUI/btn06_grid.png
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/GUI/btn06_grid.png.meta
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/GUI/btn06_grid_on.png
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/GUI/btn06_grid_on.png.meta
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/GUI/btn07_face.png
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/GUI/btn07_face.png.meta
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/GUI/btn08_model.png
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/GUI/btn08_model.png.meta
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/GUI/btn09_ui.png
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/GUI/btn09_ui.png.meta
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/GUI/btn09_ui_on.png
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/GUI/btn09_ui_on.png.meta
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/GUI/cursol_left.png
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/GUI/cursol_left.png.meta
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/GUI/cursol_left_on.png
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/GUI/cursol_left_on.png.meta
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/GUI/cursol_right.png
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/GUI/cursol_right.png.meta
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/GUI/cursol_right_on.png
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/GUI/cursol_right_on.png.meta
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/GUI/TwinViewerCustomGuiSkin.guiskin
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/GUI/TwinViewerCustomGuiSkin.guiskin.meta
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/Resources/Taichi.meta
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/Resources/Taichi/TwinViewer BackGrounds.meta
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/Resources/Taichi/TwinViewer Settings.meta
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/Resources/Taichi/TwinViewer BackGrounds/background_material.mat
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/Resources/Taichi/TwinViewer BackGrounds/background_material.mat.meta
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/Resources/Taichi/TwinViewer BackGrounds/bg0.png
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/Resources/Taichi/TwinViewer BackGrounds/bg0.png.meta
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/Resources/Taichi/TwinViewer BackGrounds/bg1.png
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/Resources/Taichi/TwinViewer BackGrounds/bg1.png.meta
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/Resources/Taichi/TwinViewer BackGrounds/bg10.png
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/Resources/Taichi/TwinViewer BackGrounds/bg10.png.meta
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/Resources/Taichi/TwinViewer BackGrounds/bg11.png
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/Resources/Taichi/TwinViewer BackGrounds/bg11.png.meta
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/Resources/Taichi/TwinViewer BackGrounds/bg12.png
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/Resources/Taichi/TwinViewer BackGrounds/bg12.png.meta
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/Resources/Taichi/TwinViewer BackGrounds/bg13.png
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/Resources/Taichi/TwinViewer BackGrounds/bg13.png.meta
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/Resources/Taichi/TwinViewer BackGrounds/bg14.png
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/Resources/Taichi/TwinViewer BackGrounds/bg14.png.meta
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/Resources/Taichi/TwinViewer BackGrounds/bg15.png
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/Resources/Taichi/TwinViewer BackGrounds/bg15.png.meta
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/Resources/Taichi/TwinViewer BackGrounds/bg16.png
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/Resources/Taichi/TwinViewer BackGrounds/bg16.png.meta
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/Resources/Taichi/TwinViewer BackGrounds/bg17.png
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/Resources/Taichi/TwinViewer BackGrounds/bg17.png.meta
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/Resources/Taichi/TwinViewer BackGrounds/bg18.png
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/Resources/Taichi/TwinViewer BackGrounds/bg18.png.meta
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/Resources/Taichi/TwinViewer BackGrounds/bg2.png
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/Resources/Taichi/TwinViewer BackGrounds/bg2.png.meta
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/Resources/Taichi/TwinViewer BackGrounds/bg3.png
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/Resources/Taichi/TwinViewer BackGrounds/bg3.png.meta
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/Resources/Taichi/TwinViewer BackGrounds/bg4.png
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/Resources/Taichi/TwinViewer BackGrounds/bg4.png.meta
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/Resources/Taichi/TwinViewer BackGrounds/bg5.png
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/Resources/Taichi/TwinViewer BackGrounds/bg5.png.meta
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/Resources/Taichi/TwinViewer BackGrounds/bg6.png
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/Resources/Taichi/TwinViewer BackGrounds/bg6.png.meta
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/Resources/Taichi/TwinViewer BackGrounds/bg7.png
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/Resources/Taichi/TwinViewer BackGrounds/bg7.png.meta
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/Resources/Taichi/TwinViewer BackGrounds/bg8.png
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/Resources/Taichi/TwinViewer BackGrounds/bg8.png.meta
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/Resources/Taichi/TwinViewer BackGrounds/bg9.png
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/Resources/Taichi/TwinViewer BackGrounds/bg9.png.meta
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/Resources/Taichi/TwinViewer BackGrounds/Grid_Plane.mat
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/Resources/Taichi/TwinViewer BackGrounds/Grid_Plane.mat.meta
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/Resources/Taichi/TwinViewer BackGrounds/Grid_Plane_tex.png
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/Resources/Taichi/TwinViewer BackGrounds/Grid_Plane_tex.png.meta
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/Resources/Taichi/TwinViewer BackGrounds/Grid_Plane_tex00.png
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/Resources/Taichi/TwinViewer BackGrounds/Grid_Plane_tex00.png.meta
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/Resources/Taichi/TwinViewer BackGrounds/Grid_Plane_tex01.png
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/Resources/Taichi/TwinViewer BackGrounds/Grid_Plane_tex01.png.meta
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/Resources/Taichi/TwinViewer BackGrounds/Grid_Plane_tex02.png
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/Resources/Taichi/TwinViewer BackGrounds/Grid_Plane_tex02.png.meta
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/Resources/Taichi/TwinViewer BackGrounds/Grid_Plane_tex03.png
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/Resources/Taichi/TwinViewer BackGrounds/Grid_Plane_tex03.png.meta
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/Resources/Taichi/TwinViewer BackGrounds/Grid_Plane_tex04.png
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/Resources/Taichi/TwinViewer BackGrounds/Grid_Plane_tex04.png.meta
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/Resources/Taichi/TwinViewer BackGrounds/Grid_Plane_tex05.png
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/Resources/Taichi/TwinViewer BackGrounds/Grid_Plane_tex05.png.meta
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/Resources/Taichi/TwinViewer BackGrounds/Grid_Plane_tex06.png
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/Resources/Taichi/TwinViewer BackGrounds/Grid_Plane_tex06.png.meta
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/Resources/Taichi/TwinViewer BackGrounds/Grid_Plane_tex07.png
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/Resources/Taichi/TwinViewer BackGrounds/Grid_Plane_tex07.png.meta
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/Resources/Taichi/TwinViewer BackGrounds/Grid_Plane_tex08.png
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/Resources/Taichi/TwinViewer BackGrounds/Grid_Plane_tex08.png.meta
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/Resources/Taichi/TwinViewer BackGrounds/Grid_Plane_tex09.png
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/Resources/Taichi/TwinViewer BackGrounds/Grid_Plane_tex09.png.meta
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/Resources/Taichi/TwinViewer BackGrounds/Grid_Plane_tex10.png
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/Resources/Taichi/TwinViewer BackGrounds/Grid_Plane_tex10.png.meta
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/Resources/Taichi/TwinViewer BackGrounds/Grid_Plane_tex11.png
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/Resources/Taichi/TwinViewer BackGrounds/Grid_Plane_tex11.png.meta
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/Resources/Taichi/TwinViewer BackGrounds/Grid_Plane_tex12.png
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/Resources/Taichi/TwinViewer BackGrounds/Grid_Plane_tex12.png.meta
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/Resources/Taichi/TwinViewer BackGrounds/Grid_Plane_tex13.png
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/Resources/Taichi/TwinViewer BackGrounds/Grid_Plane_tex13.png.meta
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/Resources/Taichi/TwinViewer BackGrounds/Grid_Plane_tex14.png
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/Resources/Taichi/TwinViewer BackGrounds/Grid_Plane_tex14.png.meta
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/Resources/Taichi/TwinViewer BackGrounds/Grid_Plane_tex15.png
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/Resources/Taichi/TwinViewer BackGrounds/Grid_Plane_tex15.png.meta
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/Resources/Taichi/TwinViewer BackGrounds/Grid_Plane_tex16.png
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/Resources/Taichi/TwinViewer BackGrounds/Grid_Plane_tex16.png.meta
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/Resources/Taichi/TwinViewer BackGrounds/Grid_Plane_tex17.png
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/Resources/Taichi/TwinViewer BackGrounds/Grid_Plane_tex17.png.meta
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/Resources/Taichi/TwinViewer BackGrounds/Grid_Plane_tex18.png
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/Resources/Taichi/TwinViewer BackGrounds/Grid_Plane_tex18.png.meta
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/Resources/Taichi/TwinViewer BackGrounds/transparent.png
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/Resources/Taichi/TwinViewer BackGrounds/transparent.png.meta
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/Resources/Taichi/TwinViewer Settings/background_list.txt
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/Resources/Taichi/TwinViewer Settings/background_list.txt.meta
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/Resources/Taichi/TwinViewer Settings/F01.meta
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/Resources/Taichi/TwinViewer Settings/F02.meta
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/Resources/Taichi/TwinViewer Settings/F03.meta
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/Resources/Taichi/TwinViewer Settings/F05.meta
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/Resources/Taichi/TwinViewer Settings/M01.meta
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/Resources/Taichi/TwinViewer Settings/Puppet.meta
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/Resources/Taichi/TwinViewer Settings/stage_texture_list.txt
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/Resources/Taichi/TwinViewer Settings/stage_texture_list.txt.meta
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/Resources/Taichi/TwinViewer Settings/F01/animation_list.txt
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/Resources/Taichi/TwinViewer Settings/F01/animation_list.txt.meta
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/Resources/Taichi/TwinViewer Settings/F01/animation_list_all.txt
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/Resources/Taichi/TwinViewer Settings/F01/animation_list_all.txt.meta
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/Resources/Taichi/TwinViewer Settings/F01/fbx_ctrl.xml
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/Resources/Taichi/TwinViewer Settings/F01/fbx_ctrl.xml.meta
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/Resources/Taichi/TwinViewer Settings/F01/fbx_list.txt
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/Resources/Taichi/TwinViewer Settings/F01/fbx_list.txt.meta
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/Resources/Taichi/TwinViewer Settings/F02/animation_list.txt
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/Resources/Taichi/TwinViewer Settings/F02/animation_list.txt.meta
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/Resources/Taichi/TwinViewer Settings/F02/animation_list_all.txt
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/Resources/Taichi/TwinViewer Settings/F02/animation_list_all.txt.meta
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/Resources/Taichi/TwinViewer Settings/F02/fbx_ctrl.xml
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/Resources/Taichi/TwinViewer Settings/F02/fbx_ctrl.xml.meta
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/Resources/Taichi/TwinViewer Settings/F02/fbx_list.txt
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/Resources/Taichi/TwinViewer Settings/F02/fbx_list.txt.meta
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/Resources/Taichi/TwinViewer Settings/F03/Arum.meta
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/Resources/Taichi/TwinViewer Settings/F03/Asphodel.meta
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/Resources/Taichi/TwinViewer Settings/F03/Arum/animation_list_a.txt
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/Resources/Taichi/TwinViewer Settings/F03/Arum/animation_list_a.txt.meta
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/Resources/Taichi/TwinViewer Settings/F03/Arum/facial_texture_list_a.txt
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/Resources/Taichi/TwinViewer Settings/F03/Arum/facial_texture_list_a.txt.meta
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/Resources/Taichi/TwinViewer Settings/F03/Arum/fbx_ctrl.xml
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/Resources/Taichi/TwinViewer Settings/F03/Arum/fbx_ctrl.xml.meta
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/Resources/Taichi/TwinViewer Settings/F03/Arum/fbx_list.txt
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/Resources/Taichi/TwinViewer Settings/F03/Arum/fbx_list.txt.meta
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/Resources/Taichi/TwinViewer Settings/F03/Asphodel/animation_list_b.txt
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/Resources/Taichi/TwinViewer Settings/F03/Asphodel/animation_list_b.txt.meta
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/Resources/Taichi/TwinViewer Settings/F03/Asphodel/facial_texture_list_b.txt
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/Resources/Taichi/TwinViewer Settings/F03/Asphodel/facial_texture_list_b.txt.meta
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/Resources/Taichi/TwinViewer Settings/F03/Asphodel/fbx_ctrl.xml
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/Resources/Taichi/TwinViewer Settings/F03/Asphodel/fbx_ctrl.xml.meta
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/Resources/Taichi/TwinViewer Settings/F03/Asphodel/fbx_list.txt
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/Resources/Taichi/TwinViewer Settings/F03/Asphodel/fbx_list.txt.meta
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/Resources/Taichi/TwinViewer Settings/F05/animation_list.txt
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/Resources/Taichi/TwinViewer Settings/F05/animation_list.txt.meta
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/Resources/Taichi/TwinViewer Settings/F05/animation_list_all.txt
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/Resources/Taichi/TwinViewer Settings/F05/animation_list_all.txt.meta
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/Resources/Taichi/TwinViewer Settings/F05/fbx_ctrl.xml
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/Resources/Taichi/TwinViewer Settings/F05/fbx_ctrl.xml.meta
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/Resources/Taichi/TwinViewer Settings/F05/fbx_list.txt
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/Resources/Taichi/TwinViewer Settings/F05/fbx_list.txt.meta
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/Resources/Taichi/TwinViewer Settings/M01/animation_list.txt
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/Resources/Taichi/TwinViewer Settings/M01/animation_list.txt.meta
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/Resources/Taichi/TwinViewer Settings/M01/fbx_ctrl.xml
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/Resources/Taichi/TwinViewer Settings/M01/fbx_ctrl.xml.meta
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/Resources/Taichi/TwinViewer Settings/M01/fbx_list.txt
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/Resources/Taichi/TwinViewer Settings/M01/fbx_list.txt.meta
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/Resources/Taichi/TwinViewer Settings/Puppet/animation_list.txt
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/Resources/Taichi/TwinViewer Settings/Puppet/animation_list.txt.meta
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/Resources/Taichi/TwinViewer Settings/Puppet/fbx_ctrl.xml
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/Resources/Taichi/TwinViewer Settings/Puppet/fbx_ctrl.xml.meta
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/Resources/Taichi/TwinViewer Settings/Puppet/fbx_list.txt
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/Resources/Taichi/TwinViewer Settings/Puppet/fbx_list.txt.meta
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/Scripts/Twin2ndSceneScript.cs
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/Scripts/Twin2ndSceneScript.cs.meta
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/Scripts/TwinSceneScript.cs
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/Scripts/TwinSceneScript.cs.meta
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/Scripts/TwinViewScript.cs
+Assets/Download Assets/TaichiCharacterPack/TwinViewer/Scripts/TwinViewScript.cs.meta
+Assets/Download Assets/TaichiCharacterPack/Viewer/GUI.meta
+Assets/Download Assets/TaichiCharacterPack/Viewer/Resources.meta
+Assets/Download Assets/TaichiCharacterPack/Viewer/Scripts.meta
+Assets/Download Assets/TaichiCharacterPack/Viewer/taichi_viewer.unity
+Assets/Download Assets/TaichiCharacterPack/Viewer/taichi_viewer.unity.meta
+Assets/Download Assets/TaichiCharacterPack/Viewer/taichi_viewerSettings.lighting
+Assets/Download Assets/TaichiCharacterPack/Viewer/taichi_viewerSettings.lighting.meta
+Assets/Download Assets/TaichiCharacterPack/Viewer/GUI/bar_slider.png
+Assets/Download Assets/TaichiCharacterPack/Viewer/GUI/bar_slider.png.meta
+Assets/Download Assets/TaichiCharacterPack/Viewer/GUI/base_camera.png
+Assets/Download Assets/TaichiCharacterPack/Viewer/GUI/base_camera.png.meta
+Assets/Download Assets/TaichiCharacterPack/Viewer/GUI/btn_slider.png
+Assets/Download Assets/TaichiCharacterPack/Viewer/GUI/btn_slider.png.meta
+Assets/Download Assets/TaichiCharacterPack/Viewer/GUI/btn01_cos.png
+Assets/Download Assets/TaichiCharacterPack/Viewer/GUI/btn01_cos.png.meta
+Assets/Download Assets/TaichiCharacterPack/Viewer/GUI/btn02_motion.png
+Assets/Download Assets/TaichiCharacterPack/Viewer/GUI/btn02_motion.png.meta
+Assets/Download Assets/TaichiCharacterPack/Viewer/GUI/btn03_bg.png
+Assets/Download Assets/TaichiCharacterPack/Viewer/GUI/btn03_bg.png.meta
+Assets/Download Assets/TaichiCharacterPack/Viewer/GUI/btn04_model.png
+Assets/Download Assets/TaichiCharacterPack/Viewer/GUI/btn04_model.png.meta
+Assets/Download Assets/TaichiCharacterPack/Viewer/GUI/btn05_cam-pan.png
+Assets/Download Assets/TaichiCharacterPack/Viewer/GUI/btn05_cam-pan.png.meta
+Assets/Download Assets/TaichiCharacterPack/Viewer/GUI/btn05_cam-pan_on.png
+Assets/Download Assets/TaichiCharacterPack/Viewer/GUI/btn05_cam-pan_on.png.meta
+Assets/Download Assets/TaichiCharacterPack/Viewer/GUI/btn05_cam-reset.png
+Assets/Download Assets/TaichiCharacterPack/Viewer/GUI/btn05_cam-reset.png.meta
+Assets/Download Assets/TaichiCharacterPack/Viewer/GUI/btn05_cam-reset_on.png
+Assets/Download Assets/TaichiCharacterPack/Viewer/GUI/btn05_cam-reset_on.png.meta
+Assets/Download Assets/TaichiCharacterPack/Viewer/GUI/btn05_cam-rotate.png
+Assets/Download Assets/TaichiCharacterPack/Viewer/GUI/btn05_cam-rotate.png.meta
+Assets/Download Assets/TaichiCharacterPack/Viewer/GUI/btn05_cam-rotate_on.png
+Assets/Download Assets/TaichiCharacterPack/Viewer/GUI/btn05_cam-rotate_on.png.meta
+Assets/Download Assets/TaichiCharacterPack/Viewer/GUI/btn05_cam-sansyou.png
+Assets/Download Assets/TaichiCharacterPack/Viewer/GUI/btn05_cam-sansyou.png.meta
+Assets/Download Assets/TaichiCharacterPack/Viewer/GUI/btn05_cam-sansyou_on.png
+Assets/Download Assets/TaichiCharacterPack/Viewer/GUI/btn05_cam-sansyou_on.png.meta
+Assets/Download Assets/TaichiCharacterPack/Viewer/GUI/btn05_cam-zoom.png
+Assets/Download Assets/TaichiCharacterPack/Viewer/GUI/btn05_cam-zoom.png.meta
+Assets/Download Assets/TaichiCharacterPack/Viewer/GUI/btn05_cam-zoom_on.png
+Assets/Download Assets/TaichiCharacterPack/Viewer/GUI/btn05_cam-zoom_on.png.meta
+Assets/Download Assets/TaichiCharacterPack/Viewer/GUI/btn06_grid.png
+Assets/Download Assets/TaichiCharacterPack/Viewer/GUI/btn06_grid.png.meta
+Assets/Download Assets/TaichiCharacterPack/Viewer/GUI/btn06_grid_on.png
+Assets/Download Assets/TaichiCharacterPack/Viewer/GUI/btn06_grid_on.png.meta
+Assets/Download Assets/TaichiCharacterPack/Viewer/GUI/btn07_face.png
+Assets/Download Assets/TaichiCharacterPack/Viewer/GUI/btn07_face.png.meta
+Assets/Download Assets/TaichiCharacterPack/Viewer/GUI/btn08_par.png
+Assets/Download Assets/TaichiCharacterPack/Viewer/GUI/btn08_par.png.meta
+Assets/Download Assets/TaichiCharacterPack/Viewer/GUI/btn08_par_on.png
+Assets/Download Assets/TaichiCharacterPack/Viewer/GUI/btn08_par_on.png.meta
+Assets/Download Assets/TaichiCharacterPack/Viewer/GUI/btn09_par-shot.png
+Assets/Download Assets/TaichiCharacterPack/Viewer/GUI/btn09_par-shot.png.meta
+Assets/Download Assets/TaichiCharacterPack/Viewer/GUI/btn09_par-shot_on.png
+Assets/Download Assets/TaichiCharacterPack/Viewer/GUI/btn09_par-shot_on.png.meta
+Assets/Download Assets/TaichiCharacterPack/Viewer/GUI/btn10_ui.png
+Assets/Download Assets/TaichiCharacterPack/Viewer/GUI/btn10_ui.png.meta
+Assets/Download Assets/TaichiCharacterPack/Viewer/GUI/btn10_ui_on.png
+Assets/Download Assets/TaichiCharacterPack/Viewer/GUI/btn10_ui_on.png.meta
+Assets/Download Assets/TaichiCharacterPack/Viewer/GUI/cursol_left.png
+Assets/Download Assets/TaichiCharacterPack/Viewer/GUI/cursol_left.png.meta
+Assets/Download Assets/TaichiCharacterPack/Viewer/GUI/cursol_left_on.png
+Assets/Download Assets/TaichiCharacterPack/Viewer/GUI/cursol_left_on.png.meta
+Assets/Download Assets/TaichiCharacterPack/Viewer/GUI/cursol_right.png
+Assets/Download Assets/TaichiCharacterPack/Viewer/GUI/cursol_right.png.meta
+Assets/Download Assets/TaichiCharacterPack/Viewer/GUI/cursol_right_on.png
+Assets/Download Assets/TaichiCharacterPack/Viewer/GUI/cursol_right_on.png.meta
+Assets/Download Assets/TaichiCharacterPack/Viewer/GUI/CustomGuiSkin.guiskin
+Assets/Download Assets/TaichiCharacterPack/Viewer/GUI/CustomGuiSkin.guiskin.meta
+Assets/Download Assets/TaichiCharacterPack/Viewer/Resources/Taichi.meta
+Assets/Download Assets/TaichiCharacterPack/Viewer/Resources/Taichi/Viewer BackGrounds.meta
+Assets/Download Assets/TaichiCharacterPack/Viewer/Resources/Taichi/Viewer Settings.meta
+Assets/Download Assets/TaichiCharacterPack/Viewer/Resources/Taichi/Viewer BackGrounds/background_material.mat
+Assets/Download Assets/TaichiCharacterPack/Viewer/Resources/Taichi/Viewer BackGrounds/background_material.mat.meta
+Assets/Download Assets/TaichiCharacterPack/Viewer/Resources/Taichi/Viewer BackGrounds/bg0.png
+Assets/Download Assets/TaichiCharacterPack/Viewer/Resources/Taichi/Viewer BackGrounds/bg0.png.meta
+Assets/Download Assets/TaichiCharacterPack/Viewer/Resources/Taichi/Viewer BackGrounds/bg1.png
+Assets/Download Assets/TaichiCharacterPack/Viewer/Resources/Taichi/Viewer BackGrounds/bg1.png.meta
+Assets/Download Assets/TaichiCharacterPack/Viewer/Resources/Taichi/Viewer BackGrounds/bg10.png
+Assets/Download Assets/TaichiCharacterPack/Viewer/Resources/Taichi/Viewer BackGrounds/bg10.png.meta
+Assets/Download Assets/TaichiCharacterPack/Viewer/Resources/Taichi/Viewer BackGrounds/bg11.png
+Assets/Download Assets/TaichiCharacterPack/Viewer/Resources/Taichi/Viewer BackGrounds/bg11.png.meta
+Assets/Download Assets/TaichiCharacterPack/Viewer/Resources/Taichi/Viewer BackGrounds/bg12.png
+Assets/Download Assets/TaichiCharacterPack/Viewer/Resources/Taichi/Viewer BackGrounds/bg12.png.meta
+Assets/Download Assets/TaichiCharacterPack/Viewer/Resources/Taichi/Viewer BackGrounds/bg13.png
+Assets/Download Assets/TaichiCharacterPack/Viewer/Resources/Taichi/Viewer BackGrounds/bg13.png.meta
+Assets/Download Assets/TaichiCharacterPack/Viewer/Resources/Taichi/Viewer BackGrounds/bg14.png
+Assets/Download Assets/TaichiCharacterPack/Viewer/Resources/Taichi/Viewer BackGrounds/bg14.png.meta
+Assets/Download Assets/TaichiCharacterPack/Viewer/Resources/Taichi/Viewer BackGrounds/bg15.png
+Assets/Download Assets/TaichiCharacterPack/Viewer/Resources/Taichi/Viewer BackGrounds/bg15.png.meta
+Assets/Download Assets/TaichiCharacterPack/Viewer/Resources/Taichi/Viewer BackGrounds/bg16.png
+Assets/Download Assets/TaichiCharacterPack/Viewer/Resources/Taichi/Viewer BackGrounds/bg16.png.meta
+Assets/Download Assets/TaichiCharacterPack/Viewer/Resources/Taichi/Viewer BackGrounds/bg17.png
+Assets/Download Assets/TaichiCharacterPack/Viewer/Resources/Taichi/Viewer BackGrounds/bg17.png.meta
+Assets/Download Assets/TaichiCharacterPack/Viewer/Resources/Taichi/Viewer BackGrounds/bg18.png
+Assets/Download Assets/TaichiCharacterPack/Viewer/Resources/Taichi/Viewer BackGrounds/bg18.png.meta
+Assets/Download Assets/TaichiCharacterPack/Viewer/Resources/Taichi/Viewer BackGrounds/bg2.png
+Assets/Download Assets/TaichiCharacterPack/Viewer/Resources/Taichi/Viewer BackGrounds/bg2.png.meta
+Assets/Download Assets/TaichiCharacterPack/Viewer/Resources/Taichi/Viewer BackGrounds/bg3.png
+Assets/Download Assets/TaichiCharacterPack/Viewer/Resources/Taichi/Viewer BackGrounds/bg3.png.meta
+Assets/Download Assets/TaichiCharacterPack/Viewer/Resources/Taichi/Viewer BackGrounds/bg4.png
+Assets/Download Assets/TaichiCharacterPack/Viewer/Resources/Taichi/Viewer BackGrounds/bg4.png.meta
+Assets/Download Assets/TaichiCharacterPack/Viewer/Resources/Taichi/Viewer BackGrounds/bg5.png
+Assets/Download Assets/TaichiCharacterPack/Viewer/Resources/Taichi/Viewer BackGrounds/bg5.png.meta
+Assets/Download Assets/TaichiCharacterPack/Viewer/Resources/Taichi/Viewer BackGrounds/bg6.png
+Assets/Download Assets/TaichiCharacterPack/Viewer/Resources/Taichi/Viewer BackGrounds/bg6.png.meta
+Assets/Download Assets/TaichiCharacterPack/Viewer/Resources/Taichi/Viewer BackGrounds/bg7.png
+Assets/Download Assets/TaichiCharacterPack/Viewer/Resources/Taichi/Viewer BackGrounds/bg7.png.meta
+Assets/Download Assets/TaichiCharacterPack/Viewer/Resources/Taichi/Viewer BackGrounds/bg8.png
+Assets/Download Assets/TaichiCharacterPack/Viewer/Resources/Taichi/Viewer BackGrounds/bg8.png.meta
+Assets/Download Assets/TaichiCharacterPack/Viewer/Resources/Taichi/Viewer BackGrounds/bg9.png
+Assets/Download Assets/TaichiCharacterPack/Viewer/Resources/Taichi/Viewer BackGrounds/bg9.png.meta
+Assets/Download Assets/TaichiCharacterPack/Viewer/Resources/Taichi/Viewer BackGrounds/Grid_Plane.mat
+Assets/Download Assets/TaichiCharacterPack/Viewer/Resources/Taichi/Viewer BackGrounds/Grid_Plane.mat.meta
+Assets/Download Assets/TaichiCharacterPack/Viewer/Resources/Taichi/Viewer BackGrounds/Grid_Plane_tex.png
+Assets/Download Assets/TaichiCharacterPack/Viewer/Resources/Taichi/Viewer BackGrounds/Grid_Plane_tex.png.meta
+Assets/Download Assets/TaichiCharacterPack/Viewer/Resources/Taichi/Viewer BackGrounds/Grid_Plane_tex00.png
+Assets/Download Assets/TaichiCharacterPack/Viewer/Resources/Taichi/Viewer BackGrounds/Grid_Plane_tex00.png.meta
+Assets/Download Assets/TaichiCharacterPack/Viewer/Resources/Taichi/Viewer BackGrounds/Grid_Plane_tex01.png
+Assets/Download Assets/TaichiCharacterPack/Viewer/Resources/Taichi/Viewer BackGrounds/Grid_Plane_tex01.png.meta
+Assets/Download Assets/TaichiCharacterPack/Viewer/Resources/Taichi/Viewer BackGrounds/Grid_Plane_tex02.png
+Assets/Download Assets/TaichiCharacterPack/Viewer/Resources/Taichi/Viewer BackGrounds/Grid_Plane_tex02.png.meta
+Assets/Download Assets/TaichiCharacterPack/Viewer/Resources/Taichi/Viewer BackGrounds/Grid_Plane_tex03.png
+Assets/Download Assets/TaichiCharacterPack/Viewer/Resources/Taichi/Viewer BackGrounds/Grid_Plane_tex03.png.meta
+Assets/Download Assets/TaichiCharacterPack/Viewer/Resources/Taichi/Viewer BackGrounds/Grid_Plane_tex04.png
+Assets/Download Assets/TaichiCharacterPack/Viewer/Resources/Taichi/Viewer BackGrounds/Grid_Plane_tex04.png.meta
+Assets/Download Assets/TaichiCharacterPack/Viewer/Resources/Taichi/Viewer BackGrounds/Grid_Plane_tex05.png
+Assets/Download Assets/TaichiCharacterPack/Viewer/Resources/Taichi/Viewer BackGrounds/Grid_Plane_tex05.png.meta
+Assets/Download Assets/TaichiCharacterPack/Viewer/Resources/Taichi/Viewer BackGrounds/Grid_Plane_tex06.png
+Assets/Download Assets/TaichiCharacterPack/Viewer/Resources/Taichi/Viewer BackGrounds/Grid_Plane_tex06.png.meta
+Assets/Download Assets/TaichiCharacterPack/Viewer/Resources/Taichi/Viewer BackGrounds/Grid_Plane_tex07.png
+Assets/Download Assets/TaichiCharacterPack/Viewer/Resources/Taichi/Viewer BackGrounds/Grid_Plane_tex07.png.meta
+Assets/Download Assets/TaichiCharacterPack/Viewer/Resources/Taichi/Viewer BackGrounds/Grid_Plane_tex08.png
+Assets/Download Assets/TaichiCharacterPack/Viewer/Resources/Taichi/Viewer BackGrounds/Grid_Plane_tex08.png.meta
+Assets/Download Assets/TaichiCharacterPack/Viewer/Resources/Taichi/Viewer BackGrounds/Grid_Plane_tex09.png
+Assets/Download Assets/TaichiCharacterPack/Viewer/Resources/Taichi/Viewer BackGrounds/Grid_Plane_tex09.png.meta
+Assets/Download Assets/TaichiCharacterPack/Viewer/Resources/Taichi/Viewer BackGrounds/Grid_Plane_tex10.png
+Assets/Download Assets/TaichiCharacterPack/Viewer/Resources/Taichi/Viewer BackGrounds/Grid_Plane_tex10.png.meta
+Assets/Download Assets/TaichiCharacterPack/Viewer/Resources/Taichi/Viewer BackGrounds/Grid_Plane_tex11.png
+Assets/Download Assets/TaichiCharacterPack/Viewer/Resources/Taichi/Viewer BackGrounds/Grid_Plane_tex11.png.meta
+Assets/Download Assets/TaichiCharacterPack/Viewer/Resources/Taichi/Viewer BackGrounds/Grid_Plane_tex12.png
+Assets/Download Assets/TaichiCharacterPack/Viewer/Resources/Taichi/Viewer BackGrounds/Grid_Plane_tex12.png.meta
+Assets/Download Assets/TaichiCharacterPack/Viewer/Resources/Taichi/Viewer BackGrounds/Grid_Plane_tex13.png
+Assets/Download Assets/TaichiCharacterPack/Viewer/Resources/Taichi/Viewer BackGrounds/Grid_Plane_tex13.png.meta
+Assets/Download Assets/TaichiCharacterPack/Viewer/Resources/Taichi/Viewer BackGrounds/Grid_Plane_tex14.png
+Assets/Download Assets/TaichiCharacterPack/Viewer/Resources/Taichi/Viewer BackGrounds/Grid_Plane_tex14.png.meta
+Assets/Download Assets/TaichiCharacterPack/Viewer/Resources/Taichi/Viewer BackGrounds/Grid_Plane_tex15.png
+Assets/Download Assets/TaichiCharacterPack/Viewer/Resources/Taichi/Viewer BackGrounds/Grid_Plane_tex15.png.meta
+Assets/Download Assets/TaichiCharacterPack/Viewer/Resources/Taichi/Viewer BackGrounds/Grid_Plane_tex16.png
+Assets/Download Assets/TaichiCharacterPack/Viewer/Resources/Taichi/Viewer BackGrounds/Grid_Plane_tex16.png.meta
+Assets/Download Assets/TaichiCharacterPack/Viewer/Resources/Taichi/Viewer BackGrounds/Grid_Plane_tex17.png
+Assets/Download Assets/TaichiCharacterPack/Viewer/Resources/Taichi/Viewer BackGrounds/Grid_Plane_tex17.png.meta
+Assets/Download Assets/TaichiCharacterPack/Viewer/Resources/Taichi/Viewer BackGrounds/Grid_Plane_tex18.png
+Assets/Download Assets/TaichiCharacterPack/Viewer/Resources/Taichi/Viewer BackGrounds/Grid_Plane_tex18.png.meta
+Assets/Download Assets/TaichiCharacterPack/Viewer/Resources/Taichi/Viewer Settings/animation_list.txt
+Assets/Download Assets/TaichiCharacterPack/Viewer/Resources/Taichi/Viewer Settings/animation_list.txt.meta
+Assets/Download Assets/TaichiCharacterPack/Viewer/Resources/Taichi/Viewer Settings/background_list.txt
+Assets/Download Assets/TaichiCharacterPack/Viewer/Resources/Taichi/Viewer Settings/background_list.txt.meta
+Assets/Download Assets/TaichiCharacterPack/Viewer/Resources/Taichi/Viewer Settings/fbx_ctrl.xml
+Assets/Download Assets/TaichiCharacterPack/Viewer/Resources/Taichi/Viewer Settings/fbx_ctrl.xml.meta
+Assets/Download Assets/TaichiCharacterPack/Viewer/Resources/Taichi/Viewer Settings/fbx_list.txt
+Assets/Download Assets/TaichiCharacterPack/Viewer/Resources/Taichi/Viewer Settings/fbx_list.txt.meta
+Assets/Download Assets/TaichiCharacterPack/Viewer/Resources/Taichi/Viewer Settings/stage_texture_list.txt
+Assets/Download Assets/TaichiCharacterPack/Viewer/Resources/Taichi/Viewer Settings/stage_texture_list.txt.meta
+Assets/Download Assets/TaichiCharacterPack/Viewer/Resources/Taichi/Viewer Settings/title_text.txt
+Assets/Download Assets/TaichiCharacterPack/Viewer/Resources/Taichi/Viewer Settings/title_text.txt.meta
+Assets/Download Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs
+Assets/Download Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs.meta
+Assets/Download Assets/TaichiCharacterPack/Viewer/Scripts/ViewScript.cs
+Assets/Download Assets/TaichiCharacterPack/Viewer/Scripts/ViewScript.cs.meta
