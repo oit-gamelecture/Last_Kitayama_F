@@ -1,69 +1,112 @@
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
-public class enemymovement : MonoBehaviour
+public class EnemyMovement : MonoBehaviour
 {
-    public Animator enemyanimator;  // 敵のアニメーションコントローラー
-    public float speed = 3.0f;      // 通常の移動速度
-    public float downspeed = -2.0f; // 転倒時の後退速度（高速化）
+    public Animator enemyAnimator; // 敵のアニメーションコントローラー
+    public float normalSpeed = 3.0f; // 通常移動速度
+    public float retreatSpeed = 8.0f; // 転倒後の高速後退速度
+    private bool isFalling = false; // 転倒フラグ
 
-    [SerializeField] private float moveDirectionZ = 1.0f; // Z軸の移動方向 (1: 前進, -1: 後退)
-    private BoxCollider boxCol;      // 当たり判定用のBoxCollider
-    private bool isFalling = false;  // 転倒フラグ
+    private NavMeshAgent navMeshAgent; // NavMeshAgent の参照
+
+    // シリアライズされた目的地の座標リスト
+    [SerializeField] private List<Vector3> targetPositions;
+    private int currentTargetIndex = 0; // 現在の目標座標のインデックス
 
     void Start()
     {
-        boxCol = GetComponent<BoxCollider>();           // BoxColliderの取得
-        enemyanimator = GetComponent<Animator>();        // Animatorの取得
+        navMeshAgent = GetComponent<NavMeshAgent>();
+
+        if (navMeshAgent == null)
+        {
+            Debug.LogError($"NavMeshAgentが {gameObject.name} に見つかりません。");
+            return;
+        }
+
+        if (targetPositions == null || targetPositions.Count == 0)
+        {
+            Debug.LogError($"{gameObject.name} の targetPositions が設定されていません。");
+            return;
+        }
+
+        enemyAnimator = GetComponent<Animator>();
+        navMeshAgent.speed = normalSpeed;
+
+        EnsureOnNavMesh(); // NavMesh上にいなければ NavMesh に移動
+        SetNextTarget(); // 最初の目標座標を設定
     }
 
-    void FixedUpdate()
+    void Update()
     {
-        if (!isFalling)
+        if (!isFalling && navMeshAgent != null && navMeshAgent.isOnNavMesh)
         {
-            MoveEnemy(); // 通常の移動処理
+            if (navMeshAgent.remainingDistance < 0.5f)
+            {
+                AdvanceToNextTarget(); // 次の目標座標に移動
+            }
         }
     }
 
-    // 敵の移動処理
-    void MoveEnemy()
+    void AdvanceToNextTarget()
     {
-        Vector3 movement = new Vector3(0, 0, moveDirectionZ) * speed * Time.deltaTime;
-        transform.Translate(movement, Space.World);
+        if (targetPositions.Count == 0) return;
+
+        currentTargetIndex = (currentTargetIndex + 1) % targetPositions.Count;
+        SetNextTarget();
     }
 
-    // 転倒時の処理（アニメーションの即時切り替えと後退）
-    IEnumerator Down()
+    void SetNextTarget()
     {
-        enemyanimator.SetBool("IsWalking", false); // 歩くアニメーション停止
-        enemyanimator.SetTrigger("Fall"); // 転倒アニメーションを再生
-        boxCol.enabled = false; // 当たり判定を無効化
+        if (navMeshAgent.isOnNavMesh)
+        {
+            navMeshAgent.SetDestination(targetPositions[currentTargetIndex]);
+        }
+    }
 
+    void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Player") && !isFalling)
+        {
+            isFalling = true;
+            StartCoroutine(HandleFall(collision.transform));
+        }
+    }
+
+    IEnumerator HandleFall(Transform playerTransform)
+    {
+        enemyAnimator.SetBool("IsWalking", false);
+        enemyAnimator.SetTrigger("Fall");
+        navMeshAgent.isStopped = true;
+
+        Vector3 retreatDirection = (transform.position - playerTransform.position).normalized;
         float elapsedTime = 0f;
-        float retreatDuration = 0.5f; // 後退する時間を少し長く調整
-        float fastRetreatSpeed = 8.0f; // 瞬間的な高速後退速度
+        float retreatDuration = 0.5f;
 
-        // 高速で短時間後退する処理
         while (elapsedTime < retreatDuration)
         {
-            transform.Translate(Vector3.back * fastRetreatSpeed * Time.deltaTime, Space.World);
+            transform.Translate(retreatDirection * retreatSpeed * Time.deltaTime, Space.World);
             elapsedTime += Time.deltaTime;
             yield return null;
         }
 
-        // 後退を停止
-        downspeed = 0;
-
+        navMeshAgent.isStopped = true;
+        navMeshAgent.velocity = Vector3.zero;
     }
 
-    // プレイヤーとの接触時の処理
-    void OnTriggerEnter(Collider other)
+    void EnsureOnNavMesh()
     {
-        if (other.CompareTag("Player") && !isFalling)
+        NavMeshHit hit;
+        if (NavMesh.SamplePosition(transform.position, out hit, 1.0f, NavMesh.AllAreas))
         {
-            isFalling = true; // 転倒フラグを立てる
-            Debug.Log("fall");
-            StartCoroutine(Down()); // 転倒処理の開始
+            transform.position = hit.position;
+            Debug.Log($"{gameObject.name} を NavMesh上に移動しました。");
+        }
+        else
+        {
+            Debug.LogError($"{gameObject.name} の近くに NavMesh上の有効な地点が見つかりませんでした。");
         }
     }
 }

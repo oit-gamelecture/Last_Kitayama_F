@@ -43,16 +43,21 @@ public class EnemyManager : MonoBehaviour
     // 障害物を生成する
     void GenerateObstacle()
     {
-        float xPos = Random.Range(minX, maxX); // X座標を-2.5から2.5の範囲でランダムに決定
+        float xPos = Random.Range(minX, maxX); // X座標をランダムに決定
         int obstacleIndex = Random.Range(0, obstacles.Length); // プレハブをランダム選択
 
         // プレイヤーの進行方向に合わせて、Z軸の負方向に生成する
         Vector3 spawnPosition = new Vector3(xPos, 0.5f, Target.position.z - obstacleDistance);
 
-        // プレハブの元の回転を参照
-        Quaternion spawnRotation = obstacles[obstacleIndex].transform.rotation;
+        // Z座標が 100 以上なら生成しない
+        if (spawnPosition.z <= -100f)
+        {
+            Debug.Log("壁に生成しようとしたよ");
+            return;
+        }
 
-        // プレハブの回転を適用して生成
+        // プレハブの回転を取得して生成
+        Quaternion spawnRotation = obstacles[obstacleIndex].transform.rotation;
         GameObject obstacle = Instantiate(obstacles[obstacleIndex], spawnPosition, spawnRotation);
 
         ObstacleList.Add(obstacle); // 障害物をリストに追加
