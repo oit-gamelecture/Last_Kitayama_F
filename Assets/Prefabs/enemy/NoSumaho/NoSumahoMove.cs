@@ -7,7 +7,7 @@ public class NoSumahoMove : MonoBehaviour
 {
     public Animator enemyAnimator;  // 敵のアニメーションコントローラー
     public float speed = 3.0f;      // 通常移動速度
-    public float downSpeed = 8.0f;  // 転倒時の後退速度
+    public float downSpeed = 6.0f;  // 転倒時の後退速度
     private float retreatDuration = 0.5f; // 後退時間
 
     private NavMeshAgent navMeshAgent; // NavMeshAgent の参照

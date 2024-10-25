@@ -108,7 +108,7 @@ NavMeshSettings:
     agentTypeID: 0
     agentRadius: 0.5
     agentHeight: 2
-    agentSlope: 45
+    agentSlope: 44.3
     agentClimb: 0.4
     ledgeDropHeight: 0
     maxJumpAcrossDistance: 0
@@ -1115,11 +1115,15 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 758669485}
+    m_TransformParent: {fileID: 1356206102}
     m_Modifications:
     - target: {fileID: 6230836067775548298, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_Name
       value: jarst_platform1_type1 (43)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6230836067775548298, guid: adf2e701b5cc703469d4282edf344542, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_RootOrder
@@ -1127,7 +1131,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.79402995
+      value: 0.79403
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalScale.z
@@ -1135,7 +1139,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.4258003
+      value: -1.4258033
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1143,7 +1147,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -11.942009
+      value: -11.94201
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1194,6 +1198,10 @@ PrefabInstance:
     - target: {fileID: 1328463516739974555, guid: 86d767735e9d0a047bc8870afad0dc9e, type: 3}
       propertyPath: m_Name
       value: jarst_platform1_type3 (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1328463516739974555, guid: 86d767735e9d0a047bc8870afad0dc9e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1811702878086786849, guid: 86d767735e9d0a047bc8870afad0dc9e, type: 3}
       propertyPath: m_RootOrder
@@ -1386,6 +1394,10 @@ PrefabInstance:
     - target: {fileID: 1113473800619157069, guid: 58325a86879c4cc4187272644df511ab, type: 3}
       propertyPath: m_Name
       value: jarst_Wi-Fi_point
+      objectReference: {fileID: 0}
+    - target: {fileID: 1113473800619157069, guid: 58325a86879c4cc4187272644df511ab, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2087,11 +2099,15 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 820755263}
+    m_TransformParent: {fileID: 626265581}
     m_Modifications:
     - target: {fileID: 6230836067775548298, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_Name
       value: jarst_platform1_type1 (51)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6230836067775548298, guid: adf2e701b5cc703469d4282edf344542, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_RootOrder
@@ -2099,7 +2115,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.79402995
+      value: 0.79403
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalScale.z
@@ -2107,7 +2123,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.9455929
+      value: 1.945596
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2115,7 +2131,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -11.942009
+      value: -11.94201
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2619,6 +2635,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: jarst_platform1_type1 (39)
       objectReference: {fileID: 0}
+    - target: {fileID: 6230836067775548298, guid: adf2e701b5cc703469d4282edf344542, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_RootOrder
       value: 130
@@ -2693,6 +2713,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: jarst_station_type14_1 (04)
       objectReference: {fileID: 0}
+    - target: {fileID: 7132250322324968631, guid: 8777e13252be0c84a85f861e9989391b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7615876474937544205, guid: 8777e13252be0c84a85f861e9989391b, type: 3}
       propertyPath: m_RootOrder
       value: 65
@@ -2762,6 +2786,10 @@ PrefabInstance:
     - target: {fileID: 6230836067775548298, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_Name
       value: jarst_platform1_type1 (42)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6230836067775548298, guid: adf2e701b5cc703469d4282edf344542, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_RootOrder
@@ -3544,6 +3572,10 @@ PrefabInstance:
     - target: {fileID: 6230836067775548298, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_Name
       value: jarst_platform1_type1 (23)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6230836067775548298, guid: adf2e701b5cc703469d4282edf344542, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_RootOrder
@@ -4523,6 +4555,10 @@ PrefabInstance:
     - target: {fileID: 6230836067775548298, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_Name
       value: jarst_platform1_type1 (30)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6230836067775548298, guid: adf2e701b5cc703469d4282edf344542, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_RootOrder
@@ -5830,6 +5866,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: jarst_station_type14_1 (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 7132250322324968631, guid: 8777e13252be0c84a85f861e9989391b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7615876474937544205, guid: 8777e13252be0c84a85f861e9989391b, type: 3}
       propertyPath: m_RootOrder
       value: 129
@@ -6478,6 +6518,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: jarst_platform1_type1 (50)
       objectReference: {fileID: 0}
+    - target: {fileID: 6230836067775548298, guid: adf2e701b5cc703469d4282edf344542, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_RootOrder
       value: 159
@@ -6599,6 +6643,10 @@ PrefabInstance:
     - target: {fileID: 6426967000911299954, guid: cd46e4368cba9304dab696c4d44699fd, type: 3}
       propertyPath: m_Name
       value: jarst_plate3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6426967000911299954, guid: cd46e4368cba9304dab696c4d44699fd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7833,6 +7881,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: jarst_platform1_type1 (25)
       objectReference: {fileID: 0}
+    - target: {fileID: 6230836067775548298, guid: adf2e701b5cc703469d4282edf344542, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_RootOrder
       value: 81
@@ -8074,6 +8126,10 @@ PrefabInstance:
     - target: {fileID: 6230836067775548298, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_Name
       value: jarst_platform1_type1 (40)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6230836067775548298, guid: adf2e701b5cc703469d4282edf344542, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_RootOrder
@@ -8431,6 +8487,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: jarst_lamp4 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 9178653021625077758, guid: bff67b2bb24ec0846811ab319257f303, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8700,6 +8760,10 @@ PrefabInstance:
     - target: {fileID: 5045115981257224078, guid: 22da705204bd80c49878ae9cefe966a3, type: 3}
       propertyPath: m_Name
       value: jarst_trash_can (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5045115981257224078, guid: 22da705204bd80c49878ae9cefe966a3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5568712955015198004, guid: 22da705204bd80c49878ae9cefe966a3, type: 3}
       propertyPath: m_RootOrder
@@ -9650,6 +9714,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: jarst_platform1_type1 (36)
       objectReference: {fileID: 0}
+    - target: {fileID: 6230836067775548298, guid: adf2e701b5cc703469d4282edf344542, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_RootOrder
       value: 120
@@ -10523,6 +10591,10 @@ PrefabInstance:
     - target: {fileID: 7728813413840090887, guid: b86005c1be04e604ca6e54f97e589ee4, type: 3}
       propertyPath: m_Name
       value: jarst_hatch (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7728813413840090887, guid: b86005c1be04e604ca6e54f97e589ee4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -11708,11 +11780,15 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 820755263}
+    m_TransformParent: {fileID: 626265581}
     m_Modifications:
     - target: {fileID: 6230836067775548298, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_Name
       value: jarst_platform1_type1 (41)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6230836067775548298, guid: adf2e701b5cc703469d4282edf344542, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_RootOrder
@@ -11720,7 +11796,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.79402995
+      value: 0.79403
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalScale.z
@@ -11728,7 +11804,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.9455929
+      value: 1.945596
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalPosition.y
@@ -11736,7 +11812,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -7.5790024
+      value: -7.5790033
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalRotation.w
@@ -11941,11 +12017,15 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 820755263}
+    m_TransformParent: {fileID: 626265581}
     m_Modifications:
     - target: {fileID: 6230836067775548298, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_Name
       value: jarst_platform1_type1 (35)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6230836067775548298, guid: adf2e701b5cc703469d4282edf344542, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_RootOrder
@@ -11953,7 +12033,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.79402995
+      value: 0.79403
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalScale.z
@@ -11961,7 +12041,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.9455929
+      value: 1.9455988
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalPosition.y
@@ -11969,7 +12049,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -38.137016
+      value: -38.137024
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalRotation.w
@@ -12089,6 +12169,10 @@ PrefabInstance:
     - target: {fileID: 5045115981257224078, guid: 22da705204bd80c49878ae9cefe966a3, type: 3}
       propertyPath: m_Name
       value: jarst_trash_can (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5045115981257224078, guid: 22da705204bd80c49878ae9cefe966a3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5568712955015198004, guid: 22da705204bd80c49878ae9cefe966a3, type: 3}
       propertyPath: m_RootOrder
@@ -12445,11 +12529,15 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 758669485}
+    m_TransformParent: {fileID: 1356206102}
     m_Modifications:
     - target: {fileID: 6230836067775548298, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_Name
       value: jarst_platform1_type1 (26)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6230836067775548298, guid: adf2e701b5cc703469d4282edf344542, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_RootOrder
@@ -12457,7 +12545,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.79402995
+      value: 0.79403
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalScale.z
@@ -12465,7 +12553,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.9455929
+      value: 1.9455988
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalPosition.y
@@ -12473,7 +12561,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -46.865013
+      value: -46.865017
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalRotation.w
@@ -13662,6 +13750,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: jarst_Wi-Fi_point (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1113473800619157069, guid: 58325a86879c4cc4187272644df511ab, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14461,6 +14553,10 @@ PrefabInstance:
     - target: {fileID: 1328463516739974555, guid: 86d767735e9d0a047bc8870afad0dc9e, type: 3}
       propertyPath: m_Name
       value: jarst_platform1_type3 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1328463516739974555, guid: 86d767735e9d0a047bc8870afad0dc9e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1811702878086786849, guid: 86d767735e9d0a047bc8870afad0dc9e, type: 3}
       propertyPath: m_RootOrder
@@ -15386,6 +15482,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: jarst_platform1_type1 (38)
       objectReference: {fileID: 0}
+    - target: {fileID: 6230836067775548298, guid: adf2e701b5cc703469d4282edf344542, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_RootOrder
       value: 128
@@ -15690,6 +15790,10 @@ PrefabInstance:
     - target: {fileID: 1113473800619157069, guid: 58325a86879c4cc4187272644df511ab, type: 3}
       propertyPath: m_Name
       value: jarst_Wi-Fi_point (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1113473800619157069, guid: 58325a86879c4cc4187272644df511ab, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -16484,6 +16588,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: jarst_station_type14_1 (07)
       objectReference: {fileID: 0}
+    - target: {fileID: 7132250322324968631, guid: 8777e13252be0c84a85f861e9989391b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7615876474937544205, guid: 8777e13252be0c84a85f861e9989391b, type: 3}
       propertyPath: m_RootOrder
       value: 94
@@ -16695,6 +16803,10 @@ PrefabInstance:
     - target: {fileID: 1113473800619157069, guid: 58325a86879c4cc4187272644df511ab, type: 3}
       propertyPath: m_Name
       value: jarst_Wi-Fi_point (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1113473800619157069, guid: 58325a86879c4cc4187272644df511ab, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -17379,11 +17491,15 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 758669485}
+    m_TransformParent: {fileID: 1356206102}
     m_Modifications:
     - target: {fileID: 6230836067775548298, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_Name
       value: jarst_platform1_type1 (51)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6230836067775548298, guid: adf2e701b5cc703469d4282edf344542, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_RootOrder
@@ -17391,7 +17507,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.79402995
+      value: 0.79403
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalScale.z
@@ -17399,7 +17515,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.9455929
+      value: 1.945596
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalPosition.y
@@ -17407,7 +17523,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -11.942009
+      value: -11.94201
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalRotation.w
@@ -17458,6 +17574,10 @@ PrefabInstance:
     - target: {fileID: 5045115981257224078, guid: 22da705204bd80c49878ae9cefe966a3, type: 3}
       propertyPath: m_Name
       value: jarst_trash_can (20)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5045115981257224078, guid: 22da705204bd80c49878ae9cefe966a3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5568712955015198004, guid: 22da705204bd80c49878ae9cefe966a3, type: 3}
       propertyPath: m_RootOrder
@@ -17576,6 +17696,10 @@ PrefabInstance:
     - target: {fileID: 2283109066129927368, guid: df6bccfe19bf3524487b3607d897e04e, type: 3}
       propertyPath: m_Name
       value: jarst_platform1_type4 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2283109066129927368, guid: df6bccfe19bf3524487b3607d897e04e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -18201,6 +18325,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: jarst_platform1_type1 (46)
       objectReference: {fileID: 0}
+    - target: {fileID: 6230836067775548298, guid: adf2e701b5cc703469d4282edf344542, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_RootOrder
       value: 141
@@ -18274,6 +18402,10 @@ PrefabInstance:
     - target: {fileID: 5045115981257224078, guid: 22da705204bd80c49878ae9cefe966a3, type: 3}
       propertyPath: m_Name
       value: jarst_trash_can (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5045115981257224078, guid: 22da705204bd80c49878ae9cefe966a3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5568712955015198004, guid: 22da705204bd80c49878ae9cefe966a3, type: 3}
       propertyPath: m_RootOrder
@@ -18622,11 +18754,15 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 758669485}
+    m_TransformParent: {fileID: 1356206102}
     m_Modifications:
     - target: {fileID: 6230836067775548298, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_Name
       value: jarst_platform1_type1 (49)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6230836067775548298, guid: adf2e701b5cc703469d4282edf344542, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_RootOrder
@@ -18634,7 +18770,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.79402995
+      value: 0.79403
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalScale.z
@@ -18642,7 +18778,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.4258003
+      value: -1.4258004
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalPosition.y
@@ -18650,7 +18786,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -46.865013
+      value: -46.865017
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalRotation.w
@@ -18958,11 +19094,15 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 820755263}
+    m_TransformParent: {fileID: 626265581}
     m_Modifications:
     - target: {fileID: 6230836067775548298, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_Name
       value: jarst_platform1_type1 (21)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6230836067775548298, guid: adf2e701b5cc703469d4282edf344542, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_RootOrder
@@ -18970,7 +19110,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.79402995
+      value: 0.79403
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalScale.z
@@ -18978,7 +19118,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.4258003
+      value: -1.4258038
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalPosition.y
@@ -18986,7 +19126,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -3.2113266
+      value: -3.211327
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalRotation.w
@@ -20347,6 +20487,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: jarst_platform1_type1 (29)
       objectReference: {fileID: 0}
+    - target: {fileID: 6230836067775548298, guid: adf2e701b5cc703469d4282edf344542, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_RootOrder
       value: 93
@@ -20856,6 +21000,10 @@ PrefabInstance:
     - target: {fileID: 6230836067775548298, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_Name
       value: jarst_platform1_type1 (31)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6230836067775548298, guid: adf2e701b5cc703469d4282edf344542, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_RootOrder
@@ -21808,6 +21956,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: jarst_platform1_type1 (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 6230836067775548298, guid: adf2e701b5cc703469d4282edf344542, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_RootOrder
       value: 52
@@ -22337,11 +22489,15 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 820755263}
+    m_TransformParent: {fileID: 626265581}
     m_Modifications:
     - target: {fileID: 6230836067775548298, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_Name
       value: jarst_platform1_type1 (32)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6230836067775548298, guid: adf2e701b5cc703469d4282edf344542, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_RootOrder
@@ -22349,7 +22505,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.79402995
+      value: 0.79403
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalScale.z
@@ -22357,7 +22513,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.4258003
+      value: -1.4258004
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalPosition.y
@@ -22365,7 +22521,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -25.041008
+      value: -25.041016
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalRotation.w
@@ -23387,6 +23543,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: jarst_platform1_type1 (28)
       objectReference: {fileID: 0}
+    - target: {fileID: 6230836067775548298, guid: adf2e701b5cc703469d4282edf344542, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_RootOrder
       value: 91
@@ -23449,6 +23609,61 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
   m_PrefabInstance: {fileID: 626031531}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &626265580
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 626265581}
+  m_Layer: 0
+  m_Name: Way
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 2147483647
+  m_IsActive: 1
+--- !u!4 &626265581
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 626265580}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1189069909}
+  - {fileID: 539573931}
+  - {fileID: 1342167097}
+  - {fileID: 862831300}
+  - {fileID: 448206879}
+  - {fileID: 774043996}
+  - {fileID: 2090009851}
+  - {fileID: 123154911}
+  - {fileID: 551496114}
+  - {fileID: 1625985072}
+  - {fileID: 70970397}
+  - {fileID: 1734008078}
+  - {fileID: 1505614330}
+  - {fileID: 460383631}
+  - {fileID: 438343891}
+  - {fileID: 266869441}
+  - {fileID: 559945777}
+  - {fileID: 1026133506}
+  - {fileID: 101527999}
+  - {fileID: 6631392}
+  - {fileID: 191996425}
+  - {fileID: 877592644}
+  - {fileID: 630927294}
+  - {fileID: 880258192}
+  m_Father: {fileID: 820755263}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &627888886
 GameObject:
   m_ObjectHideFlags: 0
@@ -25048,6 +25263,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: jarst_trash_can (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 5045115981257224078, guid: 22da705204bd80c49878ae9cefe966a3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5568712955015198004, guid: 22da705204bd80c49878ae9cefe966a3, type: 3}
       propertyPath: m_RootOrder
       value: 117
@@ -25962,11 +26181,15 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 758669485}
+    m_TransformParent: {fileID: 1356206102}
     m_Modifications:
     - target: {fileID: 6230836067775548298, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_Name
       value: jarst_platform1_type1 (20)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6230836067775548298, guid: adf2e701b5cc703469d4282edf344542, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_RootOrder
@@ -25974,7 +26197,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.79402995
+      value: 0.79403
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalScale.z
@@ -25982,7 +26205,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.9455929
+      value: 1.9455955
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalPosition.y
@@ -25990,7 +26213,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -3.2113266
+      value: -3.2113268
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalRotation.w
@@ -26374,6 +26597,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: jarst_station_type14_1 (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 7132250322324968631, guid: 8777e13252be0c84a85f861e9989391b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7615876474937544205, guid: 8777e13252be0c84a85f861e9989391b, type: 3}
       propertyPath: m_RootOrder
       value: 108
@@ -26517,6 +26744,10 @@ PrefabInstance:
     - target: {fileID: 6230836067775548298, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_Name
       value: jarst_platform1_type1 (34)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6230836067775548298, guid: adf2e701b5cc703469d4282edf344542, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_RootOrder
@@ -26810,11 +27041,15 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 820755263}
+    m_TransformParent: {fileID: 626265581}
     m_Modifications:
     - target: {fileID: 6230836067775548298, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_Name
       value: jarst_platform1_type1 (40)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6230836067775548298, guid: adf2e701b5cc703469d4282edf344542, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_RootOrder
@@ -26822,7 +27057,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.79402995
+      value: 0.79403
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalScale.z
@@ -26830,7 +27065,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.9455929
+      value: 1.9455969
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalPosition.y
@@ -26838,7 +27073,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -20.676018
+      value: -20.67602
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalRotation.w
@@ -27007,6 +27242,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: jarst_lamp4 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 9178653021625077758, guid: bff67b2bb24ec0846811ab319257f303, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -27023,11 +27262,15 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 758669485}
+    m_TransformParent: {fileID: 1356206102}
     m_Modifications:
     - target: {fileID: 6230836067775548298, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_Name
       value: jarst_platform1_type1 (41)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6230836067775548298, guid: adf2e701b5cc703469d4282edf344542, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_RootOrder
@@ -27035,7 +27278,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.79402995
+      value: 0.79403
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalScale.z
@@ -27043,7 +27286,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.9455929
+      value: 1.945596
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalPosition.y
@@ -27051,7 +27294,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -7.5790024
+      value: -7.5790033
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalRotation.w
@@ -27097,11 +27340,15 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 758669485}
+    m_TransformParent: {fileID: 1356206102}
     m_Modifications:
     - target: {fileID: 6230836067775548298, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_Name
       value: jarst_platform1_type1 (32)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6230836067775548298, guid: adf2e701b5cc703469d4282edf344542, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_RootOrder
@@ -27109,7 +27356,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.79402995
+      value: 0.79403
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalScale.z
@@ -27117,7 +27364,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.4258003
+      value: -1.4258004
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalPosition.y
@@ -27125,7 +27372,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -25.041008
+      value: -25.041012
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalRotation.w
@@ -28019,6 +28266,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: jarst_platform1_type1 (33)
       objectReference: {fileID: 0}
+    - target: {fileID: 6230836067775548298, guid: adf2e701b5cc703469d4282edf344542, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_RootOrder
       value: 110
@@ -28092,11 +28343,15 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 820755263}
+    m_TransformParent: {fileID: 626265581}
     m_Modifications:
     - target: {fileID: 6230836067775548298, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_Name
       value: jarst_platform1_type1 (24)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6230836067775548298, guid: adf2e701b5cc703469d4282edf344542, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_RootOrder
@@ -28104,7 +28359,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.79402995
+      value: 0.79403
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalScale.z
@@ -28112,7 +28367,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.9455929
+      value: 1.9455969
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalPosition.y
@@ -28120,7 +28375,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -16.313011
+      value: -16.313013
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalRotation.w
@@ -28459,6 +28714,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: jarst_platform1_type4 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 2283109066129927368, guid: df6bccfe19bf3524487b3607d897e04e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -28549,11 +28808,15 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 758669485}
+    m_TransformParent: {fileID: 1356206102}
     m_Modifications:
     - target: {fileID: 6230836067775548298, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_Name
       value: jarst_platform1_type1 (38)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6230836067775548298, guid: adf2e701b5cc703469d4282edf344542, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_RootOrder
@@ -28561,7 +28824,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.79402995
+      value: 0.79403
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalScale.z
@@ -28569,7 +28832,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.9455929
+      value: 1.9455912
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalPosition.y
@@ -28577,7 +28840,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -29.404015
+      value: -29.404018
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalRotation.w
@@ -28694,57 +28957,34 @@ Transform:
   - {fileID: 193935741}
   - {fileID: 1168499962}
   - {fileID: 2016875928}
-  - {fileID: 795619585}
-  - {fileID: 694323626}
-  - {fileID: 2001934113}
   - {fileID: 694300804}
   - {fileID: 186754337}
-  - {fileID: 1171056051}
-  - {fileID: 1473761560}
-  - {fileID: 902068247}
   - {fileID: 1400651922}
   - {fileID: 87222137}
-  - {fileID: 339631125}
+  - {fileID: 2077658231}
+  - {fileID: 1113348465}
   - {fileID: 1801957345}
   - {fileID: 1004141485}
   - {fileID: 2103466177}
   - {fileID: 1199762827}
-  - {fileID: 1390838227}
-  - {fileID: 1113348465}
-  - {fileID: 716316000}
-  - {fileID: 1493798676}
-  - {fileID: 1740563092}
   - {fileID: 825964479}
-  - {fileID: 2118234429}
+  - {fileID: 1390838227}
   - {fileID: 1980301328}
-  - {fileID: 1221836827}
-  - {fileID: 2077658231}
-  - {fileID: 1828489118}
+  - {fileID: 1493798676}
   - {fileID: 1401793843}
-  - {fileID: 757547856}
-  - {fileID: 1614540465}
-  - {fileID: 1767425151}
-  - {fileID: 714040333}
-  - {fileID: 1624613017}
-  - {fileID: 35135891}
   - {fileID: 1498572887}
-  - {fileID: 1206017197}
   - {fileID: 1749810302}
   - {fileID: 1807659541}
-  - {fileID: 1645851636}
   - {fileID: 838398393}
-  - {fileID: 528310234}
-  - {fileID: 494046104}
-  - {fileID: 1073899011}
   - {fileID: 1419724425}
   - {fileID: 1650199099}
   - {fileID: 69939406}
-  - {fileID: 865395627}
   - {fileID: 1032549194}
   - {fileID: 602049881}
   - {fileID: 585874407}
   - {fileID: 1359221809}
   - {fileID: 1511558625}
+  - {fileID: 1356206102}
   m_Father: {fileID: 144404384}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1001 &759017083
@@ -29321,6 +29561,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: jarst_hatch (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 7728813413840090887, guid: b86005c1be04e604ca6e54f97e589ee4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -29461,6 +29705,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: jarst_hatch (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 7728813413840090887, guid: b86005c1be04e604ca6e54f97e589ee4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -29482,6 +29730,10 @@ PrefabInstance:
     - target: {fileID: 7132250322324968631, guid: 8777e13252be0c84a85f861e9989391b, type: 3}
       propertyPath: m_Name
       value: jarst_station_type14_1 (08)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7132250322324968631, guid: 8777e13252be0c84a85f861e9989391b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7615876474937544205, guid: 8777e13252be0c84a85f861e9989391b, type: 3}
       propertyPath: m_RootOrder
@@ -29997,11 +30249,15 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 758669485}
+    m_TransformParent: {fileID: 1356206102}
     m_Modifications:
     - target: {fileID: 6230836067775548298, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_Name
       value: jarst_platform1_type1 (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6230836067775548298, guid: adf2e701b5cc703469d4282edf344542, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_RootOrder
@@ -30009,7 +30265,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.79402995
+      value: 0.79403
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalScale.z
@@ -30017,7 +30273,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.9455929
+      value: 1.9455988
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalPosition.y
@@ -30025,7 +30281,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -33.77401
+      value: -33.774014
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalRotation.w
@@ -30483,6 +30739,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: jarst_platform1_type1 (21)
       objectReference: {fileID: 0}
+    - target: {fileID: 6230836067775548298, guid: adf2e701b5cc703469d4282edf344542, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_RootOrder
       value: 57
@@ -30608,6 +30868,10 @@ PrefabInstance:
     - target: {fileID: 1113473800619157069, guid: 58325a86879c4cc4187272644df511ab, type: 3}
       propertyPath: m_Name
       value: jarst_Wi-Fi_point (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1113473800619157069, guid: 58325a86879c4cc4187272644df511ab, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -31234,19 +31498,13 @@ Transform:
   - {fileID: 2077392768}
   - {fileID: 339553416}
   - {fileID: 1150298549}
-  - {fileID: 101527999}
-  - {fileID: 6631392}
-  - {fileID: 191996425}
   - {fileID: 427967403}
   - {fileID: 1426267218}
   - {fileID: 537131860}
   - {fileID: 1542374148}
-  - {fileID: 877592644}
-  - {fileID: 630927294}
-  - {fileID: 880258192}
   - {fileID: 854881828}
   - {fileID: 1799309397}
-  - {fileID: 551496114}
+  - {fileID: 1047206582}
   - {fileID: 1692051381}
   - {fileID: 337312311}
   - {fileID: 2044193406}
@@ -31254,36 +31512,18 @@ Transform:
   - {fileID: 271481191}
   - {fileID: 218984}
   - {fileID: 1372783562}
-  - {fileID: 438343891}
   - {fileID: 224983330}
-  - {fileID: 460383631}
   - {fileID: 988859257}
-  - {fileID: 1026133506}
   - {fileID: 1846622407}
-  - {fileID: 559945777}
   - {fileID: 1203248321}
-  - {fileID: 266869441}
-  - {fileID: 1047206582}
-  - {fileID: 1505614330}
-  - {fileID: 1734008078}
-  - {fileID: 70970397}
-  - {fileID: 1625985072}
-  - {fileID: 123154911}
-  - {fileID: 2090009851}
   - {fileID: 1753344881}
-  - {fileID: 774043996}
   - {fileID: 208643059}
   - {fileID: 1971955762}
   - {fileID: 1465658669}
-  - {fileID: 448206879}
   - {fileID: 40039055}
-  - {fileID: 862831300}
-  - {fileID: 1342167097}
-  - {fileID: 1189069909}
   - {fileID: 1504595808}
   - {fileID: 807140249}
   - {fileID: 1545105105}
-  - {fileID: 539573931}
   - {fileID: 1564305953}
   - {fileID: 316214083}
   - {fileID: 1770170855}
@@ -31291,6 +31531,7 @@ Transform:
   - {fileID: 1025033996}
   - {fileID: 889278959}
   - {fileID: 46549194}
+  - {fileID: 626265581}
   m_Father: {fileID: 144404384}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &820895848
@@ -32737,6 +32978,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: jarst_station_type14_1 (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 7132250322324968631, guid: 8777e13252be0c84a85f861e9989391b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7615876474937544205, guid: 8777e13252be0c84a85f861e9989391b, type: 3}
       propertyPath: m_RootOrder
       value: 143
@@ -33193,11 +33438,15 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 758669485}
+    m_TransformParent: {fileID: 1356206102}
     m_Modifications:
     - target: {fileID: 6230836067775548298, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_Name
       value: jarst_platform1_type1 (53)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6230836067775548298, guid: adf2e701b5cc703469d4282edf344542, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_RootOrder
@@ -33205,7 +33454,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.79402995
+      value: 0.79403
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalScale.z
@@ -33213,7 +33462,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.4258003
+      value: -1.4258033
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalPosition.y
@@ -33221,7 +33470,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -7.5790024
+      value: -7.5790033
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalRotation.w
@@ -33367,6 +33616,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: jarst_trash_can (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5045115981257224078, guid: 22da705204bd80c49878ae9cefe966a3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5568712955015198004, guid: 22da705204bd80c49878ae9cefe966a3, type: 3}
       propertyPath: m_RootOrder
       value: 50
@@ -33488,6 +33741,10 @@ PrefabInstance:
     - target: {fileID: 7728813413840090887, guid: b86005c1be04e604ca6e54f97e589ee4, type: 3}
       propertyPath: m_Name
       value: jarst_hatch (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7728813413840090887, guid: b86005c1be04e604ca6e54f97e589ee4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -34421,11 +34678,15 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 758669485}
+    m_TransformParent: {fileID: 1356206102}
     m_Modifications:
     - target: {fileID: 6230836067775548298, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_Name
       value: jarst_platform1_type1 (24)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6230836067775548298, guid: adf2e701b5cc703469d4282edf344542, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_RootOrder
@@ -34433,7 +34694,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.79402995
+      value: 0.79403
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalScale.z
@@ -34441,7 +34702,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.9455929
+      value: 1.9455969
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalPosition.y
@@ -34449,7 +34710,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -16.313011
+      value: -16.313013
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalRotation.w
@@ -34758,6 +35019,10 @@ PrefabInstance:
     - target: {fileID: 1328463516739974555, guid: 86d767735e9d0a047bc8870afad0dc9e, type: 3}
       propertyPath: m_Name
       value: jarst_platform1_type3 (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1328463516739974555, guid: 86d767735e9d0a047bc8870afad0dc9e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1811702878086786849, guid: 86d767735e9d0a047bc8870afad0dc9e, type: 3}
       propertyPath: m_RootOrder
@@ -35848,6 +36113,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: jarst_platform1_type1 (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 6230836067775548298, guid: adf2e701b5cc703469d4282edf344542, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_RootOrder
       value: 55
@@ -36126,7 +36395,7 @@ Transform:
   m_GameObject: {fileID: 942308319}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
-  m_LocalPosition: {x: 63.3, y: -10.2, z: -107.7}
+  m_LocalPosition: {x: 63.3, y: -9.4, z: -107.7}
   m_LocalScale: {x: 100, y: 1, z: 11}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -36977,6 +37246,10 @@ PrefabInstance:
     - target: {fileID: 1328463516739974555, guid: 86d767735e9d0a047bc8870afad0dc9e, type: 3}
       propertyPath: m_Name
       value: jarst_platform1_type3 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1328463516739974555, guid: 86d767735e9d0a047bc8870afad0dc9e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1811702878086786849, guid: 86d767735e9d0a047bc8870afad0dc9e, type: 3}
       propertyPath: m_RootOrder
@@ -38172,6 +38445,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: jarst_lamp4
       objectReference: {fileID: 0}
+    - target: {fileID: 9178653021625077758, guid: bff67b2bb24ec0846811ab319257f303, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -38193,6 +38470,10 @@ PrefabInstance:
     - target: {fileID: 6230836067775548298, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_Name
       value: jarst_platform1_type1 (43)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6230836067775548298, guid: adf2e701b5cc703469d4282edf344542, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_RootOrder
@@ -39797,6 +40078,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: jarst_station_type14_1 (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 7132250322324968631, guid: 8777e13252be0c84a85f861e9989391b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7615876474937544205, guid: 8777e13252be0c84a85f861e9989391b, type: 3}
       propertyPath: m_RootOrder
       value: 186
@@ -39935,11 +40220,15 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 820755263}
+    m_TransformParent: {fileID: 626265581}
     m_Modifications:
     - target: {fileID: 6230836067775548298, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_Name
       value: jarst_platform1_type1 (52)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6230836067775548298, guid: adf2e701b5cc703469d4282edf344542, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_RootOrder
@@ -39947,7 +40236,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.79402995
+      value: 0.79403
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalScale.z
@@ -39955,7 +40244,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.4258003
+      value: -1.4257967
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalPosition.y
@@ -39963,7 +40252,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.1594009
+      value: 1.1594008
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalRotation.w
@@ -40276,6 +40565,10 @@ PrefabInstance:
     - target: {fileID: 6230836067775548298, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_Name
       value: jarst_platform1_type1 (20)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6230836067775548298, guid: adf2e701b5cc703469d4282edf344542, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_RootOrder
@@ -40793,6 +41086,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: jarst_platform1_type4 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 2283109066129927368, guid: df6bccfe19bf3524487b3607d897e04e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -40809,11 +41106,15 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 758669485}
+    m_TransformParent: {fileID: 1356206102}
     m_Modifications:
     - target: {fileID: 6230836067775548298, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_Name
       value: jarst_platform1_type1 (52)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6230836067775548298, guid: adf2e701b5cc703469d4282edf344542, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_RootOrder
@@ -40821,7 +41122,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.79402995
+      value: 0.79403
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalScale.z
@@ -40829,7 +41130,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.4258003
+      value: -1.4257967
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalPosition.y
@@ -40837,7 +41138,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.1594009
+      value: 1.1594008
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalRotation.w
@@ -40983,6 +41284,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: jarst_platform1_type1 (51)
       objectReference: {fileID: 0}
+    - target: {fileID: 6230836067775548298, guid: adf2e701b5cc703469d4282edf344542, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_RootOrder
       value: 163
@@ -41051,11 +41356,15 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 820755263}
+    m_TransformParent: {fileID: 626265581}
     m_Modifications:
     - target: {fileID: 6230836067775548298, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_Name
       value: jarst_platform1_type1 (43)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6230836067775548298, guid: adf2e701b5cc703469d4282edf344542, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_RootOrder
@@ -41063,7 +41372,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.79402995
+      value: 0.79403
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalScale.z
@@ -41071,7 +41380,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.4258003
+      value: -1.4258033
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalPosition.y
@@ -41079,7 +41388,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -11.942009
+      value: -11.94201
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalRotation.w
@@ -44679,6 +44988,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: jarst_station_type14_1 (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 7132250322324968631, guid: 8777e13252be0c84a85f861e9989391b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7615876474937544205, guid: 8777e13252be0c84a85f861e9989391b, type: 3}
       propertyPath: m_RootOrder
       value: 167
@@ -45264,11 +45577,15 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 758669485}
+    m_TransformParent: {fileID: 1356206102}
     m_Modifications:
     - target: {fileID: 6230836067775548298, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_Name
       value: jarst_platform1_type1 (22)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6230836067775548298, guid: adf2e701b5cc703469d4282edf344542, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_RootOrder
@@ -45276,7 +45593,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.79402995
+      value: 0.79403
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalScale.z
@@ -45284,7 +45601,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.4258003
+      value: -1.4258004
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalPosition.y
@@ -45292,7 +45609,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -42.502007
+      value: -42.50201
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalRotation.w
@@ -46346,11 +46663,15 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 758669485}
+    m_TransformParent: {fileID: 1356206102}
     m_Modifications:
     - target: {fileID: 6230836067775548298, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_Name
       value: jarst_platform1_type1 (47)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6230836067775548298, guid: adf2e701b5cc703469d4282edf344542, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_RootOrder
@@ -46358,7 +46679,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.79402995
+      value: 0.79403013
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalScale.z
@@ -46366,7 +46687,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.4258003
+      value: -1.4258004
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalPosition.y
@@ -46374,7 +46695,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -29.404015
+      value: -29.404026
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalRotation.w
@@ -47060,11 +47381,15 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 758669485}
+    m_TransformParent: {fileID: 1356206102}
     m_Modifications:
     - target: {fileID: 6230836067775548298, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_Name
       value: jarst_platform1_type1 (36)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6230836067775548298, guid: adf2e701b5cc703469d4282edf344542, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_RootOrder
@@ -47072,7 +47397,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.79402995
+      value: 0.79403
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalScale.z
@@ -47080,7 +47405,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.4258003
+      value: -1.4258004
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalPosition.y
@@ -47088,7 +47413,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -38.137016
+      value: -38.13702
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalRotation.w
@@ -47139,6 +47464,10 @@ PrefabInstance:
     - target: {fileID: 1328463516739974555, guid: 86d767735e9d0a047bc8870afad0dc9e, type: 3}
       propertyPath: m_Name
       value: jarst_platform1_type3 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1328463516739974555, guid: 86d767735e9d0a047bc8870afad0dc9e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1811702878086786849, guid: 86d767735e9d0a047bc8870afad0dc9e, type: 3}
       propertyPath: m_RootOrder
@@ -48160,6 +48489,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: jarst_platform1_type1 (47)
       objectReference: {fileID: 0}
+    - target: {fileID: 6230836067775548298, guid: adf2e701b5cc703469d4282edf344542, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_RootOrder
       value: 142
@@ -48233,6 +48566,10 @@ PrefabInstance:
     - target: {fileID: 7132250322324968631, guid: 8777e13252be0c84a85f861e9989391b, type: 3}
       propertyPath: m_Name
       value: jarst_station_type14_1 (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7132250322324968631, guid: 8777e13252be0c84a85f861e9989391b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7615876474937544205, guid: 8777e13252be0c84a85f861e9989391b, type: 3}
       propertyPath: m_RootOrder
@@ -49255,6 +49592,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: jarst_platform1_type1 (53)
       objectReference: {fileID: 0}
+    - target: {fileID: 6230836067775548298, guid: adf2e701b5cc703469d4282edf344542, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_RootOrder
       value: 175
@@ -49323,11 +49664,15 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 820755263}
+    m_TransformParent: {fileID: 626265581}
     m_Modifications:
     - target: {fileID: 6230836067775548298, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_Name
       value: jarst_platform1_type1 (36)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6230836067775548298, guid: adf2e701b5cc703469d4282edf344542, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_RootOrder
@@ -49335,7 +49680,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.79402995
+      value: 0.79403
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalScale.z
@@ -49343,7 +49688,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.4258003
+      value: -1.4258004
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalPosition.y
@@ -49351,7 +49696,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -38.137016
+      value: -38.137024
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalRotation.w
@@ -49467,6 +49812,10 @@ PrefabInstance:
     - target: {fileID: 6230836067775548298, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_Name
       value: jarst_platform1_type1 (35)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6230836067775548298, guid: adf2e701b5cc703469d4282edf344542, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_RootOrder
@@ -50382,6 +50731,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: jarst_platform1_type1 (52)
       objectReference: {fileID: 0}
+    - target: {fileID: 6230836067775548298, guid: adf2e701b5cc703469d4282edf344542, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_RootOrder
       value: 165
@@ -50678,6 +51031,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: jarst_station_type14_1 (06)
       objectReference: {fileID: 0}
+    - target: {fileID: 7132250322324968631, guid: 8777e13252be0c84a85f861e9989391b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7615876474937544205, guid: 8777e13252be0c84a85f861e9989391b, type: 3}
       propertyPath: m_RootOrder
       value: 92
@@ -50836,11 +51193,15 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 820755263}
+    m_TransformParent: {fileID: 626265581}
     m_Modifications:
     - target: {fileID: 6230836067775548298, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_Name
       value: jarst_platform1_type1 (22)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6230836067775548298, guid: adf2e701b5cc703469d4282edf344542, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_RootOrder
@@ -50848,7 +51209,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.79402995
+      value: 0.79403
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalScale.z
@@ -50856,7 +51217,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.4258003
+      value: -1.4258004
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalPosition.y
@@ -50864,7 +51225,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -42.502007
+      value: -42.502014
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalRotation.w
@@ -52141,6 +52502,61 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
   m_PrefabInstance: {fileID: 1355768842}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1356206101
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1356206102}
+  m_Layer: 0
+  m_Name: Way
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 2147483647
+  m_IsActive: 1
+--- !u!4 &1356206102
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1356206101}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 865395627}
+  - {fileID: 1645851636}
+  - {fileID: 528310234}
+  - {fileID: 494046104}
+  - {fileID: 1073899011}
+  - {fileID: 1206017197}
+  - {fileID: 1740563092}
+  - {fileID: 2118234429}
+  - {fileID: 1221836827}
+  - {fileID: 1828489118}
+  - {fileID: 716316000}
+  - {fileID: 795619585}
+  - {fileID: 339631125}
+  - {fileID: 1171056051}
+  - {fileID: 1473761560}
+  - {fileID: 902068247}
+  - {fileID: 694323626}
+  - {fileID: 2001934113}
+  - {fileID: 757547856}
+  - {fileID: 1614540465}
+  - {fileID: 1767425151}
+  - {fileID: 714040333}
+  - {fileID: 1624613017}
+  - {fileID: 35135891}
+  m_Father: {fileID: 758669485}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1358898250
 GameObject:
   m_ObjectHideFlags: 0
@@ -53236,6 +53652,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: jarst_trash_can (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 5045115981257224078, guid: 22da705204bd80c49878ae9cefe966a3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5568712955015198004, guid: 22da705204bd80c49878ae9cefe966a3, type: 3}
       propertyPath: m_RootOrder
       value: 99
@@ -53881,11 +54301,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1811702878086786849, guid: 86d767735e9d0a047bc8870afad0dc9e, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.59999996
+      value: 0.5999999
+      objectReference: {fileID: 0}
+    - target: {fileID: 1811702878086786849, guid: 86d767735e9d0a047bc8870afad0dc9e, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1811702878086786849, guid: 86d767735e9d0a047bc8870afad0dc9e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.068001
+      value: -6.068
       objectReference: {fileID: 0}
     - target: {fileID: 1811702878086786849, guid: 86d767735e9d0a047bc8870afad0dc9e, type: 3}
       propertyPath: m_LocalPosition.y
@@ -53893,7 +54317,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1811702878086786849, guid: 86d767735e9d0a047bc8870afad0dc9e, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -22.099998
+      value: -22.100002
       objectReference: {fileID: 0}
     - target: {fileID: 1811702878086786849, guid: 86d767735e9d0a047bc8870afad0dc9e, type: 3}
       propertyPath: m_LocalRotation.w
@@ -55448,11 +55872,15 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 820755263}
+    m_TransformParent: {fileID: 626265581}
     m_Modifications:
     - target: {fileID: 6230836067775548298, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_Name
       value: jarst_platform1_type1 (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6230836067775548298, guid: adf2e701b5cc703469d4282edf344542, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_RootOrder
@@ -55460,7 +55888,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.79402995
+      value: 0.79403
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalScale.z
@@ -55468,7 +55896,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.9455929
+      value: 1.9455988
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalPosition.y
@@ -55476,7 +55904,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -33.77401
+      value: -33.774017
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalRotation.w
@@ -55815,6 +56243,10 @@ PrefabInstance:
     - target: {fileID: 7728813413840090887, guid: b86005c1be04e604ca6e54f97e589ee4, type: 3}
       propertyPath: m_Name
       value: jarst_hatch (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7728813413840090887, guid: b86005c1be04e604ca6e54f97e589ee4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -56244,6 +56676,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: jarst_trash_can (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 5045115981257224078, guid: 22da705204bd80c49878ae9cefe966a3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5568712955015198004, guid: 22da705204bd80c49878ae9cefe966a3, type: 3}
       propertyPath: m_RootOrder
       value: 154
@@ -56551,11 +56987,15 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 758669485}
+    m_TransformParent: {fileID: 1356206102}
     m_Modifications:
     - target: {fileID: 6230836067775548298, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_Name
       value: jarst_platform1_type1 (23)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6230836067775548298, guid: adf2e701b5cc703469d4282edf344542, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_RootOrder
@@ -56563,7 +57003,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.79402995
+      value: 0.79403
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalScale.z
@@ -56571,7 +57011,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.4258003
+      value: -1.4258024
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalPosition.y
@@ -56579,7 +57019,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -20.676018
+      value: -20.67602
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalRotation.w
@@ -57618,6 +58058,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: jarst_station_type14_1 (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 7132250322324968631, guid: 8777e13252be0c84a85f861e9989391b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7615876474937544205, guid: 8777e13252be0c84a85f861e9989391b, type: 3}
       propertyPath: m_RootOrder
       value: 121
@@ -58066,11 +58510,15 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 820755263}
+    m_TransformParent: {fileID: 626265581}
     m_Modifications:
     - target: {fileID: 6230836067775548298, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_Name
       value: jarst_platform1_type1 (48)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6230836067775548298, guid: adf2e701b5cc703469d4282edf344542, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_RootOrder
@@ -58078,7 +58526,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.79402995
+      value: 0.79403
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalScale.z
@@ -58086,7 +58534,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.9455929
+      value: 1.9455988
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalPosition.y
@@ -58094,7 +58542,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -42.502007
+      value: -42.502014
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalRotation.w
@@ -58443,6 +58891,10 @@ PrefabInstance:
     - target: {fileID: 7132250322324968631, guid: 8777e13252be0c84a85f861e9989391b, type: 3}
       propertyPath: m_Name
       value: jarst_station_type14_1 (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7132250322324968631, guid: 8777e13252be0c84a85f861e9989391b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7615876474937544205, guid: 8777e13252be0c84a85f861e9989391b, type: 3}
       propertyPath: m_RootOrder
@@ -59486,6 +59938,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: jarst_platform1_type1 (32)
       objectReference: {fileID: 0}
+    - target: {fileID: 6230836067775548298, guid: adf2e701b5cc703469d4282edf344542, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_RootOrder
       value: 106
@@ -60175,6 +60631,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: jarst_fence1
       objectReference: {fileID: 0}
+    - target: {fileID: 6396956046265344724, guid: abd6cb6e2ddbd9c4b808478f49f746a3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -60514,11 +60974,15 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 820755263}
+    m_TransformParent: {fileID: 626265581}
     m_Modifications:
     - target: {fileID: 6230836067775548298, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_Name
       value: jarst_platform1_type1 (38)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6230836067775548298, guid: adf2e701b5cc703469d4282edf344542, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_RootOrder
@@ -60526,7 +60990,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.79402995
+      value: 0.79403
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalScale.z
@@ -60534,7 +60998,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.9455929
+      value: 1.9455912
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalPosition.y
@@ -60542,7 +61006,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -29.404015
+      value: -29.404022
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalRotation.w
@@ -60588,6 +61052,10 @@ PrefabInstance:
     - target: {fileID: 6230836067775548298, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_Name
       value: jarst_platform1_type1 (26)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6230836067775548298, guid: adf2e701b5cc703469d4282edf344542, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_RootOrder
@@ -60944,11 +61412,15 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 758669485}
+    m_TransformParent: {fileID: 1356206102}
     m_Modifications:
     - target: {fileID: 6230836067775548298, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_Name
       value: jarst_platform1_type1 (39)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6230836067775548298, guid: adf2e701b5cc703469d4282edf344542, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_RootOrder
@@ -60956,7 +61428,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.79402995
+      value: 0.79403
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalScale.z
@@ -60964,7 +61436,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.9455929
+      value: 1.9455912
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalPosition.y
@@ -60972,7 +61444,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -25.041008
+      value: -25.041012
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalRotation.w
@@ -61093,6 +61565,10 @@ PrefabInstance:
     - target: {fileID: 6230836067775548298, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_Name
       value: jarst_platform1_type1 (49)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6230836067775548298, guid: adf2e701b5cc703469d4282edf344542, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_RootOrder
@@ -61456,6 +61932,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: jarst_station_type14_1 (05)
       objectReference: {fileID: 0}
+    - target: {fileID: 7132250322324968631, guid: 8777e13252be0c84a85f861e9989391b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7615876474937544205, guid: 8777e13252be0c84a85f861e9989391b, type: 3}
       propertyPath: m_RootOrder
       value: 86
@@ -61614,11 +62094,15 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 758669485}
+    m_TransformParent: {fileID: 1356206102}
     m_Modifications:
     - target: {fileID: 6230836067775548298, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_Name
       value: jarst_platform1_type1 (42)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6230836067775548298, guid: adf2e701b5cc703469d4282edf344542, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_RootOrder
@@ -61626,7 +62110,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.79402995
+      value: 0.79403
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalScale.z
@@ -61634,7 +62118,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.4258003
+      value: -1.4258004
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalPosition.y
@@ -61642,7 +62126,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -33.77401
+      value: -33.774014
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalRotation.w
@@ -61837,11 +62321,15 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 820755263}
+    m_TransformParent: {fileID: 626265581}
     m_Modifications:
     - target: {fileID: 6230836067775548298, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_Name
       value: jarst_platform1_type1 (53)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6230836067775548298, guid: adf2e701b5cc703469d4282edf344542, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_RootOrder
@@ -61849,7 +62337,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.79402995
+      value: 0.79403
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalScale.z
@@ -61857,7 +62345,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.4258003
+      value: -1.4258033
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalPosition.y
@@ -61865,7 +62353,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -7.5790024
+      value: -7.5790033
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalRotation.w
@@ -62000,11 +62488,15 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 820755263}
+    m_TransformParent: {fileID: 626265581}
     m_Modifications:
     - target: {fileID: 6230836067775548298, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_Name
       value: jarst_platform1_type1 (37)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6230836067775548298, guid: adf2e701b5cc703469d4282edf344542, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_RootOrder
@@ -62012,7 +62504,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.79402995
+      value: 0.79403
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalScale.z
@@ -62020,7 +62512,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.9455929
+      value: 1.9455949
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalPosition.y
@@ -62028,7 +62520,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.1594009
+      value: 1.1594013
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalRotation.w
@@ -62411,11 +62903,15 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 758669485}
+    m_TransformParent: {fileID: 1356206102}
     m_Modifications:
     - target: {fileID: 6230836067775548298, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_Name
       value: jarst_platform1_type1 (48)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6230836067775548298, guid: adf2e701b5cc703469d4282edf344542, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_RootOrder
@@ -62423,7 +62919,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.79402995
+      value: 0.79403
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalScale.z
@@ -62431,7 +62927,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.9455929
+      value: 1.9455988
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalPosition.y
@@ -62439,7 +62935,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -42.502007
+      value: -42.50201
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalRotation.w
@@ -62867,6 +63363,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: jarst_plate3 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6426967000911299954, guid: cd46e4368cba9304dab696c4d44699fd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -63174,6 +63674,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: jarst_hatch (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 7728813413840090887, guid: b86005c1be04e604ca6e54f97e589ee4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -63284,11 +63788,15 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 820755263}
+    m_TransformParent: {fileID: 626265581}
     m_Modifications:
     - target: {fileID: 6230836067775548298, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_Name
       value: jarst_platform1_type1 (20)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6230836067775548298, guid: adf2e701b5cc703469d4282edf344542, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_RootOrder
@@ -63296,7 +63804,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.79402995
+      value: 0.79403
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalScale.z
@@ -63304,7 +63812,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.9455929
+      value: 1.9455955
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalPosition.y
@@ -63312,7 +63820,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -3.2113266
+      value: -3.2113268
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalRotation.w
@@ -63432,6 +63940,10 @@ PrefabInstance:
     - target: {fileID: 6230836067775548298, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_Name
       value: jarst_platform1_type1 (22)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6230836067775548298, guid: adf2e701b5cc703469d4282edf344542, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_RootOrder
@@ -64364,11 +64876,15 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 820755263}
+    m_TransformParent: {fileID: 626265581}
     m_Modifications:
     - target: {fileID: 6230836067775548298, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_Name
       value: jarst_platform1_type1 (26)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6230836067775548298, guid: adf2e701b5cc703469d4282edf344542, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_RootOrder
@@ -64376,7 +64892,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.79402995
+      value: 0.79403
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalScale.z
@@ -64384,7 +64900,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.9455929
+      value: 1.9455988
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalPosition.y
@@ -64392,7 +64908,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -46.865013
+      value: -46.86502
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalRotation.w
@@ -64499,6 +65015,10 @@ PrefabInstance:
     - target: {fileID: 6230836067775548298, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_Name
       value: jarst_platform1_type1 (41)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6230836067775548298, guid: adf2e701b5cc703469d4282edf344542, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_RootOrder
@@ -64621,6 +65141,10 @@ PrefabInstance:
     - target: {fileID: 1113473800619157069, guid: 58325a86879c4cc4187272644df511ab, type: 3}
       propertyPath: m_Name
       value: jarst_Wi-Fi_point (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1113473800619157069, guid: 58325a86879c4cc4187272644df511ab, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -65174,11 +65698,15 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 820755263}
+    m_TransformParent: {fileID: 626265581}
     m_Modifications:
     - target: {fileID: 6230836067775548298, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_Name
       value: jarst_platform1_type1 (49)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6230836067775548298, guid: adf2e701b5cc703469d4282edf344542, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_RootOrder
@@ -65186,7 +65714,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.79402995
+      value: 0.79403
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalScale.z
@@ -65194,7 +65722,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.4258003
+      value: -1.4258004
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalPosition.y
@@ -65202,7 +65730,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -46.865013
+      value: -46.86502
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalRotation.w
@@ -65313,11 +65841,15 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 820755263}
+    m_TransformParent: {fileID: 626265581}
     m_Modifications:
     - target: {fileID: 6230836067775548298, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_Name
       value: jarst_platform1_type1 (42)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6230836067775548298, guid: adf2e701b5cc703469d4282edf344542, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_RootOrder
@@ -65325,7 +65857,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.79402995
+      value: 0.79403
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalScale.z
@@ -65333,7 +65865,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.4258003
+      value: -1.4258004
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalPosition.y
@@ -65341,7 +65873,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -33.77401
+      value: -33.774017
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalRotation.w
@@ -65799,6 +66331,10 @@ PrefabInstance:
     - target: {fileID: 6230836067775548298, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_Name
       value: jarst_platform1_type1 (48)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6230836067775548298, guid: adf2e701b5cc703469d4282edf344542, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_RootOrder
@@ -66918,11 +67454,15 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 758669485}
+    m_TransformParent: {fileID: 1356206102}
     m_Modifications:
     - target: {fileID: 6230836067775548298, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_Name
       value: jarst_platform1_type1 (34)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6230836067775548298, guid: adf2e701b5cc703469d4282edf344542, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_RootOrder
@@ -66930,7 +67470,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.79402995
+      value: 0.79403
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalScale.z
@@ -66938,7 +67478,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.4258003
+      value: -1.4258024
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalPosition.y
@@ -66946,7 +67486,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -16.313011
+      value: -16.313013
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalRotation.w
@@ -67597,11 +68137,15 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 758669485}
+    m_TransformParent: {fileID: 1356206102}
     m_Modifications:
     - target: {fileID: 6230836067775548298, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_Name
       value: jarst_platform1_type1 (40)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6230836067775548298, guid: adf2e701b5cc703469d4282edf344542, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_RootOrder
@@ -67609,7 +68153,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.79402995
+      value: 0.79403
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalScale.z
@@ -67617,7 +68161,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.9455929
+      value: 1.9455969
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalPosition.y
@@ -67625,7 +68169,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -20.676018
+      value: -20.67602
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalRotation.w
@@ -69246,6 +69790,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: jarst_trash_can (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 5045115981257224078, guid: 22da705204bd80c49878ae9cefe966a3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5568712955015198004, guid: 22da705204bd80c49878ae9cefe966a3, type: 3}
       propertyPath: m_RootOrder
       value: 60
@@ -70168,11 +70716,15 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 758669485}
+    m_TransformParent: {fileID: 1356206102}
     m_Modifications:
     - target: {fileID: 6230836067775548298, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_Name
       value: jarst_platform1_type1 (37)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6230836067775548298, guid: adf2e701b5cc703469d4282edf344542, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_RootOrder
@@ -70180,7 +70732,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.79402995
+      value: 0.79403
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalScale.z
@@ -70188,7 +70740,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.9455929
+      value: 1.9455949
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalPosition.y
@@ -70196,7 +70748,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.1594009
+      value: 1.1594013
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalRotation.w
@@ -71087,11 +71639,15 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 820755263}
+    m_TransformParent: {fileID: 626265581}
     m_Modifications:
     - target: {fileID: 6230836067775548298, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_Name
       value: jarst_platform1_type1 (47)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6230836067775548298, guid: adf2e701b5cc703469d4282edf344542, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_RootOrder
@@ -71099,7 +71655,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.79402995
+      value: 0.79403
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalScale.z
@@ -71107,7 +71663,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.4258003
+      value: -1.4258004
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalPosition.y
@@ -71115,7 +71671,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -29.404015
+      value: -29.404022
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalRotation.w
@@ -71239,6 +71795,10 @@ PrefabInstance:
     - target: {fileID: 6230836067775548298, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_Name
       value: jarst_platform1_type1 (44)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6230836067775548298, guid: adf2e701b5cc703469d4282edf344542, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_RootOrder
@@ -71550,6 +72110,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: jarst_Wi-Fi_point (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 1113473800619157069, guid: 58325a86879c4cc4187272644df511ab, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -71824,11 +72388,15 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 820755263}
+    m_TransformParent: {fileID: 626265581}
     m_Modifications:
     - target: {fileID: 6230836067775548298, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_Name
       value: jarst_platform1_type1 (39)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6230836067775548298, guid: adf2e701b5cc703469d4282edf344542, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_RootOrder
@@ -71836,7 +72404,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.79402995
+      value: 0.79403
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalScale.z
@@ -71844,7 +72412,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.9455929
+      value: 1.9455912
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalPosition.y
@@ -71852,7 +72420,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -25.041008
+      value: -25.041016
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalRotation.w
@@ -72482,6 +73050,10 @@ PrefabInstance:
     - target: {fileID: 8277118207262560218, guid: 22f361f7b63ec1b4b9f69313de225ffb, type: 3}
       propertyPath: m_Name
       value: jarst_mirror (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8277118207262560218, guid: 22f361f7b63ec1b4b9f69313de225ffb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8761167633719350624, guid: 22f361f7b63ec1b4b9f69313de225ffb, type: 3}
       propertyPath: m_RootOrder
@@ -73286,6 +73858,10 @@ PrefabInstance:
     - target: {fileID: 5045115981257224078, guid: 22da705204bd80c49878ae9cefe966a3, type: 3}
       propertyPath: m_Name
       value: jarst_trash_can (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5045115981257224078, guid: 22da705204bd80c49878ae9cefe966a3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5568712955015198004, guid: 22da705204bd80c49878ae9cefe966a3, type: 3}
       propertyPath: m_RootOrder
@@ -74155,11 +74731,15 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 820755263}
+    m_TransformParent: {fileID: 626265581}
     m_Modifications:
     - target: {fileID: 6230836067775548298, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_Name
       value: jarst_platform1_type1 (23)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6230836067775548298, guid: adf2e701b5cc703469d4282edf344542, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_RootOrder
@@ -74167,7 +74747,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.79402995
+      value: 0.79403
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalScale.z
@@ -74175,7 +74755,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.4258003
+      value: -1.4258024
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalPosition.y
@@ -74183,7 +74763,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -20.676018
+      value: -20.67602
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalRotation.w
@@ -74417,6 +74997,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: jarst_fence1 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 6396956046265344724, guid: abd6cb6e2ddbd9c4b808478f49f746a3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -74438,6 +75022,10 @@ PrefabInstance:
     - target: {fileID: 7132250322324968631, guid: 8777e13252be0c84a85f861e9989391b, type: 3}
       propertyPath: m_Name
       value: jarst_station_type14_1 (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7132250322324968631, guid: 8777e13252be0c84a85f861e9989391b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7615876474937544205, guid: 8777e13252be0c84a85f861e9989391b, type: 3}
       propertyPath: m_RootOrder
@@ -74503,11 +75091,15 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 820755263}
+    m_TransformParent: {fileID: 626265581}
     m_Modifications:
     - target: {fileID: 6230836067775548298, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_Name
       value: jarst_platform1_type1 (34)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6230836067775548298, guid: adf2e701b5cc703469d4282edf344542, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_RootOrder
@@ -74515,7 +75107,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.79402995
+      value: 0.79403
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalScale.z
@@ -74523,7 +75115,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.4258003
+      value: -1.4258024
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalPosition.y
@@ -74531,7 +75123,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -16.313011
+      value: -16.313013
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalRotation.w
@@ -74726,6 +75318,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: jarst_platform1_type3 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 1328463516739974555, guid: 86d767735e9d0a047bc8870afad0dc9e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1811702878086786849, guid: 86d767735e9d0a047bc8870afad0dc9e, type: 3}
       propertyPath: m_RootOrder
       value: 115
@@ -74795,6 +75391,10 @@ PrefabInstance:
     - target: {fileID: 7132250322324968631, guid: 8777e13252be0c84a85f861e9989391b, type: 3}
       propertyPath: m_Name
       value: jarst_station_type14_1 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7132250322324968631, guid: 8777e13252be0c84a85f861e9989391b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7615876474937544205, guid: 8777e13252be0c84a85f861e9989391b, type: 3}
       propertyPath: m_RootOrder
@@ -75604,6 +76204,10 @@ PrefabInstance:
     - target: {fileID: 6156702041562018094, guid: 12534b4400551f241a5ba8d6a468d4ff, type: 3}
       propertyPath: m_Name
       value: jarst_station_type14 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6156702041562018094, guid: 12534b4400551f241a5ba8d6a468d4ff, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6790072881780468628, guid: 12534b4400551f241a5ba8d6a468d4ff, type: 3}
       propertyPath: m_RootOrder
@@ -76435,6 +77039,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: jarst_platform1_type4 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 2283109066129927368, guid: df6bccfe19bf3524487b3607d897e04e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -76639,11 +77247,15 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 758669485}
+    m_TransformParent: {fileID: 1356206102}
     m_Modifications:
     - target: {fileID: 6230836067775548298, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_Name
       value: jarst_platform1_type1 (21)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6230836067775548298, guid: adf2e701b5cc703469d4282edf344542, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_RootOrder
@@ -76651,7 +77263,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.79402995
+      value: 0.79403
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalScale.z
@@ -76659,7 +77271,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.4258003
+      value: -1.4258038
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalPosition.y
@@ -76667,7 +77279,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -3.2113266
+      value: -3.211327
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalRotation.w
@@ -77327,6 +77939,10 @@ PrefabInstance:
     - target: {fileID: 5045115981257224078, guid: 22da705204bd80c49878ae9cefe966a3, type: 3}
       propertyPath: m_Name
       value: jarst_trash_can (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5045115981257224078, guid: 22da705204bd80c49878ae9cefe966a3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5568712955015198004, guid: 22da705204bd80c49878ae9cefe966a3, type: 3}
       propertyPath: m_RootOrder
@@ -78176,6 +78792,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: jarst_platform1_type1 (45)
       objectReference: {fileID: 0}
+    - target: {fileID: 6230836067775548298, guid: adf2e701b5cc703469d4282edf344542, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_RootOrder
       value: 140
@@ -78249,6 +78869,10 @@ PrefabInstance:
     - target: {fileID: 6230836067775548298, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_Name
       value: jarst_platform1_type1 (27)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6230836067775548298, guid: adf2e701b5cc703469d4282edf344542, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_RootOrder
@@ -79136,6 +79760,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: jarst_platform1_type1 (37)
       objectReference: {fileID: 0}
+    - target: {fileID: 6230836067775548298, guid: adf2e701b5cc703469d4282edf344542, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_RootOrder
       value: 124
@@ -79209,6 +79837,10 @@ PrefabInstance:
     - target: {fileID: 5045115981257224078, guid: 22da705204bd80c49878ae9cefe966a3, type: 3}
       propertyPath: m_Name
       value: jarst_trash_can (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5045115981257224078, guid: 22da705204bd80c49878ae9cefe966a3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5568712955015198004, guid: 22da705204bd80c49878ae9cefe966a3, type: 3}
       propertyPath: m_RootOrder
@@ -80427,6 +81059,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: jarst_trash_can1
       objectReference: {fileID: 0}
+    - target: {fileID: 5350847128332260570, guid: 275c326fa682df4408d89a8ce24a07e9, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -80686,6 +81322,10 @@ PrefabInstance:
     - target: {fileID: 7132250322324968631, guid: 8777e13252be0c84a85f861e9989391b, type: 3}
       propertyPath: m_Name
       value: jarst_station_type14_1 (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7132250322324968631, guid: 8777e13252be0c84a85f861e9989391b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7615876474937544205, guid: 8777e13252be0c84a85f861e9989391b, type: 3}
       propertyPath: m_RootOrder
@@ -81220,6 +81860,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: jarst_platform1_type1 (24)
       objectReference: {fileID: 0}
+    - target: {fileID: 6230836067775548298, guid: adf2e701b5cc703469d4282edf344542, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_RootOrder
       value: 72
@@ -81368,6 +82012,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: jarst_trash_can (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 5045115981257224078, guid: 22da705204bd80c49878ae9cefe966a3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5568712955015198004, guid: 22da705204bd80c49878ae9cefe966a3, type: 3}
       propertyPath: m_RootOrder
       value: 80
@@ -81490,6 +82138,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: jarst_hatch (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 7728813413840090887, guid: b86005c1be04e604ca6e54f97e589ee4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -81600,11 +82252,15 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 758669485}
+    m_TransformParent: {fileID: 1356206102}
     m_Modifications:
     - target: {fileID: 6230836067775548298, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_Name
       value: jarst_platform1_type1 (35)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6230836067775548298, guid: adf2e701b5cc703469d4282edf344542, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_RootOrder
@@ -81612,7 +82268,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.79402995
+      value: 0.79403
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalScale.z
@@ -81620,7 +82276,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.9455929
+      value: 1.9455988
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalPosition.y
@@ -81628,7 +82284,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -38.137016
+      value: -38.13702
       objectReference: {fileID: 0}
     - target: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
       propertyPath: m_LocalRotation.w
@@ -81727,6 +82383,10 @@ PrefabInstance:
     - target: {fileID: 9178653021625077758, guid: bff67b2bb24ec0846811ab319257f303, type: 3}
       propertyPath: m_Name
       value: jarst_lamp4 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9178653021625077758, guid: bff67b2bb24ec0846811ab319257f303, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

@@ -7,7 +7,7 @@ public class EnemyStopMovement : MonoBehaviour
 {
     public Animator enemyAnimator; // 敵のアニメーションコントローラー
     public float normalSpeed = 3.0f; // 通常移動速度
-    public float retreatSpeed = 8.0f; // 転倒後の高速後退速度
+    public float retreatSpeed = 6.0f; // 転倒後の高速後退速度
     private bool isFalling = false; // 転倒フラグ
     private NavMeshAgent navMeshAgent; // NavMeshAgent の参照
 
