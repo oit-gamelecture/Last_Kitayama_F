@@ -101,7 +101,7 @@ public class PlayerMovement : MonoBehaviour
         float elapsedTime = 0f;
 
         animator.SetTrigger("GetUp");
-        transform.position = new Vector3(transform.position.x, 0f, transform.position.z);
+        transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z);
 
         while (elapsedTime < moveDuration)
         {
