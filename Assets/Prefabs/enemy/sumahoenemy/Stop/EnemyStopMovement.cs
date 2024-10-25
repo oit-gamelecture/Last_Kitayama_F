@@ -94,10 +94,65 @@ public class EnemyStopMovement : MonoBehaviour
 
     void SetNextTarget()
     {
-        if (navMeshAgent.isOnNavMesh)
+        if (!navMeshAgent.isOnNavMesh) return;
+
+        Vector3 targetPosition = Vector3.zero;
+        float yPosition = transform.position.y;
+
+        if (yPosition >= 0)
         {
-            navMeshAgent.SetDestination(targetPositions[currentTargetIndex]);
+            if (Random.value < 0.5f)
+            {
+                float randomX = Random.Range(3f, -1f); // x座標をランダムに
+                targetPosition = new Vector3(randomX, 1, 20);
+            }
+            else
+            {
+                float randomX = Random.Range(-6f, -2f); // x座標をランダムに
+                targetPosition = new Vector3(randomX, 1, -140);
+            }
         }
+        else if (yPosition >= -6 && yPosition < 0)
+        {
+            if (Random.value < 0.5f)
+            {
+                float randomZ = Random.Range(-109f, -106f); // z座標をランダムに
+                targetPosition = new Vector3(0, -4, randomZ);
+            }
+            else
+            {
+                float randomZ = Random.Range(-110f, -113f); // z座標をランダムに
+                targetPosition = new Vector3(130, -4, randomZ);
+            }
+        }
+        else if (yPosition >= -11 && yPosition < -6)
+        {
+            if (Random.value < 0.5f)
+            {
+                float randomX = Random.Range(103.3f, 106.3f); // x座標をランダムに
+                targetPosition = new Vector3(randomX, -9.4f, -120);
+            }
+            else
+            {
+                float randomX = Random.Range(107.3f, 110.3f); // x座標をランダムに
+                targetPosition = new Vector3(randomX, -9.4f, 10);
+            }
+        }
+        else
+        {
+            if (Random.value < 0.5f)
+            {
+                float randomZ = Random.Range(-20f, -17f); // z座標をランダムに
+                targetPosition = new Vector3(120, -14.4f, randomZ);
+            }
+            else
+            {
+                float randomZ = Random.Range(-13f, -16f); // z座標をランダムに
+                targetPosition = new Vector3(-10, -14.3f, randomZ);
+            }
+        }
+
+        navMeshAgent.SetDestination(targetPosition);
     }
 
     void OnCollisionEnter(Collision collision)
