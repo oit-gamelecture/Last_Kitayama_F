@@ -9,6 +9,7 @@ public class PlayerMovement : MonoBehaviour
     [Header("プレイヤー設定")]
     public float moveSpeed = 3.0f;
     public float leftRightSpeed = 4.0f;
+    public float knockBackSpeed = 2.0f;
     public float gravity = -3f;
     Rigidbody rb;
     private Animator animator;
@@ -16,6 +17,7 @@ public class PlayerMovement : MonoBehaviour
     private bool canMove = false;
     private bool isFalling = false;
     private bool isWalking = false;
+
 
 
     public Image blackOverlay; 
@@ -44,8 +46,7 @@ public class PlayerMovement : MonoBehaviour
         if (canMove)
         {
             // 前方移動
-            Vector3 moveDirection = transform.forward * moveSpeed ;
-            rb.velocity = new Vector3(moveDirection.x, rb.velocity.y, rb.velocity.z);
+            
 
             // 左右移動
             if (isWalking)
@@ -106,7 +107,7 @@ public class PlayerMovement : MonoBehaviour
         while (elapsedTime < moveDuration)
         {
             
-            transform.Translate(reverseDirection * Time.deltaTime * moveSpeed);
+            transform.Translate(reverseDirection * Time.deltaTime * knockBackSpeed);
             elapsedTime += Time.deltaTime;
             yield return null;
         }
