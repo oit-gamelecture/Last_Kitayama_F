@@ -96,9 +96,14 @@ public class EnemyManager : MonoBehaviour
             {
                 GameObject passedObstacle = ObstacleList[i];
                 ObstacleList.RemoveAt(i); // リストから削除
-                Destroy(passedObstacle); // 障害物を削除
+                StartCoroutine(WaitAndDestroy(passedObstacle)); // 1秒後に削除
             }
         }
+    }
+    IEnumerator WaitAndDestroy(GameObject obstacle)//削除コルーチン
+    {
+        yield return new WaitForSeconds(1f); // 1秒待機
+        Destroy(obstacle); // 障害物を削除
     }
 
 }
