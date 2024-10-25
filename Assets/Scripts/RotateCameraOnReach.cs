@@ -6,7 +6,7 @@ public class RotateCameraOnReach : MonoBehaviour
 {
     public Transform player; // プレイヤーのアバター
     private Camera mainCamera; // メインカメラ
-    private bool hasRotated = false; // 1回だけ回転させるためのフラグ
+    private bool hasRotated = false; // 回転を1回だけ行うためのフラグ
 
     void Start()
     {
@@ -17,22 +17,24 @@ public class RotateCameraOnReach : MonoBehaviour
     {
         if (other.transform == player && !hasRotated)
         {
-            RotateCamera();
+            RotatePlayerAndCameraOnce();
             hasRotated = true; // 回転済みフラグを立てる
         }
     }
 
-    void RotateCamera()
+    private void RotatePlayerAndCameraOnce()
     {
-        // プレイヤーの現在のY回転を取得
-        float currentYRotation = player.eulerAngles.y;
-        // 新しいY回転を設定（180度追加）
-        float newYRotation = currentYRotation - 90f;
+        // 現在のプレイヤーの回転を取得
+        Vector3 playerRotation = player.eulerAngles;
+        // プレイヤーをy軸で-90度回転
+        playerRotation.y -= 90f;
+        player.eulerAngles = playerRotation;
 
-        // プレイヤーのアバターを回転させる
-        player.eulerAngles = new Vector3(player.eulerAngles.x, newYRotation, player.eulerAngles.z);
-
-        // メインカメラを回転させる
-        mainCamera.transform.eulerAngles = new Vector3(mainCamera.transform.eulerAngles.x, newYRotation, mainCamera.transform.eulerAngles.z);
+        // 現在のカメラの回転を取得
+        Vector3 cameraRotation = mainCamera.transform.eulerAngles;
+        // カメラもy軸で-90度回転
+        cameraRotation.y -= 90f;
+        mainCamera.transform.eulerAngles = cameraRotation;
     }
 }
+

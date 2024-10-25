@@ -11,16 +11,14 @@ public class PlayerMovement : MonoBehaviour
     public float leftRightSpeed = 4.0f;
     public float knockBackSpeed = 2.0f;
     public float gravity = -3f;
-    Rigidbody rb;
+    private Rigidbody rb;
     private Animator animator;
 
     private bool canMove = false;
     private bool isFalling = false;
     private bool isWalking = false;
 
-
-
-    public Image blackOverlay; 
+    public Image blackOverlay;
     public float delayBeforeHiding = 3.3f;
 
     private void Start()
@@ -29,7 +27,7 @@ public class PlayerMovement : MonoBehaviour
         animator = GetComponent<Animator>();
 
         Color color = blackOverlay.color;
-        color.a = 0.5f; 
+        color.a = 0.5f;
         blackOverlay.color = color;
 
         blackOverlay.gameObject.SetActive(true);
@@ -41,12 +39,13 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        rb.AddForce(new Vector3(0f, gravity, 0f)); //= new Vector3(rb.velocity.x, rb.velocity.y * gravity * Time.fixedDeltaTime, rb.velocity.z);
+        rb.AddForce(new Vector3(0f, gravity, 0f));
 
         if (canMove)
         {
             // ëOï˚à⁄ìÆ
-            
+            Vector3 forwardDirection = transform.forward * moveSpeed * Time.fixedDeltaTime;
+            rb.MovePosition(rb.position + forwardDirection);
 
             // ç∂âEà⁄ìÆ
             if (isWalking)
@@ -86,34 +85,33 @@ public class PlayerMovement : MonoBehaviour
     private IEnumerator HideOverlayAfterDelay(float delay)
     {
         yield return new WaitForSeconds(delay);
-        Color color = blackOverlay.color; 
-        color.a = 0f; 
-        blackOverlay.color = color; 
-        blackOverlay.gameObject.SetActive(false); 
+        Color color = blackOverlay.color;
+        color.a = 0f;
+        blackOverlay.color = color;
+        blackOverlay.gameObject.SetActive(false);
     }
 
     private IEnumerator HandleFalling()
     {
         isWalking = false;
-        yield return new WaitForSeconds(1f); 
+        yield return new WaitForSeconds(1f);
 
-        Vector3 reverseDirection = transform.forward; 
-        float moveDuration = 1.5f; 
+        Vector3 reverseDirection = -transform.forward;
+        float moveDuration = 1.5f;
         float elapsedTime = 0f;
 
         animator.SetTrigger("GetUp");
         transform.position = new Vector3(transform.position.x, 0f, transform.position.z);
-        
+
         while (elapsedTime < moveDuration)
         {
-            
             transform.Translate(reverseDirection * Time.deltaTime * knockBackSpeed);
             elapsedTime += Time.deltaTime;
             yield return null;
         }
-        
+
         animator.SetTrigger("Walk");
         isWalking = true;
-        isFalling = false; 
+        isFalling = false;
     }
 }

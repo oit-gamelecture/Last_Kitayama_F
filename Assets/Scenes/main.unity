@@ -30139,7 +30139,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 36fc7c536483e3442bd6dc61808d55a3, type: 2}
+  - {fileID: 2100000, guid: 77ef6827f8575224ebf4b299fb41efb2, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -30178,8 +30178,8 @@ Transform:
   m_GameObject: {fileID: 796428848}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.84, y: 2.19, z: -108.56}
-  m_LocalScale: {x: 7, y: 3, z: 2}
+  m_LocalPosition: {x: -0.14, y: 2.19, z: -110.16}
+  m_LocalScale: {x: 9, y: 3, z: 7}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -71217,10 +71217,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b35853052e999f40aba8fb7080a3f92, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 0
+  moveSpeed: 5
   leftRightSpeed: 4
   knockBackSpeed: 1
-  gravity: -3
+  gravity: -200
   blackOverlay: {fileID: 748281277}
   delayBeforeHiding: 3.3
 --- !u!4 &1851284372 stripped
