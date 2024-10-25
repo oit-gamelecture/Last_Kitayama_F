@@ -113,7 +113,9 @@ public class EnemyStopMovement : MonoBehaviour
     {
         enemyAnimator.SetBool("IsWalking", false);
         enemyAnimator.SetTrigger("Fall");
+
         navMeshAgent.isStopped = true;
+        
 
         Vector3 retreatDirection = (transform.position - playerTransform.position).normalized;
         float elapsedTime = 0f;
@@ -136,11 +138,11 @@ public class EnemyStopMovement : MonoBehaviour
         if (NavMesh.SamplePosition(transform.position, out hit, 1.0f, NavMesh.AllAreas))
         {
             transform.position = hit.position;
-            Debug.Log($"{gameObject.name} を NavMesh上に移動しました。");
+            //Debug.Log($"{gameObject.name} を NavMesh上に移動しました。");
         }
         else
         {
-            Debug.LogError($"{gameObject.name} の近くに NavMesh上の有効な地点が見つかりませんでした。");
+            //Debug.LogError($"{gameObject.name} の近くに NavMesh上の有効な地点が見つかりませんでした。");
         }
     }
 }

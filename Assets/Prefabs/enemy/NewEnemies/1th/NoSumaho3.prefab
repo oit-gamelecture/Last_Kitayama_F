@@ -351,7 +351,7 @@ GameObject:
   - component: {fileID: 7404221425575174348}
   m_Layer: 0
   m_Name: NoSumaho3
-  m_TagString: Untagged
+  m_TagString: enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -451,7 +451,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyAnimator: {fileID: 5558386398475908739}
   speed: 3
-  downspeed: -2
+  downSpeed: 8
   targetPositions:
   - {x: 0, y: 0, z: 0}
 --- !u!1 &3030391013358674146

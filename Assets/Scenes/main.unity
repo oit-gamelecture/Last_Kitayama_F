@@ -11113,11 +11113,12 @@ MonoBehaviour:
   - {fileID: 8853820371560031445, guid: e562019104b0ba44b8666b0bf11e359e, type: 3}
   - {fileID: 3015422415794446919, guid: b82fc49d7dea47e4289941f073321aa5, type: 3}
   - {fileID: 7501788059647666026, guid: 6412d0e7d61556542a6bc1f95d270fb2, type: 3}
-  ObstacleList:
-  - {fileID: 7501788059647666026, guid: 6412d0e7d61556542a6bc1f95d270fb2, type: 3}
-  minObstacleInterval: 0.5
-  maxObstacleInterval: 1.5
+  ObstacleList: []
+  minObstacleInterval: 0.2
+  maxObstacleInterval: 0.5
   obstacleDistance: 40
+  sampleRadius: 5
+  spawnAngleRange: 30
 --- !u!4 &317060904
 Transform:
   m_ObjectHideFlags: 0

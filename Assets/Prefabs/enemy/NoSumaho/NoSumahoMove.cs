@@ -115,11 +115,11 @@ public class NoSumahoMove : MonoBehaviour
         if (NavMesh.SamplePosition(transform.position, out hit, 1.0f, NavMesh.AllAreas))
         {
             transform.position = hit.position;
-            Debug.Log($"{gameObject.name} を NavMesh 上に移動しました。");
+            //Debug.Log($"{gameObject.name} を NavMesh 上に移動しました。");
         }
         else
         {
-            Debug.LogError($"{gameObject.name} の近くに NavMesh 上の有効な地点が見つかりませんでした。");
+            //Debug.LogError($"{gameObject.name} の近くに NavMesh 上の有効な地点が見つかりませんでした。");
         }
     }
 }

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI; // NavMeshを使用するための名前空間
 
 public class EnemyManager : MonoBehaviour
 {
@@ -13,18 +14,16 @@ public class EnemyManager : MonoBehaviour
     private float nextObstacleTime; // 次の障害物生成時間
 
     public float obstacleDistance = 40f; // プレイヤーから障害物を生成する距離
-    private float minX = -0.2f; // X座標の最小値
-    private float maxX = 3.0f;  // X座標の最大値
+    public float sampleRadius = 5f; // NavMeshサンプリングの半径
+    public float spawnAngleRange = 30f; // 生成する方向の角度範囲（度数法）
 
     private float timer = 0f; // タイマー
 
-    // Startは最初に呼ばれる
     void Start()
     {
         ScheduleNextObstacle(); // 初回の障害物生成タイミングを設定
     }
 
-    // Updateは毎フレーム呼ばれる
     void Update()
     {
         timer += Time.deltaTime; // 経過時間を更新
@@ -32,7 +31,7 @@ public class EnemyManager : MonoBehaviour
         // 障害物を生成するタイミングに達したら生成
         if (Time.time >= nextObstacleTime)
         {
-            GenerateObstacle();
+            GenerateObstacleOnNavMesh(); // NavMesh上に障害物を生成
             ScheduleNextObstacle(); // 次の生成タイミングを設定
         }
 
@@ -40,27 +39,31 @@ public class EnemyManager : MonoBehaviour
         RemovePassedObstacles();
     }
 
-    // 障害物を生成する
-    void GenerateObstacle()
+    // NavMesh上に障害物を生成する
+    void GenerateObstacleOnNavMesh()
     {
-        float xPos = Random.Range(minX, maxX); // X座標をランダムに決定
-        int obstacleIndex = Random.Range(0, obstacles.Length); // プレハブをランダム選択
+        // ランダムな角度で方向を決定
+        float randomAngle = Random.Range(-spawnAngleRange, spawnAngleRange);
+        Vector3 randomDirection = Quaternion.Euler(0, randomAngle, 0) * Target.forward;
 
-        // プレイヤーの進行方向に合わせて、Z軸の負方向に生成する
-        Vector3 spawnPosition = new Vector3(xPos, 0.5f, Target.position.z - obstacleDistance);
+        // プレイヤーの前方でランダムな方向に生成位置を計算
+        Vector3 spawnPosition = Target.position + randomDirection.normalized * obstacleDistance;
 
-        // Z座標が 100 以上なら生成しない
-        if (spawnPosition.z <= -100f)
+        // NavMesh上の有効な位置を取得
+        NavMeshHit hit;
+        if (NavMesh.SamplePosition(spawnPosition, out hit, sampleRadius, NavMesh.AllAreas))
         {
-            Debug.Log("壁に生成しようとしたよ");
-            return;
+            // 有効な位置が見つかった場合、障害物を生成する
+            int obstacleIndex = Random.Range(0, obstacles.Length);
+            Quaternion spawnRotation = obstacles[obstacleIndex].transform.rotation;
+            GameObject obstacle = Instantiate(obstacles[obstacleIndex], hit.position, spawnRotation);
+
+            ObstacleList.Add(obstacle); // 障害物をリストに追加
         }
-
-        // プレハブの回転を取得して生成
-        Quaternion spawnRotation = obstacles[obstacleIndex].transform.rotation;
-        GameObject obstacle = Instantiate(obstacles[obstacleIndex], spawnPosition, spawnRotation);
-
-        ObstacleList.Add(obstacle); // 障害物をリストに追加
+        else
+        {
+            //Debug.Log("NavMesh上に適切な生成位置が見つかりませんでした");
+        }
     }
 
     // 次の障害物生成タイミングを設定
@@ -69,12 +72,11 @@ public class EnemyManager : MonoBehaviour
         nextObstacleTime = Time.time + Random.Range(minObstacleInterval, maxObstacleInterval);
     }
 
-    // プレイヤーが通り過ぎた障害物を削除
+    // 通り過ぎた障害物を削除
     void RemovePassedObstacles()
     {
         for (int i = ObstacleList.Count - 1; i >= 0; i--)
         {
-            // プレイヤーが障害物を通り過ぎたか判定（Z軸の進行方向に基づく）
             if (ObstacleList[i].transform.position.z > Target.position.z + 10f)
             {
                 GameObject passedObstacle = ObstacleList[i];
