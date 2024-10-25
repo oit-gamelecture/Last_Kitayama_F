@@ -14,7 +14,7 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody rb;
     private Animator animator;
 
-    private bool canMove = false;
+    private bool canMove = true;
     private bool isFalling = false;
     private bool isWalking = false;
 
@@ -69,8 +69,6 @@ public class PlayerMovement : MonoBehaviour
     {
         if (collision.collider.CompareTag("enemy") && !isFalling)
         {
-            isFalling = true;
-            animator.SetTrigger("Falling");
             StartCoroutine(HandleFalling());
         }
     }
@@ -78,7 +76,6 @@ public class PlayerMovement : MonoBehaviour
     private IEnumerator EnableMovementAfterDelay(float delay)
     {
         yield return new WaitForSeconds(delay);
-        canMove = true;
         isWalking = true;
     }
 
@@ -94,10 +91,13 @@ public class PlayerMovement : MonoBehaviour
     private IEnumerator HandleFalling()
     {
         isWalking = false;
-        yield return new WaitForSeconds(1f);
+        canMove = false;
+        isFalling = true;
+        animator.SetTrigger("Falling");
+        yield return new WaitForSeconds(0.5f);
 
         Vector3 reverseDirection = -transform.forward;
-        float moveDuration = 1.5f;
+        float moveDuration = 1f;
         float elapsedTime = 0f;
 
         animator.SetTrigger("GetUp");
@@ -111,6 +111,7 @@ public class PlayerMovement : MonoBehaviour
         }
 
         animator.SetTrigger("Walk");
+        canMove = true;
         isWalking = true;
         isFalling = false;
     }
