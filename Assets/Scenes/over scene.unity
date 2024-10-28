@@ -193,7 +193,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Retry
+  m_Text: Title
 --- !u!222 &29636730
 CanvasRenderer:
   m_ObjectHideFlags: 0
