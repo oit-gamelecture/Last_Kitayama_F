@@ -51,5 +51,13 @@ public class button_select_src : MonoBehaviour
                 //‘I‘ğ‚³‚ê‚È‚¢ê‡‚Í‰½‚à‚µ‚È‚¢
             }
         }
+
+        if (Input.GetKeyDown(KeyCode.Return))
+        {
+            if(this.gameObject == selectedObj)
+            {
+                yajirusi.SetActive(false);
+            }
+        }
     }
 }
