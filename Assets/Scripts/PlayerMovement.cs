@@ -101,11 +101,11 @@ public class PlayerMovement : MonoBehaviour
         float elapsedTime = 0f;
 
         animator.SetTrigger("GetUp");
-        transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z);
 
         while (elapsedTime < moveDuration)
         {
-            transform.Translate(reverseDirection * Time.deltaTime * knockBackSpeed);
+            Vector3 newPosition = rb.position + reverseDirection * knockBackSpeed * Time.deltaTime;
+            rb.MovePosition(newPosition);
             elapsedTime += Time.deltaTime;
             yield return null;
         }
@@ -115,4 +115,5 @@ public class PlayerMovement : MonoBehaviour
         isWalking = true;
         isFalling = false;
     }
+
 }
