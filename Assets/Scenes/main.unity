@@ -6309,6 +6309,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1310477626}
     m_Modifications:
+    - target: {fileID: 1595148332481571335, guid: eb3a62194c3bc8f42a7e62968e0cb8b8, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 19.47258
+      objectReference: {fileID: 0}
     - target: {fileID: 6928370878123253392, guid: eb3a62194c3bc8f42a7e62968e0cb8b8, type: 3}
       propertyPath: m_LocalPosition.x
       value: -6.7845984
@@ -6352,6 +6356,10 @@ PrefabInstance:
     - target: {fileID: 7740935932337112106, guid: eb3a62194c3bc8f42a7e62968e0cb8b8, type: 3}
       propertyPath: m_Name
       value: jarst_subway_car1 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7917269303142968594, guid: eb3a62194c3bc8f42a7e62968e0cb8b8, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 17.77258
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -52309,6 +52317,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3939632859313926233, guid: b7a4f8583f53b7243bb6eef6d657ffd0, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8604276851445722945, guid: b7a4f8583f53b7243bb6eef6d657ffd0, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2.57582
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -78218,6 +78234,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1310477626}
     m_Modifications:
+    - target: {fileID: 1002983145955003570, guid: eb3a62194c3bc8f42a7e62968e0cb8b8, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2.580997
+      objectReference: {fileID: 0}
+    - target: {fileID: 5489787720170410922, guid: eb3a62194c3bc8f42a7e62968e0cb8b8, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 6928370878123253392, guid: eb3a62194c3bc8f42a7e62968e0cb8b8, type: 3}
       propertyPath: m_LocalPosition.x
       value: -6.7845984
