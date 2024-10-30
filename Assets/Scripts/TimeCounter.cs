@@ -21,13 +21,14 @@ public class TimeCounter : MonoBehaviour
     {
         StartCoroutine(StartCountdown());
         timeText.enabled = false;
+
     }
 
     //3秒後にタイマースタート
     IEnumerator StartCountdown()
     {
         yield return new WaitForSeconds(countdownTime);
-        countStart = true;   
+        countStart = true;
     }
 
     // Update is called once per frame
