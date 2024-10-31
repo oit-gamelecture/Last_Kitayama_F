@@ -13,12 +13,18 @@ public class button_select_src : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (Input.GetMouseButtonDown(0) && Cursor.lockState != CursorLockMode.Locked)
+        {
+            OnClick();  //クリックされた時の処理
+        }
+
         if (select_f == false)
         {
             try
@@ -40,7 +46,7 @@ public class button_select_src : MonoBehaviour
             try
             {
                 selectedObj = eventSystem.currentSelectedGameObject.gameObject;
-                if(this.gameObject != eventSystem.currentSelectedGameObject.gameObject) //選択から外れたら
+                if (this.gameObject != eventSystem.currentSelectedGameObject.gameObject) //選択から外れたら
                 {
                     yajirusi.SetActive(false);  //矢印を非表示
                     select_f = false;
@@ -54,10 +60,19 @@ public class button_select_src : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Return))
         {
-            if(this.gameObject == selectedObj)
+            if (this.gameObject == selectedObj)
             {
                 yajirusi.SetActive(false);
             }
+        }
+    }
+
+    //クリックされた時にOnClickを呼び出すようにしておく
+    void OnClick()
+    {
+        if (Cursor.lockState == CursorLockMode.Locked)
+        {
+            return;  //lockStateがLockedだったら以後の処理をしない
         }
     }
 }
