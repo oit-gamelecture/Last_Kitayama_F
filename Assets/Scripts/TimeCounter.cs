@@ -9,6 +9,8 @@ public class TimeCounter : MonoBehaviour
     //カウントダウン
     public float countdown = 60.00f;
     public float countdownTime = 3f;
+    public AudioClip countSound;
+    AudioSource audioSource;
 
     //時間を表示するText型の変数
     public Text timeText;
@@ -19,6 +21,7 @@ public class TimeCounter : MonoBehaviour
 
     void Start()
     {
+        audioSource = GetComponent<AudioSource>();
         StartCoroutine(StartCountdown());
         timeText.enabled = false;
 
@@ -27,6 +30,7 @@ public class TimeCounter : MonoBehaviour
     //3秒後にタイマースタート
     IEnumerator StartCountdown()
     {
+        audioSource.PlayOneShot(countSound);
         yield return new WaitForSeconds(countdownTime);
         countStart = true;
     }
