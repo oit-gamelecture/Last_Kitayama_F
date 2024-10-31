@@ -1260,11 +1260,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 069d29923f6ec544983df6088d336f19, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyAnimator: {fileID: 0}
+  enemyAnimator: {fileID: 5291846389302195842}
   speed: 2
-  downspeed: -0.6
+  downSpeed: 6
   targetPositions:
   - {x: 0, y: 0, z: 0}
+  avoidDistance: 5
 --- !u!195 &1704954210094571850
 NavMeshAgent:
   m_ObjectHideFlags: 0
