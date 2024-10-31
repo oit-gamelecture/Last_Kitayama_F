@@ -19,6 +19,7 @@ public class RotateCameraOnReach : MonoBehaviour
         {
             RotatePlayerAndCameraOnce();
             hasRotated = true; // 回転済みフラグを立てる
+            Destroy(gameObject); // このスクリプトがアタッチされているオブジェクトを破壊
         }
     }
 
@@ -37,4 +38,5 @@ public class RotateCameraOnReach : MonoBehaviour
         mainCamera.transform.eulerAngles = cameraRotation;
     }
 }
+
 
