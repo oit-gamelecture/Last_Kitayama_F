@@ -13,6 +13,9 @@ public class PlayerMovement : MonoBehaviour
     public float gravity = -3f;
     private Rigidbody rb;
     private Animator animator;
+    public AudioClip slip;
+    public AudioClip bone;
+    AudioSource audioSource;
 
     private bool canMove = true;
     private bool isFalling = false;
@@ -25,6 +28,7 @@ public class PlayerMovement : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
         animator = GetComponent<Animator>();
+        audioSource = GetComponent<AudioSource>();
 
         Color color = blackOverlay.color;
         color.a = 0.5f;
@@ -69,6 +73,14 @@ public class PlayerMovement : MonoBehaviour
     {
         if (collision.collider.CompareTag("enemy") && !isFalling)
         {
+            if (Random.Range(0f, 1f) < 0.2f)
+            {
+                audioSource.PlayOneShot(bone);
+            }
+            else
+            {
+                audioSource.PlayOneShot(slip);
+            }
             StartCoroutine(HandleFalling());
         }
     }
