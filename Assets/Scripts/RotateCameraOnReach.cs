@@ -17,9 +17,9 @@ public class RotateCameraOnReach : MonoBehaviour
     {
         if (other.transform == player && !hasRotated)
         {
-            RotatePlayerAndCameraOnce();
+            Invoke("RotatePlayerAndCameraOnce", 1.0f); // 2秒後に回転を開始
             hasRotated = true; // 回転済みフラグを立てる
-            Destroy(gameObject); // このスクリプトがアタッチされているオブジェクトを破壊
+            Destroy(gameObject, 2.0f); // このスクリプトがアタッチされているオブジェクトを2秒後に破壊
         }
     }
 

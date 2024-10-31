@@ -377,6 +377,7 @@
 "Assets/Scripts/Pause.cs"
 "Assets/Scripts/PlayerMovement.cs"
 "Assets/Scripts/RotateCameraOnReach.cs"
+"Assets/Scripts/SetFirstSelectedObject.cs"
 "Assets/Scripts/TimeCounter.cs"
 "Assets/Scripts/TitleSceneChange.cs"
 -langversion:9.0
