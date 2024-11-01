@@ -5,16 +5,15 @@ using UnityEngine.AI;
 
 public class EnemyMovement : MonoBehaviour
 {
-    public Animator enemyAnimator; // 敵のアニメーションコントローラー
-    public float normalSpeed = 3.0f; // 通常移動速度
-    public float retreatSpeed = 6.0f; // 転倒後の高速後退速度
-    private bool isFalling = false; // 転倒フラグ
+    public Animator enemyAnimator;
+    public float normalSpeed = 3.0f;
+    public float retreatSpeed = 6.0f;
+    private bool isFalling = false;
 
-    private NavMeshAgent navMeshAgent; // NavMeshAgent の参照
+    private NavMeshAgent navMeshAgent;
 
-    // シリアライズされた目的地の座標リスト
     [SerializeField] private List<Vector3> targetPositions;
-    private int currentTargetIndex = 0; // 現在の目標座標のインデックス
+    private Vector3 initialTargetPosition; // 初期の目標座標
 
     void Start()
     {
@@ -35,92 +34,53 @@ public class EnemyMovement : MonoBehaviour
         enemyAnimator = GetComponent<Animator>();
         navMeshAgent.speed = normalSpeed;
 
-        EnsureOnNavMesh(); // NavMesh上にいなければ NavMesh に移動
-        SetNextTarget(); // 最初の目標座標を設定
+        EnsureOnNavMesh();
+        SetInitialTarget(); // 初期の目標座標を設定
     }
 
     void Update()
     {
+        // isFallingがfalseで、NavMeshAgentがNavMesh上にいる場合のみ移動を続ける
         if (!isFalling && navMeshAgent != null && navMeshAgent.isOnNavMesh)
         {
             if (navMeshAgent.remainingDistance < 0.5f)
             {
-                AdvanceToNextTarget(); // 次の目標座標に移動
+                navMeshAgent.SetDestination(initialTargetPosition); // 最初の目標に向かい続ける
             }
         }
     }
 
-    void AdvanceToNextTarget()
+    // 初期の目標座標を設定
+    void SetInitialTarget()
     {
-        if (targetPositions.Count == 0) return;
-
-        currentTargetIndex = (currentTargetIndex + 1) % targetPositions.Count;
-        SetNextTarget();
-    }
-
-    void SetNextTarget()
-{
-    if (!navMeshAgent.isOnNavMesh) return;
-
-    Vector3 targetPosition = Vector3.zero;
-    float yPosition = transform.position.y;
-
-    if (yPosition >= 0)
-    {
-        if (Random.value < 0.5f)
+        float yPosition = transform.position.y;
+        if (yPosition >= 0)
         {
-            float randomX = Random.Range(3f, -1f); // x座標をランダムに
-            targetPosition = new Vector3(randomX, 1, 20);
+            initialTargetPosition = Random.value < 0.5f
+                ? new Vector3(Random.Range(3f, -1f), 1, 20)
+                : new Vector3(Random.Range(-6f, -2f), 1, -140);
+        }
+        else if (yPosition >= -6 && yPosition < 0)
+        {
+            initialTargetPosition = Random.value < 0.5f
+                ? new Vector3(0, -4, Random.Range(-109f, -106f))
+                : new Vector3(130, -4, Random.Range(-110f, -113f));
+        }
+        else if (yPosition >= -11 && yPosition < -6)
+        {
+            initialTargetPosition = Random.value < 0.5f
+                ? new Vector3(Random.Range(103.3f, 106.3f), -9.4f, -120)
+                : new Vector3(Random.Range(107.3f, 110.3f), -9.4f, 10);
         }
         else
         {
-            float randomX = Random.Range(-6f, -2f); // x座標をランダムに
-            targetPosition = new Vector3(randomX, 1, -140);
+            initialTargetPosition = Random.value < 0.5f
+                ? new Vector3(120, -14.4f, Random.Range(-20f, -17f))
+                : new Vector3(-10, -14.3f, Random.Range(-13f, -16f));
         }
-    }
-    else if (yPosition >= -6 && yPosition < 0)
-    {
-        if (Random.value < 0.5f)
-        {
-            float randomZ = Random.Range(-109f, -106f); // z座標をランダムに
-            targetPosition = new Vector3(0, -4, randomZ);
-        }
-        else
-        {
-            float randomZ = Random.Range(-110f, -113f); // z座標をランダムに
-            targetPosition = new Vector3(130, -4, randomZ);
-        }
-    }
-    else if (yPosition >= -11 && yPosition < -6)
-    {
-        if (Random.value < 0.5f)
-        {
-            float randomX = Random.Range(103.3f, 106.3f); // x座標をランダムに
-            targetPosition = new Vector3(randomX, -9.4f, -120);
-        }
-        else
-        {
-            float randomX = Random.Range(107.3f, 110.3f); // x座標をランダムに
-            targetPosition = new Vector3(randomX, -9.4f, 10);
-        }
-    }
-    else
-    {
-        if (Random.value < 0.5f)
-        {
-            float randomZ = Random.Range(-20f, -17f); // z座標をランダムに
-            targetPosition = new Vector3(120, -14.4f, randomZ);
-        }
-        else
-        {
-            float randomZ = Random.Range(-13f, -16f); // z座標をランダムに
-            targetPosition = new Vector3(-10, -14.3f, randomZ);
-        }
-    }
 
-    navMeshAgent.SetDestination(targetPosition);
-}
-
+        navMeshAgent.SetDestination(initialTargetPosition);
+    }
 
     void OnCollisionEnter(Collision collision)
     {
@@ -158,11 +118,6 @@ public class EnemyMovement : MonoBehaviour
         if (NavMesh.SamplePosition(transform.position, out hit, 1.0f, NavMesh.AllAreas))
         {
             transform.position = hit.position;
-            //Debug.Log($"{gameObject.name} を NavMesh上に移動しました。");
-        }
-        else
-        {
-            //Debug.LogError($"{gameObject.name} の近くに NavMesh上の有効な地点が見つかりませんでした。");
         }
     }
 }
