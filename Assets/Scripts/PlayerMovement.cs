@@ -111,7 +111,7 @@ public class PlayerMovement : MonoBehaviour
         yield return new WaitForSeconds(0.5f);
 
         Vector3 reverseDirection = -transform.forward;
-        float moveDuration = 1f;
+        float moveDuration = 0.6f;
         float elapsedTime = 0f;
 
         animator.SetTrigger("GetUp");

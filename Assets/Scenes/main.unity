@@ -45458,7 +45458,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 5
   leftRightSpeed: 4
-  knockBackSpeed: 1
+  knockBackSpeed: 2
   gravity: -200
   slip: {fileID: 8300000, guid: e65ffbc7cc3c28f4984a0344e31fad22, type: 3}
   bone: {fileID: 8300000, guid: 80efc254728135c45ac5096e32094717, type: 3}
