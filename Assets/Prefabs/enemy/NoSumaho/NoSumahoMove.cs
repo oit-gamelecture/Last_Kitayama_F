@@ -11,6 +11,7 @@ public class NoSumahoMove : MonoBehaviour
     private float retreatDuration = 0.5f;
     private bool isFalling = false;
     private bool isAvoiding = false;
+    private bool hasAvoided = false; // 回避行動を一回だけ行うためのフラグ
 
     private NavMeshAgent navMeshAgent;
     private BoxCollider boxCol;
@@ -89,7 +90,7 @@ public class NoSumahoMove : MonoBehaviour
 
     void AvoidPlayer()
     {
-        if (player == null || isAvoiding) return;
+        if (player == null || isAvoiding || hasAvoided) return; // 既に回避した場合は終了
 
         float distanceToPlayer = Vector3.Distance(transform.position, player.transform.position);
         float fieldOfViewAngle = 45f;
@@ -99,6 +100,8 @@ public class NoSumahoMove : MonoBehaviour
         if (distanceToPlayer < avoidDistance && angleToEnemy < fieldOfViewAngle)
         {
             isAvoiding = true;
+            hasAvoided = true; // 回避済みに設定
+
             Vector3 originalTarget = navMeshAgent.destination;
 
             Vector3 rightDirection = Vector3.Cross(Vector3.up, directionToEnemy).normalized;
@@ -108,7 +111,7 @@ public class NoSumahoMove : MonoBehaviour
                                        Vector3.Distance(player.transform.position, transform.position + leftDirection))
                                        ? rightDirection : leftDirection;
 
-            Vector3 sideStepPosition = transform.position + chosenDirection;
+            Vector3 sideStepPosition = transform.position + chosenDirection * 0.8f;
 
             if (NavMesh.SamplePosition(sideStepPosition, out NavMeshHit hit, 1.0f, NavMesh.AllAreas))
             {
