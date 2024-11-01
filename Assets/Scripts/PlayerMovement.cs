@@ -17,7 +17,7 @@ public class PlayerMovement : MonoBehaviour
     public AudioClip bone;
     AudioSource audioSource;
 
-    private bool canMove = true;
+    private bool canMove = false; // 初期はfalseに設定
     private bool isFalling = false;
     private bool isWalking = false;
 
@@ -35,10 +35,8 @@ public class PlayerMovement : MonoBehaviour
         blackOverlay.color = color;
 
         blackOverlay.gameObject.SetActive(true);
-        StartCoroutine(EnableMovementAfterDelay(3.3f));
+        StartCoroutine(IdleCoroutine()); // Idleアニメーションのコルーチンを開始
         StartCoroutine(HideOverlayAfterDelay(delayBeforeHiding));
-
-        Debug.Log(moveSpeed);
     }
 
     private void FixedUpdate()
@@ -47,11 +45,9 @@ public class PlayerMovement : MonoBehaviour
 
         if (canMove)
         {
-            // 前方移動
             Vector3 forwardDirection = transform.forward * moveSpeed * Time.fixedDeltaTime;
             rb.MovePosition(rb.position + forwardDirection);
 
-            // 左右移動
             if (isWalking)
             {
                 if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
@@ -69,6 +65,18 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
+    private IEnumerator IdleCoroutine()
+    {
+        // Idleアニメーションの開始
+        animator.SetTrigger("Idle");
+        yield return new WaitForSeconds(3f);
+
+        // Walkアニメーションの開始と移動の許可
+        animator.SetTrigger("Walk");
+        canMove = true;
+        isWalking = true;
+    }
+
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.collider.CompareTag("enemy") && !isFalling)
@@ -83,12 +91,6 @@ public class PlayerMovement : MonoBehaviour
             }
             StartCoroutine(HandleFalling());
         }
-    }
-
-    private IEnumerator EnableMovementAfterDelay(float delay)
-    {
-        yield return new WaitForSeconds(delay);
-        isWalking = true;
     }
 
     private IEnumerator HideOverlayAfterDelay(float delay)
@@ -127,5 +129,5 @@ public class PlayerMovement : MonoBehaviour
         isWalking = true;
         isFalling = false;
     }
-
 }
+
