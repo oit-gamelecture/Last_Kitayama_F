@@ -11,9 +11,9 @@ public class EnemyMovement : MonoBehaviour
     private bool isFalling = false;
 
     private NavMeshAgent navMeshAgent;
-
-    [SerializeField] private List<Vector3> targetPositions;
-    private Vector3 initialTargetPosition; // 初期の目標座標
+    private Vector3 targetPositionA;
+    private Vector3 targetPositionB;
+    private Vector3 currentTargetPosition;
 
     void Start()
     {
@@ -25,61 +25,56 @@ public class EnemyMovement : MonoBehaviour
             return;
         }
 
-        if (targetPositions == null || targetPositions.Count == 0)
-        {
-            Debug.LogError($"{gameObject.name} の targetPositions が設定されていません。");
-            return;
-        }
-
         enemyAnimator = GetComponent<Animator>();
         navMeshAgent.speed = normalSpeed;
 
         EnsureOnNavMesh();
-        SetInitialTarget(); // 初期の目標座標を設定
+        SetRandomTargetsBasedOnHeight(); // 高さに応じた目標地点を設定
+        navMeshAgent.SetDestination(currentTargetPosition);
     }
 
     void Update()
     {
-        // isFallingがfalseで、NavMeshAgentがNavMesh上にいる場合のみ移動を続ける
         if (!isFalling && navMeshAgent != null && navMeshAgent.isOnNavMesh)
         {
             if (navMeshAgent.remainingDistance < 0.5f)
             {
-                navMeshAgent.SetDestination(initialTargetPosition); // 最初の目標に向かい続ける
+                ToggleTargetPosition();
+                navMeshAgent.SetDestination(currentTargetPosition);
             }
         }
     }
 
-    // 初期の目標座標を設定
-    void SetInitialTarget()
+    void SetRandomTargetsBasedOnHeight()
     {
         float yPosition = transform.position.y;
         if (yPosition >= 0)
         {
-            initialTargetPosition = Random.value < 0.5f
-                ? new Vector3(Random.Range(3f, -1f), 1, 20)
-                : new Vector3(Random.Range(-6f, -2f), 1, -140);
+            targetPositionA = new Vector3(Random.Range(3f, -1f), 1, 20);
+            targetPositionB = new Vector3(Random.Range(-6f, -2f), 1, -140);
         }
         else if (yPosition >= -6 && yPosition < 0)
         {
-            initialTargetPosition = Random.value < 0.5f
-                ? new Vector3(0, -4, Random.Range(-109f, -106f))
-                : new Vector3(130, -4, Random.Range(-110f, -113f));
+            targetPositionA = new Vector3(0, -4, Random.Range(-109f, -106f));
+            targetPositionB = new Vector3(130, -4, Random.Range(-110f, -113f));
         }
         else if (yPosition >= -11 && yPosition < -6)
         {
-            initialTargetPosition = Random.value < 0.5f
-                ? new Vector3(Random.Range(103.3f, 106.3f), -9.4f, -120)
-                : new Vector3(Random.Range(107.3f, 110.3f), -9.4f, 10);
+            targetPositionA = new Vector3(Random.Range(103.3f, 106.3f), -9.4f, -120);
+            targetPositionB = new Vector3(Random.Range(107.3f, 110.3f), -9.4f, 10);
         }
         else
         {
-            initialTargetPosition = Random.value < 0.5f
-                ? new Vector3(120, -14.4f, Random.Range(-20f, -17f))
-                : new Vector3(-10, -14.3f, Random.Range(-13f, -16f));
+            targetPositionA = new Vector3(120, -14.4f, Random.Range(-20f, -17f));
+            targetPositionB = new Vector3(-10, -14.3f, Random.Range(-13f, -16f));
         }
 
-        navMeshAgent.SetDestination(initialTargetPosition);
+        currentTargetPosition = Random.value < 0.5f ? targetPositionA : targetPositionB;
+    }
+
+    void ToggleTargetPosition()
+    {
+        currentTargetPosition = currentTargetPosition == targetPositionA ? targetPositionB : targetPositionA;
     }
 
     void OnCollisionEnter(Collision collision)
