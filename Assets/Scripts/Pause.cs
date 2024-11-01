@@ -1,8 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Pause : MonoBehaviour
 {
@@ -11,9 +11,12 @@ public class Pause : MonoBehaviour
     public Button titleButton;
 
     private bool isPaused = false;
+    private float startTime;
 
     void Start()
     {
+        startTime = Time.time; // ゲーム開始時の時間を記録
+
         resumeButton.onClick.AddListener(ResumeGame);
         titleButton.onClick.AddListener(ReturnToTitle);
         pauseMenuUI.SetActive(false);
@@ -23,6 +26,9 @@ public class Pause : MonoBehaviour
 
     void Update()
     {
+        // 最初の3.3秒間はポーズを無効化
+        if (Time.time - startTime < 3.3f) return;
+
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             if (isPaused)
@@ -56,8 +62,7 @@ public class Pause : MonoBehaviour
 
     public void ReturnToTitle()
     {
-         // ゲームを再開してからシーンを切り替えます
         Time.timeScale = 1f;
-        SceneManager.LoadScene("Title"); 
+        SceneManager.LoadScene("Title");
     }
 }
