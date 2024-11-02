@@ -1147,9 +1147,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyAnimator: {fileID: 6462915117248766369}
   speed: 3
-  downspeed: -2
-  targetPositions:
-  - {x: 0, y: 0, z: 0}
+  downSpeed: 6
+  avoidDistance: 8
 --- !u!1 &8867209619487801182
 GameObject:
   m_ObjectHideFlags: 0

@@ -19,7 +19,7 @@ public class NoSumahoMove : MonoBehaviour
     private Vector3 targetPositionB;
     private Vector3 currentTargetPosition;
 
-    public float avoidDistance = 20.0f;
+    public float avoidDistance = 10.0f;
     private GameObject player;
 
     void Start()

@@ -1263,9 +1263,7 @@ MonoBehaviour:
   enemyAnimator: {fileID: 5291846389302195842}
   speed: 2
   downSpeed: 6
-  targetPositions:
-  - {x: 0, y: 0, z: 0}
-  avoidDistance: 5
+  avoidDistance: 8
 --- !u!195 &1704954210094571850
 NavMeshAgent:
   m_ObjectHideFlags: 0
