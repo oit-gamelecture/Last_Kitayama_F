@@ -49,6 +49,8 @@ public class EnemyManager : MonoBehaviour
             // y >= 0 ‚Ìê‡‚Ì¶¬
             float xPos1 = Random.Range(3f, -1f);
             float xPos2 = Random.Range(-6f, -2f);
+            // ZÀ•W‚ª -109.3 ˆÈ‰º‚Ì¶¬‚µ‚È‚¢
+            if (spawnPosition.z < -109.3f) return;
             GenerateFromList(new Vector3(xPos1, spawnPosition.y, spawnPosition.z), obstacles);
             GenerateFromList(new Vector3(xPos2, spawnPosition.y, spawnPosition.z), obstaclesList2);
         }
@@ -57,6 +59,8 @@ public class EnemyManager : MonoBehaviour
             // y >= -6 ‚Ìê‡‚Ì¶¬
             float zPos1 = Random.Range(-109f, -106f);
             float zPos2 = Random.Range(-110f, -113f);
+            // XÀ•W‚ª 115 –¢–‚Ì‚Ì‚İ¶¬
+            if (spawnPosition.x >= 115f) return;
             GenerateFromList(new Vector3(spawnPosition.x, spawnPosition.y, zPos1), obstacles);
             GenerateFromList(new Vector3(spawnPosition.x, spawnPosition.y, zPos2), obstaclesList2);
         }
@@ -65,6 +69,8 @@ public class EnemyManager : MonoBehaviour
             // y >= -10 ‚Ìê‡‚Ì¶¬
             float xPos1 = Random.Range(103.3f, 106.3f);
             float xPos2 = Random.Range(107.3f, 110.3f);
+            // ZÀ•W‚ª -20 ˆÈ‰º‚Ì‚Ì‚İ¶¬
+            if (spawnPosition.z > -30f) return;
             GenerateFromList(new Vector3(xPos1, spawnPosition.y, spawnPosition.z), obstacles);
             GenerateFromList(new Vector3(xPos2, spawnPosition.y, spawnPosition.z), obstaclesList2);
         }
