@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.3731193, g: 0.38073996, b: 0.35872698, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311918, g: 0.3807398, b: 0.35872716, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -7047,11 +7047,6 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 6920223334873836989, guid: b86005c1be04e604ca6e54f97e589ee4, type: 3}
   m_PrefabInstance: {fileID: 295823789}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &296676394 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6278639941341815018, guid: 86d91df2ef29bbf4382ba38d4c274a75, type: 3}
-  m_PrefabInstance: {fileID: 2084301307}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &297841026
 GameObject:
@@ -16374,7 +16369,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &652189312
 RectTransform:
   m_ObjectHideFlags: 0
@@ -16490,7 +16485,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   eventSystem: {fileID: 1949268937}
-  yajirusi: {fileID: 296676394}
+  yajirusi: {fileID: 0}
   soundEffect: {fileID: 8300000, guid: 601e6bb87d071c54189af986fb6a3333, type: 3}
 --- !u!1001 &653207826
 PrefabInstance:
@@ -45352,11 +45347,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6715905845395476784, guid: adf2e701b5cc703469d4282edf344542, type: 3}
   m_PrefabInstance: {fileID: 1740563091}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1746678901 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6278639941341815018, guid: 86d91df2ef29bbf4382ba38d4c274a75, type: 3}
-  m_PrefabInstance: {fileID: 565861981}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1746845059
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -49291,7 +49281,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1892172338
 RectTransform:
   m_ObjectHideFlags: 0
@@ -52403,7 +52393,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1998776164
 RectTransform:
   m_ObjectHideFlags: 0
@@ -52519,7 +52509,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   eventSystem: {fileID: 1949268937}
-  yajirusi: {fileID: 1746678901}
+  yajirusi: {fileID: 0}
   soundEffect: {fileID: 8300000, guid: 601e6bb87d071c54189af986fb6a3333, type: 3}
 --- !u!1001 &2001934112
 PrefabInstance:
