@@ -45,9 +45,10 @@ GameObject:
   - component: {fileID: 5697554240426020738}
   - component: {fileID: 1616918478793966587}
   - component: {fileID: 7398361512813273297}
+  - component: {fileID: 4229151267518762361}
   m_Layer: 0
   m_Name: Sumahokids
-  m_TagString: Untagged
+  m_TagString: enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -149,6 +150,19 @@ MonoBehaviour:
   enemyAnimator: {fileID: 4027768798704219546}
   normalSpeed: 3
   retreatSpeed: 6
+--- !u!114 &4229151267518762361
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 228561043393179066}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cc8dca1febf4f14580672db9d9821e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  seClip: {fileID: 8300000, guid: de396a222bc636b43a5732ad7c5fafde, type: 3}
 --- !u!1 &263225938002821041
 GameObject:
   m_ObjectHideFlags: 0
