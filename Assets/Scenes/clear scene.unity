@@ -1690,6 +1690,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   eventSystem: {fileID: 57213204}
   yajirusi: {fileID: 1533052836}
+  soundEffect: {fileID: 8300000, guid: 601e6bb87d071c54189af986fb6a3333, type: 3}
 --- !u!1 &1414917503
 GameObject:
   m_ObjectHideFlags: 0
@@ -1920,7 +1921,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 268484600759300545, guid: 86d91df2ef29bbf4382ba38d4c274a75, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 200
+      value: 160
       objectReference: {fileID: 0}
     - target: {fileID: 268484600759300545, guid: 86d91df2ef29bbf4382ba38d4c274a75, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -2238,6 +2239,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   eventSystem: {fileID: 57213204}
   yajirusi: {fileID: 1434025799}
+  soundEffect: {fileID: 8300000, guid: 601e6bb87d071c54189af986fb6a3333, type: 3}
 --- !u!1 &1827950747
 GameObject:
   m_ObjectHideFlags: 0

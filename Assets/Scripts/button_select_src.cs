@@ -10,11 +10,15 @@ public class button_select_src : MonoBehaviour
     bool select_f = false;                      //ボタンが選択されるとtrue
     public GameObject yajirusi;                 //矢印のイメージをセット
     GameObject selectedObj;
+
+    public AudioClip soundEffect;      // 効果音のオーディオクリップ
+    private AudioSource audioSource;   // 効果音再生用のAudioSource
     // Start is called before the first frame update
     void Start()
     {
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
+        audioSource = gameObject.AddComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -50,6 +54,8 @@ public class button_select_src : MonoBehaviour
                 {
                     yajirusi.SetActive(false);  //矢印を非表示
                     select_f = false;
+                    audioSource.clip = soundEffect;
+                    audioSource.Play();
                 }
             }
             catch
