@@ -1261,7 +1261,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyAnimator: {fileID: 5291846389302195842}
-  speed: 2
+  speed: 3
   downSpeed: 6
   avoidDistance: 8
 --- !u!195 &1704954210094571850
