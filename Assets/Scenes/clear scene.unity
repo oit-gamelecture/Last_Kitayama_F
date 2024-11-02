@@ -1409,7 +1409,7 @@ RectTransform:
   m_GameObject: {fileID: 1402178692}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 3, y: 6, z: 1}
+  m_LocalScale: {x: 3, y: 4.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1149475360}
@@ -1460,7 +1460,7 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 1402178695}
+  m_TargetGraphic: {fileID: 1149475361}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
@@ -1829,7 +1829,7 @@ RectTransform:
   m_GameObject: {fileID: 1597887805}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 3, y: 6, z: 1}
+  m_LocalScale: {x: 3, y: 4.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 552165764}
@@ -1880,7 +1880,7 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 1597887808}
+  m_TargetGraphic: {fileID: 552165765}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
