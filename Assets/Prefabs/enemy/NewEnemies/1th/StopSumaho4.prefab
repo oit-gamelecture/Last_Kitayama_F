@@ -961,6 +961,7 @@ GameObject:
   - component: {fileID: -7767972177794973610}
   - component: {fileID: 2824608862528314545}
   - component: {fileID: 2553148105351405149}
+  - component: {fileID: 2703058679906858908}
   m_Layer: 0
   m_Name: StopSumaho4
   m_TagString: enemy
@@ -1065,9 +1066,21 @@ MonoBehaviour:
   enemyAnimator: {fileID: 3868671272202102698}
   normalSpeed: 3
   retreatSpeed: 8
-  targetPositions:
-  - {x: 0, y: 0, z: 0}
   detectionRadius: 10
+--- !u!114 &2703058679906858908
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7501788059647666026}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cc8dca1febf4f14580672db9d9821e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  seClips:
+  - {fileID: 8300000, guid: c16c704da1a93694e9a29140b68d675a, type: 3}
 --- !u!1 &7524111919617231996
 GameObject:
   m_ObjectHideFlags: 0
