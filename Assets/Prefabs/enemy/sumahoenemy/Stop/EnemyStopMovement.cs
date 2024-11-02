@@ -1,25 +1,29 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.AI; // NavMeshAgentを使用するため
+using UnityEngine.AI;
 
 public class EnemyStopMovement : MonoBehaviour
 {
-    public Animator enemyAnimator; // 敵のアニメーションコントローラー
-    public float normalSpeed = 3.0f; // 通常移動速度
-    public float retreatSpeed = 6.0f; // 転倒後の高速後退速度
-    private bool isFalling = false; // 転倒フラグ
-    private NavMeshAgent navMeshAgent; // NavMeshAgent の参照
+    public Animator enemyAnimator;
+    public float normalSpeed = 3.0f;
+    public float retreatSpeed = 6.0f;
+    public float detectionRadius = 10.0f;
 
-    [SerializeField] private List<Vector3> targetPositions; // 目的地の座標リスト
-    private int currentTargetIndex = 0; // 現在の目標座標のインデックス
+    private bool isFalling = false;
+    private bool isStopped = false;
 
-    public float detectionRadius = 10.0f; // プレイヤーとの距離を監視する半径
-    private Transform playerTransform; // PlayerオブジェクトのTransform参照
+    private NavMeshAgent navMeshAgent;
+    private Vector3 targetPositionA;
+    private Vector3 targetPositionB;
+    private Vector3 currentTargetPosition;
+
+    private Transform playerTransform;
 
     void Start()
     {
         navMeshAgent = GetComponent<NavMeshAgent>();
+        enemyAnimator = GetComponent<Animator>();
 
         if (navMeshAgent == null)
         {
@@ -27,19 +31,12 @@ public class EnemyStopMovement : MonoBehaviour
             return;
         }
 
-        if (targetPositions == null || targetPositions.Count == 0)
-        {
-            Debug.LogError($"{gameObject.name} の targetPositions が設定されていません。");
-            return;
-        }
-
-        enemyAnimator = GetComponent<Animator>();
         navMeshAgent.speed = normalSpeed;
+        EnsureOnNavMesh();
 
-        EnsureOnNavMesh(); // NavMesh上にいなければ NavMesh に移動
-        SetNextTarget(); // 最初の目標座標を設定
+        SetRandomTargetsBasedOnHeight(); // 高さに基づく目標地点を設定
+        navMeshAgent.SetDestination(currentTargetPosition);
 
-        // プレイヤーのTransformを取得
         GameObject player = GameObject.FindGameObjectWithTag("Player");
         if (player != null)
         {
@@ -51,108 +48,81 @@ public class EnemyStopMovement : MonoBehaviour
     {
         if (isFalling || navMeshAgent == null || !navMeshAgent.isOnNavMesh) return;
 
-        // プレイヤーとの距離を常に監視
-        if (playerTransform != null)
-        {
-            float distanceToPlayer = Vector3.Distance(transform.position, playerTransform.position);
-            if (distanceToPlayer <= detectionRadius)
-            {
-                StopMovement(); // プレイヤーが近い場合、移動停止
-            }
-            else
-            {
-                ResumeMovement(); // プレイヤーが離れた場合、移動再開
-            }
-        }
+        MonitorPlayerDistance();
 
-        // 目的地への移動処理
-        if (navMeshAgent.remainingDistance < 0.5f && !navMeshAgent.isStopped)
+        if (navMeshAgent.remainingDistance < 0.5f && !isStopped)
         {
-            AdvanceToNextTarget(); // 次の目標座標に移動
+            ToggleTargetPosition(); // 次の目標地点に切り替え
+            navMeshAgent.SetDestination(currentTargetPosition);
+        }
+    }
+
+    void MonitorPlayerDistance()
+    {
+        if (playerTransform == null) return;
+
+        float distanceToPlayer = Vector3.Distance(transform.position, playerTransform.position);
+        if (distanceToPlayer <= detectionRadius)
+        {
+            StopMovement();
+        }
+        else
+        {
+            ResumeMovement();
         }
     }
 
     void StopMovement()
     {
-        navMeshAgent.isStopped = true; // 移動を停止
-        enemyAnimator.SetBool("stop", true); // stopアニメーションに遷移
+        if (!isStopped)
+        {
+            isStopped = true;
+            navMeshAgent.isStopped = true;
+            enemyAnimator.SetBool("stop", true);
+        }
     }
 
     void ResumeMovement()
     {
-        navMeshAgent.isStopped = false; // 移動を再開
-        enemyAnimator.SetBool("stop", false); // stopアニメーションを解除
+        if (isStopped)
+        {
+            isStopped = false;
+            navMeshAgent.isStopped = false;
+            enemyAnimator.SetBool("stop", false);
+        }
     }
 
-    void AdvanceToNextTarget()
+    void SetRandomTargetsBasedOnHeight()
     {
-        if (targetPositions.Count == 0) return;
-
-        currentTargetIndex = (currentTargetIndex + 1) % targetPositions.Count;
-        SetNextTarget();
-    }
-
-    void SetNextTarget()
-    {
-        if (!navMeshAgent.isOnNavMesh) return;
-
-        Vector3 targetPosition = Vector3.zero;
         float yPosition = transform.position.y;
 
         if (yPosition >= 0)
         {
-            if (Random.value < 0.5f)
-            {
-                float randomX = Random.Range(3f, -1f); // x座標をランダムに
-                targetPosition = new Vector3(randomX, 1, 20);
-            }
-            else
-            {
-                float randomX = Random.Range(-6f, -2f); // x座標をランダムに
-                targetPosition = new Vector3(randomX, 1, -140);
-            }
+            targetPositionA = new Vector3(Random.Range(3f, -1f), 1, 20);
+            targetPositionB = new Vector3(Random.Range(-6f, -2f), 1, -140);
         }
         else if (yPosition >= -6 && yPosition < 0)
         {
-            if (Random.value < 0.5f)
-            {
-                float randomZ = Random.Range(-109f, -106f); // z座標をランダムに
-                targetPosition = new Vector3(0, -4, randomZ);
-            }
-            else
-            {
-                float randomZ = Random.Range(-110f, -113f); // z座標をランダムに
-                targetPosition = new Vector3(130, -4, randomZ);
-            }
+            targetPositionA = new Vector3(0, -4, Random.Range(-109f, -106f));
+            targetPositionB = new Vector3(130, -4, Random.Range(-110f, -113f));
         }
         else if (yPosition >= -11 && yPosition < -6)
         {
-            if (Random.value < 0.5f)
-            {
-                float randomX = Random.Range(103.3f, 106.3f); // x座標をランダムに
-                targetPosition = new Vector3(randomX, -9.4f, -120);
-            }
-            else
-            {
-                float randomX = Random.Range(107.3f, 110.3f); // x座標をランダムに
-                targetPosition = new Vector3(randomX, -9.4f, 10);
-            }
+            targetPositionA = new Vector3(Random.Range(103.3f, 106.3f), -9.4f, -120);
+            targetPositionB = new Vector3(Random.Range(107.3f, 110.3f), -9.4f, 10);
         }
         else
         {
-            if (Random.value < 0.5f)
-            {
-                float randomZ = Random.Range(-20f, -17f); // z座標をランダムに
-                targetPosition = new Vector3(120, -14.4f, randomZ);
-            }
-            else
-            {
-                float randomZ = Random.Range(-13f, -16f); // z座標をランダムに
-                targetPosition = new Vector3(-10, -14.3f, randomZ);
-            }
+            targetPositionA = new Vector3(120, -14.4f, Random.Range(-20f, -17f));
+            targetPositionB = new Vector3(-10, -14.3f, Random.Range(-13f, -16f));
         }
 
-        navMeshAgent.SetDestination(targetPosition);
+        currentTargetPosition = Random.value < 0.5f ? targetPositionA : targetPositionB;
+    }
+
+    void ToggleTargetPosition()
+    {
+        currentTargetPosition = currentTargetPosition == targetPositionA ? targetPositionB : targetPositionA;
     }
 
     void OnCollisionEnter(Collision collision)
@@ -170,7 +140,6 @@ public class EnemyStopMovement : MonoBehaviour
         enemyAnimator.SetTrigger("Fall");
 
         navMeshAgent.isStopped = true;
-        
 
         Vector3 retreatDirection = (transform.position - playerTransform.position).normalized;
         float elapsedTime = 0f;
@@ -193,11 +162,6 @@ public class EnemyStopMovement : MonoBehaviour
         if (NavMesh.SamplePosition(transform.position, out hit, 1.0f, NavMesh.AllAreas))
         {
             transform.position = hit.position;
-            //Debug.Log($"{gameObject.name} を NavMesh上に移動しました。");
-        }
-        else
-        {
-            //Debug.LogError($"{gameObject.name} の近くに NavMesh上の有効な地点が見つかりませんでした。");
         }
     }
 }
