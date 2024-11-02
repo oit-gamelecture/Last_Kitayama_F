@@ -597,8 +597,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
-  m_EffectDistance: {x: 3, y: -3}
-  m_UseGraphicAlpha: 0
+  m_EffectDistance: {x: 5, y: -5}
+  m_UseGraphicAlpha: 1
 --- !u!114 &283980664
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -622,7 +622,7 @@ MonoBehaviour:
   m_FontData:
     m_Font: {fileID: 12800000, guid: e3265ab4bf004d28a9537516768c1c75, type: 3}
     m_FontSize: 120
-    m_FontStyle: 0
+    m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 0
     m_MaxSize: 120
@@ -893,7 +893,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
-  m_EffectDistance: {x: 3, y: -3}
+  m_EffectDistance: {x: 5, y: -5}
   m_UseGraphicAlpha: 1
 --- !u!114 &618478475
 MonoBehaviour:
@@ -918,7 +918,7 @@ MonoBehaviour:
   m_FontData:
     m_Font: {fileID: 12800000, guid: e3265ab4bf004d28a9537516768c1c75, type: 3}
     m_FontSize: 120
-    m_FontStyle: 0
+    m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 0
     m_MaxSize: 120
@@ -1571,7 +1571,7 @@ RectTransform:
   m_GameObject: {fileID: 1402178692}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 3, y: 4, z: 1}
+  m_LocalScale: {x: 4, y: 5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 283980662}
@@ -1690,7 +1690,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   eventSystem: {fileID: 57213204}
   yajirusi: {fileID: 1533052836}
-  soundEffect: {fileID: 8300000, guid: 601e6bb87d071c54189af986fb6a3333, type: 3}
 --- !u!1 &1414917503
 GameObject:
   m_ObjectHideFlags: 0
@@ -2120,8 +2119,8 @@ RectTransform:
   m_GameObject: {fileID: 1597887805}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 3, y: 4, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 4, y: 5.3333335, z: 1.3333334}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 618478473}
   m_Father: {fileID: 791164154}
@@ -2239,7 +2238,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   eventSystem: {fileID: 57213204}
   yajirusi: {fileID: 1434025799}
-  soundEffect: {fileID: 8300000, guid: 601e6bb87d071c54189af986fb6a3333, type: 3}
 --- !u!1 &1827950747
 GameObject:
   m_ObjectHideFlags: 0
