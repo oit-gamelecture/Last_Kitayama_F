@@ -19,7 +19,7 @@ public class PlayerMovement : MonoBehaviour
 
     public float movementInputValue;
 
-    private bool canMove = true;
+    private bool canMove = false;
     private bool isFalling = false;
     private bool isWalking = false;
 
@@ -37,7 +37,7 @@ public class PlayerMovement : MonoBehaviour
         blackOverlay.color = color;
 
         blackOverlay.gameObject.SetActive(true);
-        StartCoroutine(EnableMovementAfterDelay(3.3f));
+        StartCoroutine(IdleCoroutine());
         StartCoroutine(HideOverlayAfterDelay(delayBeforeHiding));
 
         Debug.Log(moveSpeed);
@@ -91,9 +91,16 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    private IEnumerator EnableMovementAfterDelay(float delay)
+    private IEnumerator IdleCoroutine()
     {
-        yield return new WaitForSeconds(delay);
+        // Idleアニメーションの開始
+        animator.SetBool("Idle", true);
+        yield return new WaitForSeconds(3.3f);
+
+        // Idleアニメーションを停止し、Walkアニメーションを開始
+        animator.SetBool("Idle", false);
+        animator.SetTrigger("Walk");
+        canMove = true;
         isWalking = true;
     }
 
