@@ -349,6 +349,7 @@ GameObject:
   - component: {fileID: 8468625010372925769}
   - component: {fileID: 5073030503021565378}
   - component: {fileID: 7404221425575174348}
+  - component: {fileID: -5141604015765962714}
   m_Layer: 0
   m_Name: NoSumaho3
   m_TagString: enemy
@@ -453,6 +454,20 @@ MonoBehaviour:
   speed: 3
   downSpeed: 8
   avoidDistance: 8
+--- !u!114 &-5141604015765962714
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3015422415794446919}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cc8dca1febf4f14580672db9d9821e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  seClips:
+  - {fileID: 8300000, guid: b37f87c5e71af2242bbcef1c8255be92, type: 3}
 --- !u!1 &3030391013358674146
 GameObject:
   m_ObjectHideFlags: 0

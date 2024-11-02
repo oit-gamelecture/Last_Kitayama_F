@@ -349,6 +349,7 @@ GameObject:
   - component: {fileID: 308695867972776864}
   - component: {fileID: 8468625010372925769}
   - component: {fileID: 5073030503021565378}
+  - component: {fileID: 3010036642870832773}
   m_Layer: 0
   m_Name: Sumaho3
   m_TagString: enemy
@@ -409,8 +410,6 @@ MonoBehaviour:
   enemyAnimator: {fileID: 5558386398475908739}
   normalSpeed: 3
   retreatSpeed: 8
-  targetPositions:
-  - {x: 0, y: 0, z: 0}
 --- !u!195 &8468625010372925769
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -454,6 +453,19 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.63, y: 1.72, z: 0.57}
   m_Center: {x: 0, y: 0.93, z: 0}
+--- !u!114 &3010036642870832773
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3015422415794446919}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cc8dca1febf4f14580672db9d9821e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  seClip: {fileID: 8300000, guid: b37f87c5e71af2242bbcef1c8255be92, type: 3}
 --- !u!1 &3030391013358674146
 GameObject:
   m_ObjectHideFlags: 0
