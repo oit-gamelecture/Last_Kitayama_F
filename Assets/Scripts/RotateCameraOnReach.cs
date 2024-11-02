@@ -17,10 +17,17 @@ public class RotateCameraOnReach : MonoBehaviour
     {
         if (other.transform == player && !hasRotated)
         {
+            TeleportPlayerToCenter();
             RotatePlayerAndCameraOnce();
             hasRotated = true; // 回転済みフラグを立てる
             Destroy(gameObject); // このスクリプトがアタッチされているオブジェクトを破壊
         }
+    }
+
+    private void TeleportPlayerToCenter()
+    {
+        // プレイヤーをこのオブジェクトの中心にワープさせる
+        player.position = transform.position;
     }
 
     private void RotatePlayerAndCameraOnce()
@@ -38,5 +45,6 @@ public class RotateCameraOnReach : MonoBehaviour
         mainCamera.transform.eulerAngles = cameraRotation;
     }
 }
+
 
 
