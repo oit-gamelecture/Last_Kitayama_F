@@ -17,6 +17,8 @@ public class PlayerMovement : MonoBehaviour
     public AudioClip bone;
     AudioSource audioSource;
 
+    public float movementInputValue;
+
     private bool canMove = true;
     private bool isFalling = false;
     private bool isWalking = false;
@@ -65,6 +67,10 @@ public class PlayerMovement : MonoBehaviour
                     Vector3 rightDirection = transform.right * leftRightSpeed * Time.fixedDeltaTime;
                     rb.MovePosition(rb.position + rightDirection);
                 }
+
+                movementInputValue = Input.GetAxis("Horizontal");
+                Vector3 movement = transform.right * movementInputValue * leftRightSpeed * Time.fixedDeltaTime;
+                rb.MovePosition(rb.position + movement);
             }
         }
     }
