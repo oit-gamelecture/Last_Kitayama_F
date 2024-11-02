@@ -58,7 +58,7 @@ public class button_select_src : MonoBehaviour
             }
         }
 
-        if (Input.GetKeyDown(KeyCode.Return))
+        if (Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown("joystick button 0") || Input.GetKeyDown("joystick button 7"))
         {
             if (this.gameObject == selectedObj)
             {
