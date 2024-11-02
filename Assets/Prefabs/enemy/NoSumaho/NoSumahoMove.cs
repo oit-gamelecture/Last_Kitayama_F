@@ -31,7 +31,7 @@ public class NoSumahoMove : MonoBehaviour
 
         if (navMeshAgent == null)
         {
-            Debug.LogError($"{gameObject.name} に NavMeshAgent が見つかりません。");
+            
             return;
         }
 
@@ -179,7 +179,7 @@ public class NoSumahoMove : MonoBehaviour
         }
         else
         {
-            Debug.LogError($"{gameObject.name} の近くに NavMesh 上の有効な地点が見つかりませんでした。");
+            
         }
     }
 }
