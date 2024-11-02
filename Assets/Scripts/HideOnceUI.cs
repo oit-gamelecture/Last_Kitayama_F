@@ -1,5 +1,4 @@
 using UnityEngine;
-using UnityEngine.EventSystems;
 
 public class HideOnceUI : MonoBehaviour
 {
@@ -18,7 +17,10 @@ public class HideOnceUI : MonoBehaviour
     void Update()
     {
         // 十字キーが押され、UIがまだ非表示になっていない場合
-        if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.RightArrow))
+        if (!hasBeenHidden && (Input.GetKeyDown(KeyCode.UpArrow) ||
+                               Input.GetKeyDown(KeyCode.DownArrow) ||
+                               Input.GetKeyDown(KeyCode.LeftArrow) ||
+                               Input.GetKeyDown(KeyCode.RightArrow)))
         {
             HideUI();
         }
