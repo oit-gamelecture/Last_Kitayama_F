@@ -1299,4 +1299,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cc8dca1febf4f14580672db9d9821e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  seClips: []
+  seClips:
+  - {fileID: 8300000, guid: c16c704da1a93694e9a29140b68d675a, type: 3}
