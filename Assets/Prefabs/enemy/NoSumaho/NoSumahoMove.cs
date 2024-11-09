@@ -11,7 +11,7 @@ public class NoSumahoMove : MonoBehaviour
     private float retreatDuration = 0.5f;
     private bool isFalling = false;
     private bool isAvoiding = false;
-    private bool hasAvoided = false; // 回避行動を一回だけ行うためのフラグ
+    private bool hasAvoided = true; // 回避行動を一回だけ行うためのフラグ
 
     private NavMeshAgent navMeshAgent;
     private BoxCollider boxCol;
