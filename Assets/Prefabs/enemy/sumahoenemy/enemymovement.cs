@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class EnemyMovement : MonoBehaviour
+public class enemymovement : MonoBehaviour
 {
     public Animator enemyAnimator;
     public float normalSpeed = 3.0f;
@@ -11,9 +11,14 @@ public class EnemyMovement : MonoBehaviour
     private bool isFalling = false;
 
     private NavMeshAgent navMeshAgent;
-    private Vector3 targetPositionA;
-    private Vector3 targetPositionB;
-    private Vector3 currentTargetPosition;
+    private Transform currentTarget;
+
+    [Header("Targets for each height range")]
+    private Transform[] targetsLevel1 = new Transform[2]; // 高さ0以上のターゲット
+    private Transform[] targetsLevel2 = new Transform[2]; // 高さ -6 ～ 0
+    private Transform[] targetsLevel3 = new Transform[2]; // 高さ -11 ～ -6
+    private Transform[] targetsLevel4 = new Transform[2]; // 高さ -11以下
+
 
     void Start()
     {
@@ -29,8 +34,9 @@ public class EnemyMovement : MonoBehaviour
         navMeshAgent.speed = normalSpeed;
 
         EnsureOnNavMesh();
-        SetRandomTargetsBasedOnHeight(); // 高さに応じた目標地点を設定
-        navMeshAgent.SetDestination(currentTargetPosition);
+        InitializeTargets();
+        SetTargetsBasedOnHeight(); // 高さに応じた目標地点を設定
+        navMeshAgent.SetDestination(SetRandomizedTargetPosition());
     }
 
     void Update()
@@ -40,42 +46,92 @@ public class EnemyMovement : MonoBehaviour
             if (navMeshAgent.remainingDistance < 0.5f)
             {
                 ToggleTargetPosition();
-                navMeshAgent.SetDestination(currentTargetPosition);
+                navMeshAgent.SetDestination(currentTarget.position);
             }
         }
     }
 
-    void SetRandomTargetsBasedOnHeight()
+    void InitializeTargets()
+    {
+        // シーン内のオブジェクトを名前で検索し、ターゲット配列に格納
+        targetsLevel1[0] = GameObject.Find("Target1_1").transform;
+        targetsLevel1[1] = GameObject.Find("Target1_2").transform;
+        targetsLevel2[0] = GameObject.Find("Target2_1").transform;
+        targetsLevel2[1] = GameObject.Find("Target2_2").transform;
+        targetsLevel3[0] = GameObject.Find("Target3_1").transform;
+        targetsLevel3[1] = GameObject.Find("Target3_2").transform;
+        targetsLevel4[0] = GameObject.Find("Target4_1").transform;
+        targetsLevel4[1] = GameObject.Find("Target4_2").transform;
+    }
+
+    void SetTargetsBasedOnHeight()
     {
         float yPosition = transform.position.y;
+
         if (yPosition >= 0)
         {
-            targetPositionA = new Vector3(Random.Range(3f, -1f), 1, 20);
-            targetPositionB = new Vector3(Random.Range(-6f, -2f), 1, -140);
+            currentTarget = Random.value < 0.5f ? targetsLevel1[0] : targetsLevel1[1];
         }
         else if (yPosition >= -6 && yPosition < 0)
         {
-            targetPositionA = new Vector3(0, -4, Random.Range(-109f, -106f));
-            targetPositionB = new Vector3(130, -4, Random.Range(-110f, -113f));
+            currentTarget = Random.value < 0.5f ? targetsLevel2[0] : targetsLevel2[1];
         }
         else if (yPosition >= -11 && yPosition < -6)
         {
-            targetPositionA = new Vector3(Random.Range(103.3f, 106.3f), -9.4f, -120);
-            targetPositionB = new Vector3(Random.Range(107.3f, 110.3f), -9.4f, 10);
+            currentTarget = Random.value < 0.5f ? targetsLevel3[0] : targetsLevel3[1];
         }
         else
         {
-            targetPositionA = new Vector3(120, -14.4f, Random.Range(-20f, -17f));
-            targetPositionB = new Vector3(-10, -14.3f, Random.Range(-13f, -16f));
+            currentTarget = Random.value < 0.5f ? targetsLevel4[0] : targetsLevel4[1];
+        }
+    }
+
+    Vector3 SetRandomizedTargetPosition()
+    {
+        Vector3 randomizedPosition = currentTarget.position;
+
+        if (System.Array.IndexOf(targetsLevel1, currentTarget) >= 0)
+        {
+            randomizedPosition.x = Random.Range(3f, -6f);
+        }
+        else if (System.Array.IndexOf(targetsLevel2, currentTarget) >= 0)
+        {
+            randomizedPosition.z = Random.Range(-106f, -113f);
+        }
+        else if (System.Array.IndexOf(targetsLevel3, currentTarget) >= 0)
+        {
+            randomizedPosition.x = Random.Range(103.3f, 110f);
+        }
+        else if (System.Array.IndexOf(targetsLevel4, currentTarget) >= 0)
+        {
+            randomizedPosition.z = Random.Range(-13f, -20f);
         }
 
-        currentTargetPosition = Random.value < 0.5f ? targetPositionA : targetPositionB;
+        return randomizedPosition;
     }
+
 
     void ToggleTargetPosition()
     {
-        currentTargetPosition = currentTargetPosition == targetPositionA ? targetPositionB : targetPositionA;
+        if (System.Array.IndexOf(targetsLevel1, currentTarget) >= 0)
+        {
+            currentTarget = currentTarget == targetsLevel1[0] ? targetsLevel1[1] : targetsLevel1[0];
+        }
+        else if (System.Array.IndexOf(targetsLevel2, currentTarget) >= 0)
+        {
+            currentTarget = currentTarget == targetsLevel2[0] ? targetsLevel2[1] : targetsLevel2[0];
+        }
+        else if (System.Array.IndexOf(targetsLevel3, currentTarget) >= 0)
+        {
+            currentTarget = currentTarget == targetsLevel3[0] ? targetsLevel3[1] : targetsLevel3[0];
+        }
+        else if (System.Array.IndexOf(targetsLevel4, currentTarget) >= 0)
+        {
+            currentTarget = currentTarget == targetsLevel4[0] ? targetsLevel4[1] : targetsLevel4[0];
+        }
     }
+
+
 
     void OnCollisionEnter(Collision collision)
     {

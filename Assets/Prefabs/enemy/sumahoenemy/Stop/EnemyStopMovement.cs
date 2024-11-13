@@ -14,8 +14,6 @@ public class EnemyStopMovement : MonoBehaviour
     private bool isStopped = false;
 
     private NavMeshAgent navMeshAgent;
-    private Vector3 targetPositionA;
-    private Vector3 targetPositionB;
     private Vector3 currentTargetPosition;
 
     private Transform playerTransform;
@@ -34,7 +32,7 @@ public class EnemyStopMovement : MonoBehaviour
         navMeshAgent.speed = normalSpeed;
         EnsureOnNavMesh();
 
-        SetRandomTargetsBasedOnHeight(); // 高さに基づく目標地点を設定
+        SetRandomizedTargetBasedOnHeight(); // 高さに基づくランダムな目標地点を設定
         navMeshAgent.SetDestination(currentTargetPosition);
 
         GameObject player = GameObject.FindGameObjectWithTag("Player");
@@ -92,37 +90,35 @@ public class EnemyStopMovement : MonoBehaviour
         }
     }
 
-    void SetRandomTargetsBasedOnHeight()
+    void SetRandomizedTargetBasedOnHeight()
     {
         float yPosition = transform.position.y;
 
         if (yPosition >= 0)
         {
-            targetPositionA = new Vector3(Random.Range(3f, -1f), 1, 20);
-            targetPositionB = new Vector3(Random.Range(-6f, -2f), 1, -140);
+            // 高さ 0 以上の場合
+            currentTargetPosition = new Vector3(Random.Range(3f, -6f), 1, 20);
         }
         else if (yPosition >= -6 && yPosition < 0)
         {
-            targetPositionA = new Vector3(0, -4, Random.Range(-109f, -106f));
-            targetPositionB = new Vector3(130, -4, Random.Range(-110f, -113f));
+            // 高さ -6 ～ 0 の場合
+            currentTargetPosition = new Vector3(0, -4, Random.Range(-106f, -113f));
         }
         else if (yPosition >= -11 && yPosition < -6)
         {
-            targetPositionA = new Vector3(Random.Range(103.3f, 106.3f), -9.4f, -120);
-            targetPositionB = new Vector3(Random.Range(107.3f, 110.3f), -9.4f, 10);
+            // 高さ -11 ～ -6 の場合
+            currentTargetPosition = new Vector3(Random.Range(103.3f, 110f), -9.4f, -120);
         }
         else
         {
-            targetPositionA = new Vector3(120, -14.4f, Random.Range(-20f, -17f));
-            targetPositionB = new Vector3(-10, -14.3f, Random.Range(-13f, -16f));
+            // 高さ -11 以下の場合
+            currentTargetPosition = new Vector3(120, -14.4f, Random.Range(-20f, -13f));
         }
-
-        currentTargetPosition = Random.value < 0.5f ? targetPositionA : targetPositionB;
     }
 
     void ToggleTargetPosition()
     {
-        currentTargetPosition = currentTargetPosition == targetPositionA ? targetPositionB : targetPositionA;
+        SetRandomizedTargetBasedOnHeight();
     }
 
     void OnCollisionEnter(Collision collision)
