@@ -4,44 +4,36 @@ using UnityEngine;
 
 public class RotationScript : MonoBehaviour
 {
-    public Transform player; // プレイヤーのアバター
-    private Camera mainCamera; // メインカメラ
-    private bool hasRotated = false; // 回転を1回だけ行うためのフラグ
+    public float rotationDuration = 1.0f; // 回転のスムーズな時間（秒）
 
-    void Start()
-    {
-        mainCamera = Camera.main; // メインカメラを取得
-    }
+    private bool isRotating = false;
 
-    void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter(Collider other)
     {
-        if (other.transform == player && !hasRotated)
+        if (other.CompareTag("Player") && !isRotating) // プレイヤーにタグ付けされているオブジェクトのみに反応
         {
-            TeleportPlayerToCenter();
-            RotatePlayerAndCameraOnce();
-            hasRotated = true; // 回転済みフラグを立てる
-            Destroy(gameObject); // このスクリプトがアタッチされているオブジェクトを破壊
+            StartCoroutine(RotatePlayer(other.transform, -90f));
         }
     }
 
-    private void TeleportPlayerToCenter()
+    private IEnumerator RotatePlayer(Transform playerTransform, float targetAngle)
     {
-        // プレイヤーをこのオブジェクトの中心にワープさせる
-        player.position = transform.position;
+        isRotating = true;
+
+        Quaternion startRotation = playerTransform.rotation;
+        Quaternion endRotation = startRotation * Quaternion.Euler(0, targetAngle, 0);
+
+        float elapsedTime = 0f;
+
+        while (elapsedTime < rotationDuration)
+        {
+            playerTransform.rotation = Quaternion.Slerp(startRotation, endRotation, elapsedTime / rotationDuration);
+            elapsedTime += Time.deltaTime;
+            yield return null;
+        }
+
+        playerTransform.rotation = endRotation; // 最終的な回転角にセット
+        isRotating = false;
     }
 
-    private void RotatePlayerAndCameraOnce()
-    {
-        // 現在のプレイヤーの回転を取得
-        Vector3 playerRotation = player.eulerAngles;
-        // プレイヤーをy軸で-90度回転
-        playerRotation.y -= 90f;
-        player.eulerAngles = playerRotation;
-
-        // 現在のカメラの回転を取得
-        Vector3 cameraRotation = mainCamera.transform.eulerAngles;
-        // カメラもy軸で-90度回転
-        cameraRotation.y -= 90f;
-        mainCamera.transform.eulerAngles = cameraRotation;
-    }
 }
