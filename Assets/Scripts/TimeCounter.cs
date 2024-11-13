@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class TimeCounter : MonoBehaviour
 {
     //カウントダウン
-    public float countdown = 60.00f;
+    public float countdown = 90.00f;
     public float countdownTime = 3f;
     public AudioClip countSound;
     AudioSource audioSource;
@@ -52,5 +52,16 @@ public class TimeCounter : MonoBehaviour
         {
             SceneManager.LoadScene("over scene");
         }
+    }
+
+    public void SaveElapsedTime()
+    {
+        float elapsedTime = 90.00f - countdown;
+        PlayerPrefs.SetFloat("ElapsedTime", elapsedTime);
+    }
+
+    public void StopCountdown()
+    {
+        countStart = false;
     }
 }

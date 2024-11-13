@@ -9,6 +9,14 @@ public class GoalManager : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+            TimeCounter timeCounter = FindObjectOfType<TimeCounter>();
+            if (timeCounter != null)
+            {
+                // Œo‰ßŽžŠÔ‚ð•Û‘¶
+                timeCounter.SaveElapsedTime();
+                timeCounter.StopCountdown();
+            }
+
             SceneManager.LoadScene("clear scene"); 
         }
     }
