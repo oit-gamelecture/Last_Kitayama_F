@@ -10,8 +10,8 @@ public class EnemyManager : MonoBehaviour
     public GameObject[] obstaclesList2; // リスト2として使用する障害物のプレハブ配列
     public List<GameObject> ObstacleList = new List<GameObject>();
 
-    public float minObstacleInterval = 1f;
-    public float maxObstacleInterval = 3f;
+    public float minObstacleInterval = 1.5f;
+    public float maxObstacleInterval = 2f;
     private float nextObstacleTime;
 
     public float obstacleDistance = 40f;
@@ -28,6 +28,8 @@ public class EnemyManager : MonoBehaviour
     void Update()
     {
         timer += Time.deltaTime;
+
+        IncreaseEnemies();
 
         if (Time.time >= nextObstacleTime)
         {
@@ -123,6 +125,32 @@ public class EnemyManager : MonoBehaviour
                 ObstacleList.RemoveAt(i);
                 StartCoroutine(WaitAndDestroy(passedObstacle));
             }
+        }
+    }
+
+    void IncreaseEnemies()
+    {
+        float yPos = Target.position.y;
+
+        if (yPos >= 0)
+        {
+            minObstacleInterval = 1.5f;
+            maxObstacleInterval = 2f;
+        }
+        else if (yPos >= -6f)
+        {
+            minObstacleInterval = 0.8f;
+            maxObstacleInterval = 1.5f;
+        }
+        else if (yPos >= -10f)
+        {
+            minObstacleInterval = 0.5f;
+            maxObstacleInterval = 1.2f;
+        }
+        else
+        {
+            minObstacleInterval = 0.3f;
+            maxObstacleInterval = 1f;
         }
     }
 
