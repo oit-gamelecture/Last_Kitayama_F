@@ -26,6 +26,20 @@ public class PlayerMovement : MonoBehaviour
     public Image blackOverlay;
     public float delayBeforeHiding = 3.3f;
 
+    [Header("ダメージエフェクト")]
+    public Renderer playerRenderer; // プレイヤーのマテリアルを制御
+    public Color blinkColor = Color.red; // 点滅時の色
+    public float blinkDuration = 0.1f; // 点滅間隔
+    public int blinkCount = 5; // 点滅回数
+
+    [Header("画面揺れ")]
+    public Transform cameraTransform; // カメラのTransform
+    public float shakeDuration = 1f; // 揺れの時間
+    public float shakeMagnitude = 0.1f; // 揺れの強さ
+
+    private Color originalColor; // プレイヤーの元の色
+    private Vector3 originalCameraPosition;
+
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
@@ -41,6 +55,18 @@ public class PlayerMovement : MonoBehaviour
         StartCoroutine(HideOverlayAfterDelay(delayBeforeHiding));
 
         Debug.Log(moveSpeed);
+
+        // プレイヤーの初期設定
+        if (playerRenderer != null)
+        {
+            originalColor = playerRenderer.material.color;
+        }
+
+        // カメラの初期位置を保存
+        if (cameraTransform != null)
+        {
+            originalCameraPosition = cameraTransform.position;
+        }
     }
 
     private void FixedUpdate()
@@ -89,6 +115,49 @@ public class PlayerMovement : MonoBehaviour
             }
             StartCoroutine(HandleFalling());
         }
+
+        if (collision.gameObject.CompareTag("enemy"))
+        {
+            // 赤く点滅と画面揺れをトリガー
+            StartCoroutine(BlinkEffect());
+            StartCoroutine(CameraShake());
+        }
+    }
+
+    private IEnumerator BlinkEffect()
+    {
+        for (int i = 0; i < blinkCount; i++)
+        {
+            playerRenderer.material.color = blinkColor;
+            yield return new WaitForSeconds(blinkDuration);
+            playerRenderer.material.color = originalColor;
+            yield return new WaitForSeconds(blinkDuration);
+        }
+    }
+
+    private IEnumerator CameraShake()
+    {
+        float elapsed = 0f;
+
+        Vector3 initialPosition = cameraTransform.localPosition; // ローカル座標を基準にする
+
+        while (elapsed < shakeDuration)
+        {
+            // 初期位置を基準にランダムな揺れを加える
+            Vector3 randomOffset = Random.insideUnitSphere * shakeMagnitude;
+
+            // 高さ（Y座標）は一定にする（上下に揺らしたくない場合）
+            
+
+            // カメラ位置を更新
+            cameraTransform.localPosition = initialPosition + randomOffset;
+
+            elapsed += Time.deltaTime;
+            yield return null;
+        }
+
+        // カメラを元の位置に戻す
+        cameraTransform.localPosition = initialPosition;
     }
 
     private IEnumerator IdleCoroutine()
@@ -140,5 +209,4 @@ public class PlayerMovement : MonoBehaviour
         isWalking = true;
         isFalling = false;
     }
-
 }
