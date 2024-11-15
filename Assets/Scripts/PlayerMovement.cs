@@ -27,18 +27,18 @@ public class PlayerMovement : MonoBehaviour
     public float delayBeforeHiding = 3.3f;
 
     [Header("ダメージエフェクト")]
-    public Renderer playerRenderer; // プレイヤーのマテリアルを制御
+    public SkinnedMeshRenderer playerRenderer; // SkinnedMeshRendererに変更
     public Color blinkColor = Color.red; // 点滅時の色
-    public float blinkDuration = 0.1f; // 点滅間隔
-    public int blinkCount = 5; // 点滅回数
+    public float blinkDuration = 0.2f; // 点滅間隔
+    public int blinkCount = 2; // 点滅回数
+
 
     [Header("画面揺れ")]
     public Transform cameraTransform; // カメラのTransform
     public float shakeDuration = 1f; // 揺れの時間
     public float shakeMagnitude = 0.1f; // 揺れの強さ
 
-    private Color originalColor; // プレイヤーの元の色
-    private Vector3 originalCameraPosition;
+    private Material[] originalMaterials; // プレイヤーの元のマテリアル
 
     private void Start()
     {
@@ -56,16 +56,9 @@ public class PlayerMovement : MonoBehaviour
 
         Debug.Log(moveSpeed);
 
-        // プレイヤーの初期設定
         if (playerRenderer != null)
         {
-            originalColor = playerRenderer.material.color;
-        }
-
-        // カメラの初期位置を保存
-        if (cameraTransform != null)
-        {
-            originalCameraPosition = cameraTransform.position;
+            originalMaterials = playerRenderer.materials; // 元のマテリアルを保存
         }
     }
 
@@ -126,14 +119,35 @@ public class PlayerMovement : MonoBehaviour
 
     private IEnumerator BlinkEffect()
     {
+        // インスタンス化されたマテリアルを取得
+        Material[] materials = playerRenderer.materials;
+
+        // 各マテリアルの元の色を保存
+        Color[] originalColors = new Color[materials.Length];
+        for (int i = 0; i < materials.Length; i++)
+        {
+            originalColors[i] = materials[i].color;
+        }
+
+        // 点滅ループ
         for (int i = 0; i < blinkCount; i++)
         {
-            playerRenderer.material.color = blinkColor;
+            // すべてのマテリアルを赤にする
+            foreach (Material mat in materials)
+            {
+                mat.color = blinkColor;
+            }
             yield return new WaitForSeconds(blinkDuration);
-            playerRenderer.material.color = originalColor;
+
+            // すべてのマテリアルを元の色に戻す
+            for (int j = 0; j < materials.Length; j++)
+            {
+                materials[j].color = originalColors[j];
+            }
             yield return new WaitForSeconds(blinkDuration);
         }
     }
+
 
     private IEnumerator CameraShake()
     {
@@ -143,11 +157,7 @@ public class PlayerMovement : MonoBehaviour
 
         while (elapsed < shakeDuration)
         {
-            // 初期位置を基準にランダムな揺れを加える
             Vector3 randomOffset = Random.insideUnitSphere * shakeMagnitude;
-
-            // 高さ（Y座標）は一定にする（上下に揺らしたくない場合）
-            
 
             // カメラ位置を更新
             cameraTransform.localPosition = initialPosition + randomOffset;
@@ -156,7 +166,6 @@ public class PlayerMovement : MonoBehaviour
             yield return null;
         }
 
-        // カメラを元の位置に戻す
         cameraTransform.localPosition = initialPosition;
     }
 
