@@ -129,6 +129,8 @@ public class PlayerMovement : MonoBehaviour
             originalColors[i] = materials[i].color;
         }
 
+        bool resetPending = true; // リセットフラグを設定
+
         // 点滅ループ
         for (int i = 0; i < blinkCount; i++)
         {
@@ -146,7 +148,30 @@ public class PlayerMovement : MonoBehaviour
             }
             yield return new WaitForSeconds(blinkDuration);
         }
+
+        // 1秒後に元の色に戻す処理を保証
+        StartCoroutine(EnsureOriginalColor(materials, originalColors, 1f));
     }
+
+    private IEnumerator EnsureOriginalColor(Material[] materials, Color[] originalColors, float delay)
+    {
+        // 指定時間待機
+        yield return new WaitForSeconds(delay);
+
+        // プレイヤーのマテリアルを確認し、赤のままなら元の色に戻す
+        foreach (Material mat in materials)
+        {
+            if (mat.color == blinkColor) // 赤のままの場合
+            {
+                for (int i = 0; i < materials.Length; i++)
+                {
+                    materials[i].color = originalColors[i]; // 元の色に戻す
+                }
+                break;
+            }
+        }
+    }
+
 
 
     private IEnumerator CameraShake()
