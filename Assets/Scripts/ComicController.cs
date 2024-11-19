@@ -18,9 +18,9 @@ public class ComicController : MonoBehaviour
         { 0, 0 },  // AudioClip[0] ‚É‘Î‚µ‚Ä ComicFrame[0] ‚ð•\Ž¦
         { 2, 1 },
         { 8, 2 },
-        { 11, 3 },
-        { 12, 4 },
-        { 15, 5 }
+        { 14, 3 },
+        { 16, 4 },
+        { 19, 5 }
     };
 
     void Start()
