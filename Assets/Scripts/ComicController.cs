@@ -5,29 +5,43 @@ using UnityEngine.UI;
 
 public class ComicController : MonoBehaviour
 {
-    private Image comicImage;          // 漫画を表示するImage
-    public Sprite[] comicFrames;       // 漫画の各コマ
-    private int currentFrame = 0;      // 現在のフレーム
-    public LoadingMainScene loadingScene; // ロード画面のスクリプト参照
+    private Image comicImage;                  // 漫画を表示するImage
+    public Sprite[] comicFrames;               // 漫画の各コマ
+    private int currentAudioIndex = 0;         // 現在のAudioClipインデックス
+    public AudioClip[] audioClips;             // 各コマに対応する音声
+    public AudioSource audioSource;            // 音声を再生するAudioSource
+    public LoadingMainScene loadingScene;      // ロード画面のスクリプト参照
+
+    // AudioClipとComicFrameの対応リスト
+    private readonly Dictionary<int, int> audioToFrameMap = new Dictionary<int, int>
+    {
+        { 0, 0 },  // AudioClip[0] に対して ComicFrame[0] を表示
+        { 2, 1 },
+        { 8, 2 },
+        { 11, 3 },
+        { 12, 4 },
+        { 15, 5 }
+    };
 
     void Start()
     {
         // 子オブジェクトからImageコンポーネントを取得
         comicImage = GetComponentInChildren<Image>();
 
-        // 最初のコマを表示
+        // 最初のコマと音声を設定
         if (comicImage != null && comicFrames.Length > 0)
         {
-            comicImage.sprite = comicFrames[currentFrame];
+            comicImage.sprite = comicFrames[0]; // 最初のコマを表示
+            PlayAudio(); // 最初の音声を再生
         }
     }
 
     void Update()
     {
-        // Enterキーで次のコマへ
+        // Enterキーで次の音声を再生
         if (Input.GetKeyDown(KeyCode.Return))
         {
-            ShowNextFrame();
+            ShowNextFrameAndAudio();
         }
 
         // ESCキーで直接ロード画面を表示してシーン遷移
@@ -38,19 +52,41 @@ public class ComicController : MonoBehaviour
         }
     }
 
-    void ShowNextFrame()
+    void ShowNextFrameAndAudio()
     {
-        if (comicImage != null && currentFrame < comicFrames.Length - 1)
+        if (currentAudioIndex < audioClips.Length - 1)
         {
-            // 次のコマを表示
-            currentFrame++;
-            comicImage.sprite = comicFrames[currentFrame];
+            currentAudioIndex++; // 次の音声に進む
+            PlayAudio();
+
+            // AudioClipインデックスが対応リストに含まれる場合のみComicFrameを更新
+            if (audioToFrameMap.ContainsKey(currentAudioIndex))
+            {
+                int frameIndex = audioToFrameMap[currentAudioIndex];
+                if (frameIndex < comicFrames.Length)
+                {
+                    comicImage.sprite = comicFrames[frameIndex];
+                }
+                else
+                {
+                    Debug.LogError($"対応するComicFrameのインデックス {frameIndex} が範囲外です。");
+                }
+            }
         }
-        else if (currentFrame == comicFrames.Length - 1)
+        else
         {
-            // 最後のコマのときにロード画面を表示してシーン遷移
-            Debug.Log("漫画終了！ ロード画面を表示してメインシーンへ移行します。");
-            StartLoadingScene();
+            Debug.Log("最後の音声が再生されました。");
+            StartLoadingScene(); // 最後の音声再生後はシーン遷移
+        }
+    }
+
+    void PlayAudio()
+    {
+        // 音声を再生
+        if (audioClips.Length > currentAudioIndex && audioSource != null)
+        {
+            audioSource.clip = audioClips[currentAudioIndex];
+            audioSource.Play();
         }
     }
 
