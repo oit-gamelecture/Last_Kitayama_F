@@ -40609,6 +40609,8 @@ MonoBehaviour:
   cameraTransform: {fileID: 1031197565}
   shakeDuration: 1
   shakeMagnitude: 0.2
+  impactParticlePrefab: {fileID: 8443315704496310908, guid: 6ef35fa36e3a65043b2d800600204bdd, type: 3}
+  particleDuration: 2
 --- !u!4 &1851284372 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 75916f735b2fe014e9dfa3b043e648d1, type: 3}

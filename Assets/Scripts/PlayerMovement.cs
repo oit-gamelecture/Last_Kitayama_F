@@ -38,7 +38,12 @@ public class PlayerMovement : MonoBehaviour
     public float shakeDuration = 1f; // 揺れの時間
     public float shakeMagnitude = 0.1f; // 揺れの強さ
 
+    [Header("パーティクル設定")]
+    public ParticleSystem impactParticlePrefab; // パーティクルのプレハブ
+    public float particleDuration = 2f;        // パーティクルを自動で消すまでの時間
+
     private Material[] originalMaterials; // プレイヤーの元のマテリアル
+
 
     private void Start()
     {
@@ -114,6 +119,29 @@ public class PlayerMovement : MonoBehaviour
             // 赤く点滅と画面揺れをトリガー
             StartCoroutine(BlinkEffect());
             StartCoroutine(CameraShake());
+        }
+
+        if (collision.collider.CompareTag("enemy"))
+        {
+            // 衝突位置と方向を取得
+            ContactPoint contact = collision.contacts[0];
+            Vector3 spawnPosition = contact.point; // 衝突位置
+            Quaternion spawnRotation = Quaternion.LookRotation(contact.normal); // 衝突方向
+
+            // パーティクルを生成
+            if (impactParticlePrefab != null)
+            {
+                ParticleSystem particleInstance = Instantiate(impactParticlePrefab, spawnPosition, spawnRotation);
+
+                float newScale = 5.0f; // 好きなスケールに設定
+                particleInstance.transform.localScale = new Vector3(newScale, newScale, newScale);
+
+                // パーティクルを一定時間後に削除
+                Destroy(particleInstance.gameObject, particleDuration);
+            }
+
+            // 他のエフェクトや動作もここで実行可能
+            Debug.Log("Enemyに衝突しました！");
         }
     }
 
