@@ -25,13 +25,13 @@ public class ClearTime : MonoBehaviour
         {
             elapsedTime += Time.deltaTime;
             displayedTime = Mathf.Lerp(0, finalTime, elapsedTime / animationDuration);
-            clearTimeText.text = displayedTime.ToString("F2") + "ïb";
+            clearTimeText.text = displayedTime.ToString("F2") + " s";
 
             yield return null;
         }
 
         // ç≈å„Ç…ç≈èIéûä‘Çê≥ämÇ…ï\é¶
-        clearTimeText.text =  finalTime.ToString("F2") + "ïb";
+        clearTimeText.text =  finalTime.ToString("F2") + " s";
     }
 }
 
