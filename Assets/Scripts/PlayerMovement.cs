@@ -125,19 +125,25 @@ public class PlayerMovement : MonoBehaviour
         {
             // 衝突位置と方向を取得
             ContactPoint contact = collision.contacts[0];
-            Vector3 spawnPosition = contact.point; // 衝突位置
-            Quaternion spawnRotation = Quaternion.LookRotation(contact.normal); // 衝突方向
+            Vector3 spawnPosition = transform.position; // 衝突位置
+            Quaternion spawnRotation = Quaternion.identity; ; // 衝突方向
 
             // パーティクルを生成
             if (impactParticlePrefab != null)
             {
-                ParticleSystem particleInstance = Instantiate(impactParticlePrefab, spawnPosition, spawnRotation);
+                spawnPosition += new Vector3(0, 1.0f, 0); // 必要に応じてオフセット (例: Y方向に1.0f上)
 
-                float newScale = 5.0f; // 好きなスケールに設定
-                particleInstance.transform.localScale = new Vector3(newScale, newScale, newScale);
+                // パーティクルを生成
+                if (impactParticlePrefab != null)
+                {
+                    ParticleSystem particleInstance = Instantiate(impactParticlePrefab, spawnPosition, spawnRotation);
 
-                // パーティクルを一定時間後に削除
-                Destroy(particleInstance.gameObject, particleDuration);
+                    float newScale = 8.0f; // 好きなスケールに設定
+                    particleInstance.transform.localScale = new Vector3(newScale, newScale, newScale);
+
+                    // 一定時間後に削除
+                    Destroy(particleInstance.gameObject, particleDuration);
+                }
             }
 
             // 他のエフェクトや動作もここで実行可能
