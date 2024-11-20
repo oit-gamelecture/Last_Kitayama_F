@@ -10,9 +10,30 @@ public class RotationScript : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        PlayerMovement playerMovement = other.GetComponent<PlayerMovement>();
         if (other.CompareTag("Player") && !isRotating) // プレイヤーにタグ付けされているオブジェクトのみに反応
         {
             StartCoroutine(RotatePlayer(other.transform, -90f));
+        }
+
+        if (playerMovement != null)
+        {
+            playerMovement.SetMovement(false);
+            Debug.Log("Player entered the zone. Movement disabled.");
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            // PlayerMovementを取得して移動を再び有効化
+            PlayerMovement playerMovement = other.GetComponent<PlayerMovement>();
+            if (playerMovement != null)
+            {
+                playerMovement.SetMovement(true);
+                Debug.Log("Player exited the zone. Movement enabled.");
+            }
         }
     }
 

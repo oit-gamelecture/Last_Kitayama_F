@@ -22,6 +22,7 @@ public class PlayerMovement : MonoBehaviour
     private bool canMove = false;
     private bool isFalling = false;
     private bool isWalking = false;
+    private bool flag = true;
 
     public Image blackOverlay;
     public float delayBeforeHiding = 3.3f;
@@ -77,6 +78,8 @@ public class PlayerMovement : MonoBehaviour
             Vector3 forwardDirection = transform.forward * moveSpeed * Time.fixedDeltaTime;
             rb.MovePosition(rb.position + forwardDirection);
 
+            if (!flag) return;
+
             // ç∂âEà⁄ìÆ
             if (isWalking)
             {
@@ -97,6 +100,11 @@ public class PlayerMovement : MonoBehaviour
                 rb.MovePosition(rb.position + movement);
             }
         }
+    }
+
+    public void SetMovement(bool enabled)
+    {
+        flag = enabled;
     }
 
     private void OnCollisionEnter(Collision collision)
