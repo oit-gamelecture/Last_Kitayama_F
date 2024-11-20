@@ -163,7 +163,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seClips:
-  - {fileID: 8300000, guid: 0ff2cdd8724d9c741a421ae363b856af, type: 3}
+  - {fileID: 8300000, guid: e0f063edbff9ba84ca2566c57169d4b2, type: 3}
 --- !u!1 &263225938002821041
 GameObject:
   m_ObjectHideFlags: 0
