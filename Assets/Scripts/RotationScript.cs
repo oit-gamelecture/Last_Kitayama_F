@@ -5,8 +5,19 @@ using UnityEngine;
 public class RotationScript : MonoBehaviour
 {
     public float rotationDuration = 1.0f; // 回転のスムーズな時間（秒）
-
+    public AudioClip[] audioClips;        // 再生するオーディオクリップの配列
+    private AudioSource audioSource;      // オーディオソース
+    private int entryCount = 0;           // プレイヤーが侵入した回数
     private bool isRotating = false;
+
+    private void Start()
+    {
+        audioSource = GetComponent<AudioSource>();
+        if (audioSource == null)
+        {
+            Debug.LogError("AudioSource component is missing!");
+        }
+    }
 
     private void OnTriggerEnter(Collider other)
     {
@@ -20,6 +31,15 @@ public class RotationScript : MonoBehaviour
         {
             playerMovement.SetMovement(false);
             Debug.Log("Player entered the zone. Movement disabled.");
+        }
+
+        // オーディオクリップの再生
+        if (audioSource != null && audioClips.Length > 0)
+        {
+            // 現在の侵入回数に応じたクリップを取得
+            int clipIndex = entryCount % audioClips.Length; // 配列の範囲を超えないようにする
+            audioSource.PlayOneShot(audioClips[clipIndex]);
+            entryCount++; // 侵入回数を増やす
         }
     }
 
@@ -56,5 +76,4 @@ public class RotationScript : MonoBehaviour
         playerTransform.rotation = endRotation; // 最終的な回転角にセット
         isRotating = false;
     }
-
 }
