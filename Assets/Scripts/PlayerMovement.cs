@@ -27,11 +27,11 @@ public class PlayerMovement : MonoBehaviour
     public Image blackOverlay;
     public float delayBeforeHiding = 3.3f;
 
-    [Header("ダメージエフェクト")]
-    public SkinnedMeshRenderer playerRenderer; // SkinnedMeshRendererに変更
-    public Color blinkColor = Color.red; // 点滅時の色
-    public float blinkDuration = 0.2f; // 点滅間隔
-    public int blinkCount = 2; // 点滅回数
+    //[Header("ダメージエフェクト")]
+    //public SkinnedMeshRenderer playerRenderer; // SkinnedMeshRendererに変更
+    //public Color blinkColor = Color.red; // 点滅時の色
+    //public float blinkDuration = 0.2f; // 点滅間隔
+    //public int blinkCount = 2; // 点滅回数
 
 
     [Header("画面揺れ")]
@@ -62,10 +62,10 @@ public class PlayerMovement : MonoBehaviour
 
         Debug.Log(moveSpeed);
 
-        if (playerRenderer != null)
-        {
-            originalMaterials = playerRenderer.materials; // 元のマテリアルを保存
-        }
+        //if (playerRenderer != null)
+        //{
+          //  originalMaterials = playerRenderer.materials; // 元のマテリアルを保存
+        //}
     }
 
     private void FixedUpdate()
@@ -125,7 +125,7 @@ public class PlayerMovement : MonoBehaviour
         if (collision.gameObject.CompareTag("enemy"))
         {
             // 赤く点滅と画面揺れをトリガー
-            StartCoroutine(BlinkEffect());
+           // StartCoroutine(BlinkEffect());
             StartCoroutine(CameraShake());
         }
 
@@ -159,43 +159,43 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    private IEnumerator BlinkEffect()
-    {
+    //private IEnumerator BlinkEffect()
+    //{
         // インスタンス化されたマテリアルを取得
-        Material[] materials = playerRenderer.materials;
+      //  Material[] materials = playerRenderer.materials;
 
         // 各マテリアルの元の色を保存
-        Color[] originalColors = new Color[materials.Length];
-        for (int i = 0; i < materials.Length; i++)
-        {
-            originalColors[i] = materials[i].color;
-        }
+        //Color[] originalColors = new Color[materials.Length];
+        //for (int i = 0; i < materials.Length; i++)
+        //{
+          //  originalColors[i] = materials[i].color;
+        //}
 
-        bool resetPending = true; // リセットフラグを設定
+       // bool resetPending = true; // リセットフラグを設定
 
         // 点滅ループ
-        for (int i = 0; i < blinkCount; i++)
-        {
+        //for (int i = 0; i < blinkCount; i++)
+       // {
             // すべてのマテリアルを赤にする
-            foreach (Material mat in materials)
-            {
-                mat.color = blinkColor;
-            }
-            yield return new WaitForSeconds(blinkDuration);
+          //  foreach (Material mat in materials)
+            //{
+              //  mat.color = blinkColor;
+            //}
+           // yield return new WaitForSeconds(blinkDuration);
 
-            // すべてのマテリアルを元の色に戻す
-            for (int j = 0; j < materials.Length; j++)
-            {
-                materials[j].color = originalColors[j];
-            }
-            yield return new WaitForSeconds(blinkDuration);
-        }
+            /// すべてのマテリアルを元の色に戻す
+           // for (int j = 0; j < materials.Length; j++)
+            //{
+              //  materials[j].color = originalColors[j];
+            //}
+            //yield return new WaitForSeconds(blinkDuration);
+        //}
 
         // 1秒後に元の色に戻す処理を保証
-        StartCoroutine(EnsureOriginalColor(materials, originalColors, 1f));
-    }
+        ///**/StartCoroutine(EnsureOriginalColor(materials, originalColors, 1f));
+    //}
 
-    private IEnumerator EnsureOriginalColor(Material[] materials, Color[] originalColors, float delay)
+   /* private IEnumerator EnsureOriginalColor(Material[] materials, Color[] originalColors, float delay)
     {
         // 指定時間待機
         yield return new WaitForSeconds(delay);
@@ -212,7 +212,7 @@ public class PlayerMovement : MonoBehaviour
                 break;
             }
         }
-    }
+    }*/
 
 
 
