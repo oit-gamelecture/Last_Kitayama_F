@@ -8,6 +8,8 @@ public class ReportManager : MonoBehaviour
     // 非表示にしたいUIオブジェクト
     public GameObject uiElement;
 
+    public GameObject reportText;
+
     // 衝突したプレイヤー
     private void OnTriggerEnter(Collider other)
     {
@@ -16,6 +18,7 @@ public class ReportManager : MonoBehaviour
         {
             // UIを表示
             uiElement.SetActive(true);
+            reportText.SetActive(true);
 
             // 3秒後にUIを非表示にするコルーチンを開始
             StartCoroutine(HideUIAfterDelay(3f));
@@ -30,6 +33,7 @@ public class ReportManager : MonoBehaviour
 
         // UIを非表示
         uiElement.SetActive(false);
+        reportText.SetActive(false);
     }
 }
 
