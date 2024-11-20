@@ -5,8 +5,13 @@ using System.Collections;
 public class ClearTime : MonoBehaviour
 {
     public Text clearTimeText;    // 経過時間を表示するテキスト
+    public Text valueText1;
+    public Text valueText2;
+    public Text valueText3;
+    public Text valueText4;
     public float animationDuration = 2.0f;  // アニメーションの再生時間
     public float delayBeforeStart = 5.0f;  // 表示を遅らせる時間（秒）
+    public float delayBeforeStart1 = 5.0f;
     public AudioClip tickSound;              // 効果音クリップ
     private AudioSource audioSource;         // 効果音用のAudioSource
 
@@ -50,6 +55,26 @@ public class ClearTime : MonoBehaviour
 
         // 最後に最終時間を正確に表示
         clearTimeText.text =  finalTime.ToString("F2") + " s";
+
+        yield return new WaitForSeconds(delayBeforeStart1);
+
+        if (finalTime < 75.00f)
+        {
+            valueText1.text = "S";
+        }
+        else if(finalTime < 80.00f)
+        {
+            valueText2.text = "A";
+        }
+        else if(finalTime < 85.00f)
+        {
+            valueText3.text = "B";
+        }
+        else 
+        {
+            valueText4.text = "C";
+        }
+
     }
 }
 
