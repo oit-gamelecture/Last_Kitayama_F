@@ -16,7 +16,7 @@ public class LoadingScene : MonoBehaviour
 
     IEnumerator LoadScene()
     {
-        AsyncOperation async = SceneManager.LoadSceneAsync("ComicScene");
+        AsyncOperation async = SceneManager.LoadSceneAsync("main");
         async.allowSceneActivation = false; // ©“®‚ÅƒV[ƒ“‘JˆÚ‚µ‚È‚¢‚æ‚¤‚Éİ’è
 
         float progress = 0f;

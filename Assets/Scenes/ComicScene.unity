@@ -231,11 +231,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   comicFrames:
-  - {fileID: 21300000, guid: 35c64e80a4217924f970d8cd5338fc1e, type: 3}
+  - {fileID: 21300000, guid: eeaf1418010583e40bdfaeb150d5f175, type: 3}
   - {fileID: 21300000, guid: a736dcb92ee2eba49bb62c82525dd387, type: 3}
   - {fileID: 21300000, guid: b4035d3cd18879949b1e3857da75ae5d, type: 3}
   - {fileID: 21300000, guid: 8ba538bf32b261c4c990ca1d0cd1ed2d, type: 3}
-  - {fileID: 21300000, guid: 373416631e8672c4fa2591f97a29b11d, type: 3}
+  - {fileID: 21300000, guid: 3eff1b8a2b4603340abb7ad378abeea7, type: 3}
   - {fileID: 21300000, guid: 69aa2e64d597f8344a46af6fcf8c0a7e, type: 3}
   audioClips:
   - {fileID: 8300000, guid: 0ba90b8c473c4e6439f712e1493a5c77, type: 3}
