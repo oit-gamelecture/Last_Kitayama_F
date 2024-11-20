@@ -1582,6 +1582,7 @@ MonoBehaviour:
   soundClips:
   - {fileID: 8300000, guid: accc2dc32f74af24da32ccf0bde1dc12, type: 3}
   - {fileID: 8300000, guid: 278cae8050f64cf48be27aaf0de761df, type: 3}
+  delayBeforeStart: 0.3
 --- !u!82 &1460826546
 AudioSource:
   m_ObjectHideFlags: 0
