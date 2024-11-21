@@ -1,47 +1,97 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class VolumeControl : MonoBehaviour
 {
-    [SerializeField] private Button volumeButton;      // 音量調節ボタン
-    [SerializeField] private Slider volumeSlider;      // 音量スライダー
+    public Button volumeButton;
+    public Button titleButton;
+    public Slider volumeSlider;
+    public GameObject defaultSelectedButton;
 
-    private void Start()
+    private bool isAdjustingVolume = false;
+
+    void Start()
     {
-        // 初期設定
-        volumeSlider.value = AudioListener.volume;
+        // 最初に選択されるボタンを設定
+        EventSystem.current.SetSelectedGameObject(defaultSelectedButton);
+        EventSystem.current.SetSelectedGameObject(volumeButton.gameObject);
 
-        volumeButton.Select(); // 初期選択を音量調節ボタンに
-        volumeSlider.gameObject.SetActive(true); // スライダーを常に表示
+        // スライダーを非表示にして無効化
+        volumeSlider.gameObject.SetActive(false);
+        volumeSlider.value = AudioListener.volume;
     }
 
-    private void Update()
+    void Update()
     {
-        // EscキーでTitleシーンに遷移
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (isAdjustingVolume)
+        {
+            HandleVolumeAdjustment();
+        }
+        else
+        {
+            HandleButtonSelection();
+        }
+    }
+
+    void HandleButtonSelection()
+    {
+        // Enterキーで音量調節モードに切り替え
+        if (Input.GetKeyDown(KeyCode.Return) && EventSystem.current.currentSelectedGameObject == volumeButton.gameObject)
+        {
+            EnterVolumeAdjustmentMode();
+        }
+
+        // タイトルシーンに戻る処理
+        if (Input.GetKeyDown(KeyCode.Return) && EventSystem.current.currentSelectedGameObject == titleButton.gameObject)
         {
             SceneManager.LoadScene("Title");
         }
+    }
 
-        // AキーとDキーでスライダーの値を調整
-        if (Input.GetKey(KeyCode.D))
-        {
-            volumeSlider.value = Mathf.Clamp(volumeSlider.value + 0.005f, 0, 1);
-            AudioListener.volume = volumeSlider.value; // 音量を更新
-        }
-        else if (Input.GetKey(KeyCode.A))
-        {
-            volumeSlider.value = Mathf.Clamp(volumeSlider.value - 0.005f, 0, 1);
-            AudioListener.volume = volumeSlider.value; // 音量を更新
-        }
+    void HandleVolumeAdjustment()
+    {
+        float horizontalInput = Input.GetAxis("Horizontal");
+        volumeSlider.value += horizontalInput * Time.deltaTime;
 
-        // Enterキーでボタン選択に戻る
+        // AudioListener.volumeにスライダーの値を反映
+        AudioListener.volume = volumeSlider.value;
+
+        // Enterキーで音量調節モードを終了
         if (Input.GetKeyDown(KeyCode.Return))
         {
-            volumeButton.Select(); // 音量ボタンにカーソルを戻す
+            ExitVolumeAdjustmentMode();
         }
+    }
+
+    void EnterVolumeAdjustmentMode()
+    {
+        isAdjustingVolume = true;
+
+        // スライダーを表示して選択
+        volumeSlider.gameObject.SetActive(true);
+        EventSystem.current.SetSelectedGameObject(volumeSlider.gameObject);
+
+        // 他のボタンを無効化
+        volumeButton.interactable = false;
+        titleButton.interactable = false;
+    }
+
+    void ExitVolumeAdjustmentMode()
+    {
+        isAdjustingVolume = false;
+
+        // スライダーを非表示にしてリセット
+        volumeSlider.gameObject.SetActive(false);
+
+        // 他のボタンを再び有効化
+        volumeButton.interactable = true;
+        titleButton.interactable = true;
+
+        // 音量調節ボタンを再び選択
+        EventSystem.current.SetSelectedGameObject(volumeButton.gameObject);
     }
 }
