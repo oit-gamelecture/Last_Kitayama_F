@@ -18,10 +18,12 @@ public class ComicController : MonoBehaviour
         { 0, 0 },  // AudioClip[0] に対して ComicFrame[0] を表示
         { 2, 1 },
         { 8, 2 },
-        { 14, 3 },
-        { 16, 4 },
-        { 19, 5 }
+        { 12, 3 },
+        { 14, 4 },
+        { 17, 5 }
     };
+
+    private bool isPlaying = false;            // 再生中かどうかのフラグ
 
     void Start()
     {
@@ -49,6 +51,12 @@ public class ComicController : MonoBehaviour
         {
             Debug.Log("ESCキーが押されました。ロード画面を表示してメインシーンへ移行します。");
             StartLoadingScene();
+        }
+
+        // 音声の再生終了をチェックして次のフレームと音声を再生
+        if (!audioSource.isPlaying && isPlaying)
+        {
+            ShowNextFrameAndAudio();
         }
     }
 
@@ -87,6 +95,7 @@ public class ComicController : MonoBehaviour
         {
             audioSource.clip = audioClips[currentAudioIndex];
             audioSource.Play();
+            isPlaying = true; // 再生中フラグをオンにする
         }
     }
 
