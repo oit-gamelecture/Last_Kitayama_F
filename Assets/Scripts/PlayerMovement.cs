@@ -23,6 +23,7 @@ public class PlayerMovement : MonoBehaviour
     private bool isGuarding = false; // ガード状態を管理
     private bool flag = true;
     private bool isRotating = false;
+    private bool canGuard = false;
 
     public Image blackOverlay;
     public float delayBeforeHiding = 3.3f;
@@ -100,29 +101,35 @@ public class PlayerMovement : MonoBehaviour
 
     private void HandleGuardInput()
     {
-        if (Input.GetKeyDown(KeyCode.E)) // Eキーが押されたとき
+        if (canGuard)
         {
-            isGuarding = true;
-            canMove = false; // 移動を禁止
-        }
-        else if (Input.GetKeyUp(KeyCode.E)) // Eキーが離されたとき
-        {
-            isGuarding = false;
-            canMove = true; // 移動を許可
+            if (Input.GetKeyDown(KeyCode.E)) // Eキーが押されたとき
+            {
+                isGuarding = true;
+                canMove = false; // 移動を禁止
+            }
+            else if (Input.GetKeyUp(KeyCode.E)) // Eキーが離されたとき
+            {
+                isGuarding = false;
+                canMove = true; // 移動を許可
+            }
         }
     }
 
 
     private void UpdateAnimationState()
     {
-        // アニメーションの状態が既に正しい場合は処理しない
-        if (animator.GetBool("Guard") != isGuarding)
+        if (canGuard)
         {
-            animator.SetBool("Guard", isGuarding);
-
-            if (!isGuarding)
+            // アニメーションの状態が既に正しい場合は処理しない
+            if (animator.GetBool("Guard") != isGuarding)
             {
-                animator.SetTrigger("Walk");
+                animator.SetBool("Guard", isGuarding);
+
+                if (!isGuarding)
+                {
+                    animator.SetTrigger("Walk");
+                }
             }
         }
     }
@@ -177,6 +184,8 @@ public class PlayerMovement : MonoBehaviour
         animator.SetTrigger("Walk");
         canMove = true;
         isWalking = true;
+        canGuard = true;
+
     }
 
     private IEnumerator HideOverlayAfterDelay(float delay)
