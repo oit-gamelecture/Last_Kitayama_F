@@ -21,27 +21,25 @@ public class RotationScript : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        PlayerMovement playerMovement = other.GetComponent<PlayerMovement>();
-        if (other.CompareTag("Player") && !isRotating) // プレイヤーにタグ付けされているオブジェクトのみに反応
+        if (other.CompareTag("Player") && !isRotating)
         {
             StartCoroutine(RotatePlayer(other.transform, -90f));
-        }
+            PlayerMovement playerMovement = other.GetComponent<PlayerMovement>();
+            if (playerMovement != null)
+            {
+                playerMovement.SetMovement(true); // 移動を許可
+            }
 
-        if (playerMovement != null)
-        {
-            playerMovement.SetMovement(false);
-            Debug.Log("Player entered the zone. Movement disabled.");
-        }
-
-        // オーディオクリップの再生
-        if (audioSource != null && audioClips.Length > 0)
-        {
-            // 現在の侵入回数に応じたクリップを取得
-            int clipIndex = entryCount % audioClips.Length; // 配列の範囲を超えないようにする
-            audioSource.PlayOneShot(audioClips[clipIndex]);
-            entryCount++; // 侵入回数を増やす
+            // オーディオクリップ再生
+            if (audioSource != null && audioClips.Length > 0)
+            {
+                int clipIndex = entryCount % audioClips.Length;
+                audioSource.PlayOneShot(audioClips[clipIndex]);
+                entryCount++;
+            }
         }
     }
+
 
     private void OnTriggerExit(Collider other)
     {
@@ -60,12 +58,16 @@ public class RotationScript : MonoBehaviour
     private IEnumerator RotatePlayer(Transform playerTransform, float targetAngle)
     {
         isRotating = true;
+        PlayerMovement playerMovement = playerTransform.GetComponent<PlayerMovement>();
+        if (playerMovement != null)
+        {
+            playerMovement.SetRotating(true); // 回転開始を通知
+        }
 
         Quaternion startRotation = playerTransform.rotation;
         Quaternion endRotation = startRotation * Quaternion.Euler(0, targetAngle, 0);
 
         float elapsedTime = 0f;
-
         while (elapsedTime < rotationDuration)
         {
             playerTransform.rotation = Quaternion.Slerp(startRotation, endRotation, elapsedTime / rotationDuration);
@@ -73,7 +75,13 @@ public class RotationScript : MonoBehaviour
             yield return null;
         }
 
-        playerTransform.rotation = endRotation; // 最終的な回転角にセット
+        playerTransform.rotation = endRotation;
         isRotating = false;
+
+        if (playerMovement != null)
+        {
+            playerMovement.SetRotating(false); // 回転終了を通知
+        }
     }
+
 }

@@ -1,7 +1,5 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 public class PlayerMovement : MonoBehaviour
@@ -22,29 +20,21 @@ public class PlayerMovement : MonoBehaviour
     private bool canMove = false;
     private bool isFalling = false;
     private bool isWalking = false;
+    private bool isGuarding = false; // ガード状態を管理
     private bool flag = true;
+    private bool isRotating = false;
 
     public Image blackOverlay;
     public float delayBeforeHiding = 3.3f;
 
-    //[Header("ダメージエフェクト")]
-    //public SkinnedMeshRenderer playerRenderer; // SkinnedMeshRendererに変更
-    //public Color blinkColor = Color.red; // 点滅時の色
-    //public float blinkDuration = 0.2f; // 点滅間隔
-    //public int blinkCount = 2; // 点滅回数
-
-
     [Header("画面揺れ")]
-    public Transform cameraTransform; // カメラのTransform
-    public float shakeDuration = 1f; // 揺れの時間
-    public float shakeMagnitude = 0.1f; // 揺れの強さ
+    public Transform cameraTransform;
+    public float shakeDuration = 1f;
+    public float shakeMagnitude = 0.1f;
 
     [Header("パーティクル設定")]
-    public ParticleSystem impactParticlePrefab; // パーティクルのプレハブ
-    public float particleDuration = 2f;        // パーティクルを自動で消すまでの時間
-
-    private Material[] originalMaterials; // プレイヤーの元のマテリアル
-
+    public ParticleSystem impactParticlePrefab;
+    public float particleDuration = 2f;
 
     private void Start()
     {
@@ -59,14 +49,24 @@ public class PlayerMovement : MonoBehaviour
         blackOverlay.gameObject.SetActive(true);
         StartCoroutine(IdleCoroutine());
         StartCoroutine(HideOverlayAfterDelay(delayBeforeHiding));
-
-        Debug.Log(moveSpeed);
-
-        //if (playerRenderer != null)
-        //{
-        //  originalMaterials = playerRenderer.materials; // 元のマテリアルを保存
-        //}
     }
+
+    private void Update()
+    {
+        HandleGuardInput();
+        UpdateAnimationState();
+    }
+
+    public void SetMovement(bool enabled)
+    {
+        canMove = enabled;
+    }
+
+    public void SetRotating(bool rotating)
+    {
+        isRotating = rotating;
+    }
+
 
     private void FixedUpdate()
     {
@@ -74,175 +74,105 @@ public class PlayerMovement : MonoBehaviour
 
         if (canMove)
         {
-            // 前方移動
-            Vector3 forwardDirection = transform.forward * moveSpeed * Time.fixedDeltaTime;
+            float currentSpeed = isRotating ? moveSpeed * 0.5f : moveSpeed; // 回転中は速度を半分に
+            Vector3 forwardDirection = transform.forward * currentSpeed * Time.fixedDeltaTime;
             rb.MovePosition(rb.position + forwardDirection);
 
             if (!flag) return;
 
-            // 左右移動
             if (isWalking)
             {
+                float currentLeftRightSpeed = isRotating ? leftRightSpeed * 0.5f : leftRightSpeed;
                 if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
                 {
-                    Vector3 leftDirection = -transform.right * leftRightSpeed * Time.fixedDeltaTime;
+                    Vector3 leftDirection = -transform.right * currentLeftRightSpeed * Time.fixedDeltaTime;
                     rb.MovePosition(rb.position + leftDirection);
                 }
 
                 if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
                 {
-                    Vector3 rightDirection = transform.right * leftRightSpeed * Time.fixedDeltaTime;
+                    Vector3 rightDirection = transform.right * currentLeftRightSpeed * Time.fixedDeltaTime;
                     rb.MovePosition(rb.position + rightDirection);
                 }
-
-                movementInputValue = Input.GetAxis("Horizontal");
-                Vector3 movement = transform.right * movementInputValue * leftRightSpeed * Time.fixedDeltaTime;
-                rb.MovePosition(rb.position + movement);
             }
         }
     }
 
-    public void SetMovement(bool enabled)
+    private void HandleGuardInput()
     {
-        flag = enabled;
+        if (Input.GetKeyDown(KeyCode.E)) // Eキーが押されたとき
+        {
+            isGuarding = true;
+            canMove = false; // 移動を禁止
+        }
+        else if (Input.GetKeyUp(KeyCode.E)) // Eキーが離されたとき
+        {
+            isGuarding = false;
+            canMove = true; // 移動を許可
+        }
     }
+
+
+    private void UpdateAnimationState()
+    {
+        // アニメーションの状態が既に正しい場合は処理しない
+        if (animator.GetBool("Guard") != isGuarding)
+        {
+            animator.SetBool("Guard", isGuarding);
+
+            if (!isGuarding)
+            {
+                animator.SetTrigger("Walk");
+            }
+        }
+    }
+
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.collider.CompareTag("enemy") && !isFalling)
-        {
-            if (Random.Range(0f, 1f) < 0.2f)
-            {
-                audioSource.PlayOneShot(bone);
-            }
-            else
-            {
-                audioSource.PlayOneShot(slip);
-            }
-            StartCoroutine(HandleFalling());
-        }
-
-        if (collision.gameObject.CompareTag("enemy"))
-        {
-            // 赤く点滅と画面揺れをトリガー
-            // StartCoroutine(BlinkEffect());
-            StartCoroutine(CameraShake());
-        }
-
         if (collision.collider.CompareTag("enemy"))
         {
-            // 衝突位置と方向を取得
-            ContactPoint contact = collision.contacts[0];
-            Vector3 spawnPosition = transform.position; // 衝突位置
-            Quaternion spawnRotation = Quaternion.identity; ; // 衝突方向
+            if (isGuarding) return; // ガード中は処理をスキップ
 
-            // パーティクルを生成
-            if (impactParticlePrefab != null)
+            if (!isFalling)
             {
-                spawnPosition += new Vector3(0, 1.0f, 0); // 必要に応じてオフセット (例: Y方向に1.0f上)
-
-                // パーティクルを生成
-                if (impactParticlePrefab != null)
+                if (Random.Range(0f, 1f) < 0.2f)
                 {
-                    ParticleSystem particleInstance = Instantiate(impactParticlePrefab, spawnPosition, spawnRotation);
-
-                    float newScale = 8.0f; // 好きなスケールに設定
-                    particleInstance.transform.localScale = new Vector3(newScale, newScale, newScale);
-
-                    // 一定時間後に削除
-                    Destroy(particleInstance.gameObject, particleDuration);
+                    audioSource.PlayOneShot(bone);
                 }
+                else
+                {
+                    audioSource.PlayOneShot(slip);
+                }
+                StartCoroutine(HandleFalling());
             }
 
-            // 他のエフェクトや動作もここで実行可能
+            StartCoroutine(CameraShake());
+
+            ContactPoint contact = collision.contacts[0];
+            Vector3 spawnPosition = transform.position;
+            Quaternion spawnRotation = Quaternion.identity;
+
+            if (impactParticlePrefab != null)
+            {
+                spawnPosition += new Vector3(0, 1.0f, 0);
+                ParticleSystem particleInstance = Instantiate(impactParticlePrefab, spawnPosition, spawnRotation);
+
+                float newScale = 8.0f;
+                particleInstance.transform.localScale = new Vector3(newScale, newScale, newScale);
+
+                Destroy(particleInstance.gameObject, particleDuration);
+            }
+
             Debug.Log("Enemyに衝突しました！");
         }
     }
 
-    //private IEnumerator BlinkEffect()
-    //{
-    // インスタンス化されたマテリアルを取得
-    //  Material[] materials = playerRenderer.materials;
-
-    // 各マテリアルの元の色を保存
-    //Color[] originalColors = new Color[materials.Length];
-    //for (int i = 0; i < materials.Length; i++)
-    //{
-    //  originalColors[i] = materials[i].color;
-    //}
-
-    // bool resetPending = true; // リセットフラグを設定
-
-    // 点滅ループ
-    //for (int i = 0; i < blinkCount; i++)
-    // {
-    // すべてのマテリアルを赤にする
-    //  foreach (Material mat in materials)
-    //{
-    //  mat.color = blinkColor;
-    //}
-    // yield return new WaitForSeconds(blinkDuration);
-
-    /// すべてのマテリアルを元の色に戻す
-    // for (int j = 0; j < materials.Length; j++)
-    //{
-    //  materials[j].color = originalColors[j];
-    //}
-    //yield return new WaitForSeconds(blinkDuration);
-    //}
-
-    // 1秒後に元の色に戻す処理を保証
-    ///**/StartCoroutine(EnsureOriginalColor(materials, originalColors, 1f));
-    //}
-
-    /* private IEnumerator EnsureOriginalColor(Material[] materials, Color[] originalColors, float delay)
-     {
-         // 指定時間待機
-         yield return new WaitForSeconds(delay);
-
-         // プレイヤーのマテリアルを確認し、赤のままなら元の色に戻す
-         foreach (Material mat in materials)
-         {
-             if (mat.color == blinkColor) // 赤のままの場合
-             {
-                 for (int i = 0; i < materials.Length; i++)
-                 {
-                     materials[i].color = originalColors[i]; // 元の色に戻す
-                 }
-                 break;
-             }
-         }
-     }*/
-
-
-
-    private IEnumerator CameraShake()
-    {
-        float elapsed = 0f;
-
-        Vector3 initialPosition = cameraTransform.localPosition; // ローカル座標を基準にする
-
-        while (elapsed < shakeDuration)
-        {
-            Vector3 randomOffset = Random.insideUnitSphere * shakeMagnitude;
-
-            // カメラ位置を更新
-            cameraTransform.localPosition = initialPosition + randomOffset;
-
-            elapsed += Time.deltaTime;
-            yield return null;
-        }
-
-        cameraTransform.localPosition = initialPosition;
-    }
-
     private IEnumerator IdleCoroutine()
     {
-        // Idleアニメーションの開始
         animator.SetBool("Idle", true);
         yield return new WaitForSeconds(3.3f);
 
-        // Idleアニメーションを停止し、Walkアニメーションを開始
         animator.SetBool("Idle", false);
         animator.SetTrigger("Walk");
         canMove = true;
@@ -284,5 +214,22 @@ public class PlayerMovement : MonoBehaviour
         canMove = true;
         isWalking = true;
         isFalling = false;
+    }
+
+    private IEnumerator CameraShake()
+    {
+        float elapsed = 0f;
+        Vector3 initialPosition = cameraTransform.localPosition;
+
+        while (elapsed < shakeDuration)
+        {
+            Vector3 randomOffset = Random.insideUnitSphere * shakeMagnitude;
+            cameraTransform.localPosition = initialPosition + randomOffset;
+
+            elapsed += Time.deltaTime;
+            yield return null;
+        }
+
+        cameraTransform.localPosition = initialPosition;
     }
 }
