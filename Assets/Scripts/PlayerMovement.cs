@@ -41,6 +41,7 @@ public class PlayerMovement : MonoBehaviour
 
     private bool canUseQ = false; // Qキーが使用可能かどうか
     private bool isUsingQ = false; // Qキー処理中かどうか
+    private Coroutine currentQActionCoroutine;
 
     [Header("Raycast 設定")]
     public float raycastDistance = 5.0f; // Rayの距離
@@ -70,7 +71,12 @@ public class PlayerMovement : MonoBehaviour
 
         if (canUseQ && Input.GetKeyDown(KeyCode.Q))
         {
-            StartCoroutine(HandleQAction());
+            if (currentQActionCoroutine != null)
+            {
+                StopCoroutine(currentQActionCoroutine); // 既にコルーチンが動いていれば停止
+            }
+
+            currentQActionCoroutine = StartCoroutine(HandleQAction()); // 新しくコルーチンを開始
         }
     }
 
@@ -175,8 +181,24 @@ public class PlayerMovement : MonoBehaviour
     {
         if (collision.collider.CompareTag("enemy"))
         {
-            if (isGuarding) return; // ガード中は処理をスキップ
+            if (isGuarding) return; // Skip if guarding
 
+            // Qキー処理中の場合、強制的にコルーチンを停止してノックバック処理に移行
+            if (isUsingQ)
+            {
+                // Qキー処理中ならそのコルーチンを停止
+                if (currentQActionCoroutine != null)
+                {
+                    StopCoroutine(currentQActionCoroutine);
+                    currentQActionCoroutine = null; // コルーチン参照をリセット
+                }
+
+                // ノックバック処理に移行
+                StartCoroutine(HandleFalling());
+                return; // それ以上の処理をスキップ
+            }
+
+            // 通常の衝突処理
             if (!isFalling)
             {
                 if (Random.Range(0f, 1f) < 0.2f)
@@ -211,6 +233,7 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
+
     private IEnumerator IdleCoroutine()
     {
         animator.SetBool("Idle", true);
@@ -239,11 +262,11 @@ public class PlayerMovement : MonoBehaviour
         float elapsedTime = 0f;
         while (elapsedTime < 0.5f) // 1秒間左移動
         {
-            Vector3 leftDirection = -transform.right * avoidSpeed *  Time.fixedDeltaTime;
+            Vector3 leftDirection = -transform.right * avoidSpeed * Time.fixedDeltaTime;
             rb.MovePosition(rb.position + leftDirection);
 
             // 前方移動を維持
-            Vector3 forwardDirection = transform.forward * avoidMoveSpeed *  Time.fixedDeltaTime;
+            Vector3 forwardDirection = transform.forward * avoidMoveSpeed * Time.fixedDeltaTime;
             rb.MovePosition(rb.position + forwardDirection);
 
             elapsedTime += Time.fixedDeltaTime;
@@ -269,7 +292,11 @@ public class PlayerMovement : MonoBehaviour
         isUsingQ = false;
         canMove = originalCanMove; // 元のcanMove状態を復元
         isWalking = true; // 左右移動を再び有効化
+
+        // コルーチンが終了した時にnullにリセット
+        currentQActionCoroutine = null;
     }
+
 
 
     private IEnumerator HideOverlayAfterDelay(float delay)
@@ -302,6 +329,9 @@ public class PlayerMovement : MonoBehaviour
             elapsedTime += Time.deltaTime;
             yield return null;
         }
+
+        // Reset Q action availability after falling
+        isUsingQ = false;
 
         animator.SetTrigger("Walk");
         canMove = true;
