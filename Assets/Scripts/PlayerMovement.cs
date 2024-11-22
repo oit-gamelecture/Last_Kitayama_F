@@ -6,7 +6,9 @@ public class PlayerMovement : MonoBehaviour
 {
     [Header("プレイヤー設定")]
     public float moveSpeed = 3.0f;
+    public float avoidMoveSpeed = 1.0f;
     public float leftRightSpeed = 4.0f;
+    public float avoidSpeed = 8.0f;
     public float knockBackSpeed = 2.0f;
     public float gravity = -3f;
     private Rigidbody rb;
@@ -37,6 +39,14 @@ public class PlayerMovement : MonoBehaviour
     public ParticleSystem impactParticlePrefab;
     public float particleDuration = 2f;
 
+    private bool canUseQ = false; // Qキーが使用可能かどうか
+    private bool isUsingQ = false; // Qキー処理中かどうか
+
+    [Header("Raycast 設定")]
+    public float raycastDistance = 5.0f; // Rayの距離
+    public Transform raycastOriginLeft; // 左のRay発射位置
+    public Transform raycastOriginRight; // 右のRay発射位置
+
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
@@ -56,6 +66,32 @@ public class PlayerMovement : MonoBehaviour
     {
         HandleGuardInput();
         UpdateAnimationState();
+        CheckForEnemiesWithRaycast();
+
+        if (canUseQ && Input.GetKeyDown(KeyCode.Q))
+        {
+            StartCoroutine(HandleQAction());
+        }
+    }
+
+    private void CheckForEnemiesWithRaycast()
+    {
+        // 左のRaycast
+        RaycastHit hitLeft;
+        bool hitLeftEnemy = Physics.Raycast(raycastOriginLeft.position, transform.forward, out hitLeft, raycastDistance) &&
+                            hitLeft.collider.CompareTag("enemy");
+
+        // 右のRaycast
+        RaycastHit hitRight;
+        bool hitRightEnemy = Physics.Raycast(raycastOriginRight.position, transform.forward, out hitRight, raycastDistance) &&
+                             hitRight.collider.CompareTag("enemy");
+
+        // どちらかに敵がいればQキーを有効化
+        canUseQ = hitLeftEnemy || hitRightEnemy;
+
+        Debug.DrawRay(raycastOriginLeft.position, transform.forward * raycastDistance, Color.red);
+        Debug.DrawRay(raycastOriginRight.position, transform.forward * raycastDistance, Color.red);
+
     }
 
     public void SetMovement(bool enabled)
@@ -103,12 +139,12 @@ public class PlayerMovement : MonoBehaviour
     {
         if (canGuard)
         {
-            if (Input.GetKeyDown(KeyCode.E)) // Eキーが押されたとき
+            if (Input.GetKeyDown(KeyCode.F)) // Fキーが押されたとき
             {
                 isGuarding = true;
                 canMove = false; // 移動を禁止
             }
-            else if (Input.GetKeyUp(KeyCode.E)) // Eキーが離されたとき
+            else if (Input.GetKeyUp(KeyCode.F)) // Fキーが離されたとき
             {
                 isGuarding = false;
                 canMove = true; // 移動を許可
@@ -187,6 +223,54 @@ public class PlayerMovement : MonoBehaviour
         canGuard = true;
 
     }
+
+    private IEnumerator HandleQAction()
+    {
+        if (isUsingQ) yield break; // 処理中の場合はスキップ
+
+        isUsingQ = true;
+        bool originalCanMove = canMove; // 元のcanMove状態を保存
+        canMove = true; // 前方移動は維持
+
+        isWalking = false; // 左右移動無効化
+        isGuarding = false; // ガード無効化
+
+        // 左に移動
+        float elapsedTime = 0f;
+        while (elapsedTime < 0.5f) // 1秒間左移動
+        {
+            Vector3 leftDirection = -transform.right * avoidSpeed *  Time.fixedDeltaTime;
+            rb.MovePosition(rb.position + leftDirection);
+
+            // 前方移動を維持
+            Vector3 forwardDirection = transform.forward * avoidMoveSpeed *  Time.fixedDeltaTime;
+            rb.MovePosition(rb.position + forwardDirection);
+
+            elapsedTime += Time.fixedDeltaTime;
+            yield return new WaitForFixedUpdate();
+        }
+
+        // 右に戻る
+        elapsedTime = 0f;
+        while (elapsedTime < 0.5f) // 1秒間右移動
+        {
+            Vector3 rightDirection = transform.right * avoidSpeed * Time.fixedDeltaTime;
+            rb.MovePosition(rb.position + rightDirection);
+
+            // 前方移動を維持
+            Vector3 forwardDirection = transform.forward * avoidMoveSpeed * Time.fixedDeltaTime;
+            rb.MovePosition(rb.position + forwardDirection);
+
+            elapsedTime += Time.fixedDeltaTime;
+            yield return new WaitForFixedUpdate();
+        }
+
+        // 状態を元に戻す
+        isUsingQ = false;
+        canMove = originalCanMove; // 元のcanMove状態を復元
+        isWalking = true; // 左右移動を再び有効化
+    }
+
 
     private IEnumerator HideOverlayAfterDelay(float delay)
     {
