@@ -12,12 +12,19 @@ public class ClearTime : MonoBehaviour
     public float animationDuration = 2.0f;  // アニメーションの再生時間
     public float delayBeforeStart = 5.0f;  // 表示を遅らせる時間（秒）
     public float delayBeforeStart1 = 5.0f;
+    public float delayBeforeStart3 = 5.0f;
     public AudioClip tickSound;              // 効果音クリップ
-    private AudioSource audioSource;         // 効果音用のAudioSource
+    public AudioClip valueSound;
+    public AudioClip valueSound1;
+    private AudioSource audioSource;// 効果音用のAudioSource
+    private AudioSource audioSource1;
+    private AudioSource audioSource2;
 
     void Start()
     {
         audioSource = GetComponent<AudioSource>();
+        audioSource1 = GetComponent<AudioSource>();
+        audioSource2 = GetComponent<AudioSource>();
         if (audioSource == null)
         {
             Debug.LogError("AudioSource is not attached to this GameObject!");
@@ -60,19 +67,31 @@ public class ClearTime : MonoBehaviour
 
         if (finalTime < 75.00f)
         {
-            valueText1.text = "S";
+            valueText1.gameObject.SetActive(true);
+            audioSource2.PlayOneShot(valueSound1);
+            yield return new WaitForSeconds(delayBeforeStart3);
+            audioSource1.PlayOneShot(valueSound);
         }
         else if(finalTime < 80.00f)
         {
-            valueText2.text = "A";
+            valueText2.gameObject.SetActive(true);
+            audioSource2.PlayOneShot(valueSound1);
+            yield return new WaitForSeconds(delayBeforeStart3);
+            audioSource1.PlayOneShot(valueSound);
         }
         else if(finalTime < 85.00f)
         {
-            valueText3.text = "B";
+            valueText3.gameObject.SetActive(true);
+            audioSource2.PlayOneShot(valueSound1);
+            yield return new WaitForSeconds(delayBeforeStart3);
+            audioSource1.PlayOneShot(valueSound);
         }
         else 
         {
-            valueText4.text = "C";
+            valueText4.gameObject.SetActive(true);
+            audioSource2.PlayOneShot(valueSound1);
+            yield return new WaitForSeconds(delayBeforeStart3);
+            audioSource1.PlayOneShot(valueSound);
         }
 
     }
