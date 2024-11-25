@@ -10,6 +10,11 @@ public class TimeCounter : MonoBehaviour
     public float countdown = 90.00f;
     public float countdownTime = 3f;
     public AudioClip countSound;
+    // 時間警告のための変数
+    private bool isWarning = false; // 警告状態フラグ
+    private float scaleSpeed = 2.0f; // 拡大縮小速度
+    private Vector3 originalScale; // 元のスケールを保存
+
     AudioSource audioSource;
 
     //時間を表示するText型の変数
@@ -24,6 +29,11 @@ public class TimeCounter : MonoBehaviour
         audioSource = GetComponent<AudioSource>();
         StartCoroutine(StartCountdown());
         timeText.enabled = false;
+
+        audioSource = GetComponent<AudioSource>();
+        StartCoroutine(StartCountdown());
+        timeText.enabled = false;
+        originalScale = timeText.transform.localScale; // 初期スケールを保存
 
     }
 
@@ -46,10 +56,20 @@ public class TimeCounter : MonoBehaviour
 
             //時間を表示する
             timeText.text = countdown.ToString("f2");
+
+            // 警告状態のチェック
+            if (countdown <= 20f && !isWarning)
+            {
+                isWarning = true;
+                StartCoroutine(WarningEffect());
+            }
         }
+
         //countdownが0以下になったとき
         if (countdown <= 0)
         {
+            countdown = 0;
+            countStart = false;
             SceneManager.LoadScene("over scene");
         }
     }
@@ -64,4 +84,24 @@ public class TimeCounter : MonoBehaviour
     {
         countStart = false;
     }
+
+    IEnumerator WarningEffect()
+    {
+        while (countdown > 0) // 残り時間が0になるまでループ
+        {
+            // 拡大
+            for (float t = 0; t < 1; t += Time.deltaTime * scaleSpeed)
+            {
+                timeText.transform.localScale = Vector3.Lerp(originalScale, originalScale * 1.5f, t);
+                yield return null;
+            }
+            // 縮小
+            for (float t = 0; t < 1; t += Time.deltaTime * scaleSpeed)
+            {
+                timeText.transform.localScale = Vector3.Lerp(originalScale * 1.5f, originalScale, t);
+                yield return null;
+            }
+        }
+    }
+
 }
