@@ -42,6 +42,9 @@ public class PlayerMovement : MonoBehaviour
     private bool canUseQ = false; // Qキーが使用可能かどうか
     private bool isUsingQ = false; // Qキー処理中かどうか
     private Coroutine currentQActionCoroutine;
+    private bool canUseE = false;
+    private bool isUsingE = false;
+    private Coroutine currentEActionCoroutine;
 
     [Header("Raycast 設定")]
     public float raycastDistance = 5.0f; // Rayの距離
@@ -78,6 +81,16 @@ public class PlayerMovement : MonoBehaviour
 
             currentQActionCoroutine = StartCoroutine(HandleQAction()); // 新しくコルーチンを開始
         }
+
+        if (canUseE && Input.GetKeyDown(KeyCode.E))
+        {
+            if (currentEActionCoroutine != null)
+            {
+                StopCoroutine(currentEActionCoroutine); // 既にコルーチンが動いていれば停止
+            }
+
+            currentEActionCoroutine = StartCoroutine(HandleEAction()); // 新しくコルーチンを開始
+        }
     }
 
     private void CheckForEnemiesWithRaycast()
@@ -94,6 +107,7 @@ public class PlayerMovement : MonoBehaviour
 
         // どちらかに敵がいればQキーを有効化
         canUseQ = hitLeftEnemy || hitRightEnemy;
+        canUseE = hitLeftEnemy || hitRightEnemy;
 
         Debug.DrawRay(raycastOriginLeft.position, transform.forward * raycastDistance, Color.red);
         Debug.DrawRay(raycastOriginRight.position, transform.forward * raycastDistance, Color.red);
@@ -191,6 +205,20 @@ public class PlayerMovement : MonoBehaviour
                 {
                     StopCoroutine(currentQActionCoroutine);
                     currentQActionCoroutine = null; // コルーチン参照をリセット
+                }
+
+                // ノックバック処理に移行
+                StartCoroutine(HandleFalling());
+                return; // それ以上の処理をスキップ
+            }
+
+            if (isUsingE)
+            {
+                // Qキー処理中ならそのコルーチンを停止
+                if (currentEActionCoroutine != null)
+                {
+                    StopCoroutine(currentEActionCoroutine);
+                    currentEActionCoroutine = null; // コルーチン参照をリセット
                 }
 
                 // ノックバック処理に移行
@@ -297,6 +325,56 @@ public class PlayerMovement : MonoBehaviour
         currentQActionCoroutine = null;
     }
 
+    private IEnumerator HandleEAction()
+    {
+        if (isUsingE) yield break; // 処理中の場合はスキップ
+
+        isUsingE = true;
+        bool originalCanMove = canMove; // 元のcanMove状態を保存
+        canMove = true; // 前方移動は維持
+
+        isWalking = false; // 左右移動無効化
+        isGuarding = false; // ガード無効化
+
+        // 左に移動
+        float elapsedTime = 0f;
+        while (elapsedTime < 0.5f) // 1秒間左移動
+        {
+            Vector3 rightDirection = transform.right * avoidSpeed * Time.fixedDeltaTime;
+            rb.MovePosition(rb.position + rightDirection);
+
+            // 前方移動を維持
+            Vector3 forwardDirection = transform.forward * avoidMoveSpeed * Time.fixedDeltaTime;
+            rb.MovePosition(rb.position + forwardDirection);
+
+            elapsedTime += Time.fixedDeltaTime;
+            yield return new WaitForFixedUpdate();
+        }
+
+        // 右に戻る
+        elapsedTime = 0f;
+        while (elapsedTime < 0.5f) // 1秒間右移動
+        {
+            Vector3 rightDirection = -transform.right * avoidSpeed * Time.fixedDeltaTime;
+            rb.MovePosition(rb.position + rightDirection);
+
+            // 前方移動を維持
+            Vector3 forwardDirection = transform.forward * avoidMoveSpeed * Time.fixedDeltaTime;
+            rb.MovePosition(rb.position + forwardDirection);
+
+            elapsedTime += Time.fixedDeltaTime;
+            yield return new WaitForFixedUpdate();
+        }
+
+        // 状態を元に戻す
+        isUsingE = false;
+        canMove = originalCanMove; // 元のcanMove状態を復元
+        isWalking = true; // 左右移動を再び有効化
+
+        // コルーチンが終了した時にnullにリセット
+        currentEActionCoroutine = null;
+    }
+
 
 
     private IEnumerator HideOverlayAfterDelay(float delay)
@@ -332,6 +410,7 @@ public class PlayerMovement : MonoBehaviour
 
         // Reset Q action availability after falling
         isUsingQ = false;
+        isUsingE = false;
 
         animator.SetTrigger("Walk");
         canMove = true;
