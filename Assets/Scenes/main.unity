@@ -38539,7 +38539,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1734809372}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -38578,7 +38578,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a9f1a918267b6244e9198cf81ac60523, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  countdown: 5
+  countdown: 90
   countdownTime: 3
   countSound: {fileID: 8300000, guid: fba1518fb4a516d47821cc24ce4a32f1, type: 3}
   timeText: {fileID: 1734809376}
