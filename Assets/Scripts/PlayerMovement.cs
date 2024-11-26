@@ -157,7 +157,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void HandleGuardInput()
     {
-        if (canGuard)
+        if (canGuard && !isFalling) // こけている間はガードを無効化
         {
             if (Input.GetKeyDown(KeyCode.F)) // Fキーが押されたとき
             {
