@@ -72,6 +72,10 @@ public class PlayerMovement : MonoBehaviour
         UpdateAnimationState();
         CheckForEnemiesWithRaycast();
 
+        movementInputValue = Input.GetAxis("Horizontal");
+        Vector3 movement = transform.right * movementInputValue * moveSpeed * Time.deltaTime;
+        rb.MovePosition(rb.position + movement);
+
         if (canUseQ && Input.GetKeyDown(KeyCode.Q))
         {
             if (currentQActionCoroutine != null)
@@ -159,12 +163,12 @@ public class PlayerMovement : MonoBehaviour
     {
         if (canGuard && !isFalling) // こけている間はガードを無効化
         {
-            if (Input.GetKeyDown(KeyCode.F)) // Fキーが押されたとき
+            if (Input.GetKeyDown(KeyCode.F) || Input.GetKeyDown("joystick button 0")) // Fキーが押されたとき
             {
                 isGuarding = true;
                 canMove = false; // 移動を禁止
             }
-            else if (Input.GetKeyUp(KeyCode.F)) // Fキーが離されたとき
+            else if (Input.GetKeyUp(KeyCode.F) || Input.GetKeyUp("joystick button 0")) // Fキーが離されたとき
             {
                 isGuarding = false;
                 canMove = true; // 移動を許可

@@ -22,12 +22,12 @@ public class ChangeIconColor : MonoBehaviour
         if (targetIcon != null)
         {
             // Fキーが押された時に赤くする
-            if (Input.GetKey(KeyCode.F))
+            if (Input.GetKey(KeyCode.F) || Input.GetKeyDown("joystick button 0"))
             {
                 targetIcon.color = Color.red;
             }
             // Fキーを離した時に元の色に戻す
-            else
+            else if(Input.GetKeyUp(KeyCode.F) || Input.GetKeyUp("joystick button 0"))
             {
                 targetIcon.color = originalColor;
             }
