@@ -3,67 +3,74 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class TextMove : MonoBehaviour
+public class FadeInTextWithActivation : MonoBehaviour
 {
-    public RectTransform textTransform;
-    public float speed = 100f;
-    public float stopPositionY = 0f;
-    public GameObject[] objectsToActivate;
+    public Text uiText; // 対象のUIテキスト
+    public float fadeDuration = 2f; // フェードインにかかる時間
+    public GameObject[] objectsToActivate; // 有効化するオブジェクト群
+    public float activationDelay = 0.5f; // テキスト表示後の遅延時間
 
-    private bool isMoving = true;
+    private float fadeTimer = 0f; // フェード用タイマー
+    private Color initialColor; // テキストの元の色
+    private Vector3 initialScale; // 初期スケール
+    public float maxScale = 1.2f; // 最大スケール
 
-    private Vector3 startPosition;
+    private bool fadeComplete = false; // フェード完了フラグ
 
-    // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
-        startPosition = textTransform.localPosition;
+        if (uiText == null)
+        {
+            uiText = GetComponent<Text>();
+        }
+
+        // 初期状態の設定
+        initialColor = uiText.color;
+        uiText.color = new Color(initialColor.r, initialColor.g, initialColor.b, 0); // アルファ値を0に
+        initialScale = uiText.transform.localScale;
+        uiText.transform.localScale = Vector3.zero; // 初期スケールを0に
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        if(isMoving)
+        if (!fadeComplete)
         {
-            textTransform.localPosition -= new Vector3(0, speed * Time.deltaTime, 0);
-
-            if (textTransform.localPosition.y <= stopPositionY)
-            {
-                textTransform.localPosition = new Vector3(textTransform.localPosition.x, stopPositionY, textTransform.localPosition.z);
-                isMoving = false;
-
-                ActivateObjects();
-            }
+            FadeInAndScale();
         }
     }
 
-    private void ActivateObjects()
+    private void FadeInAndScale()
     {
+        if (fadeTimer < fadeDuration)
+        {
+            fadeTimer += Time.deltaTime;
+
+            // アルファ値を線形補間
+            float alpha = Mathf.Clamp01(fadeTimer / fadeDuration);
+            uiText.color = new Color(initialColor.r, initialColor.g, initialColor.b, alpha);
+
+            // スケールの変更
+            float scale = Mathf.Lerp(0, maxScale, fadeTimer / fadeDuration);
+            uiText.transform.localScale = initialScale * scale;
+        }
+        else if (!fadeComplete)
+        {
+            // フェードが完了したらフラグをセットし、遅延付きでオブジェクトを有効化
+            fadeComplete = true;
+            StartCoroutine(ActivateObjectsWithDelay());
+        }
+    }
+
+    private IEnumerator ActivateObjectsWithDelay()
+    {
+        yield return new WaitForSeconds(activationDelay);
+
         foreach (GameObject obj in objectsToActivate)
         {
             if (obj != null)
             {
-                obj.SetActive(true);
+                obj.SetActive(true); // オブジェクトを有効化
             }
         }
     }
-
-    private void ActivateObjectsWithDelay(float delay)
-    {
-        StartCoroutine(ActivateAfterDelay(delay));
-    }
-
-    private IEnumerator ActivateAfterDelay(float delay)
-    {
-        yield return new WaitForSeconds(delay);
-
-        foreach (GameObject obj in objectsToActivate)
-        {
-            if (obj != null)
-            {
-                obj.SetActive(true);
-            }
-        }
-    }
-
 }
