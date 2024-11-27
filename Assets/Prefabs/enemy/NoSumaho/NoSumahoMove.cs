@@ -11,7 +11,7 @@ public class NoSumahoMove : MonoBehaviour
     private float retreatDuration = 0.5f;
     private bool isFalling = false;
     private bool isAvoiding = false;
-    private bool hasAvoided = true; // 回避行動を一回だけ行うためのフラグ
+    private bool hasAvoided = false; // 回避行動を一回だけ行うためのフラグ
 
     private NavMeshAgent navMeshAgent;
     private BoxCollider boxCol;
@@ -87,40 +87,57 @@ public class NoSumahoMove : MonoBehaviour
 
     void AvoidPlayer()
     {
-        if (player == null || isAvoiding || hasAvoided) return; // 既に回避した場合は終了
+        if (player == null || isAvoiding || hasAvoided) return; // 既に回避済みの場合は終了
 
         float distanceToPlayer = Vector3.Distance(transform.position, player.transform.position);
-        float fieldOfViewAngle = 45f;
-        Vector3 directionToEnemy = (transform.position - player.transform.position).normalized;
-        float angleToEnemy = Vector3.Angle(player.transform.forward, directionToEnemy);
+        if (distanceToPlayer >= avoidDistance) return; // 避ける必要がない場合終了
 
-        if (distanceToPlayer < avoidDistance && angleToEnemy < fieldOfViewAngle)
+        // プレイヤーの進行方向を取得
+        Vector3 playerForward = player.transform.forward.normalized;
+
+        // プレイヤーの左右方向を計算
+        Vector3 rightDirection = Vector3.Cross(Vector3.up, playerForward).normalized;
+        Vector3 leftDirection = -rightDirection;
+
+        // 右側と左側のNavMesh上の距離を計測
+        Vector3 rightPosition = transform.position + rightDirection * 2.0f;
+        Vector3 leftPosition = transform.position + leftDirection * 2.0f;
+
+        float rightDistance = (NavMesh.SamplePosition(rightPosition, out NavMeshHit rightHit, 2.0f, NavMesh.AllAreas))
+                              ? Vector3.Distance(player.transform.position, rightHit.position)
+                              : 0;
+
+        float leftDistance = (NavMesh.SamplePosition(leftPosition, out NavMeshHit leftHit, 2.0f, NavMesh.AllAreas))
+                             ? Vector3.Distance(player.transform.position, leftHit.position)
+                             : 0;
+
+        // プレイヤーから遠い方向を選択
+        Vector3 chosenPosition;
+        if (rightDistance > leftDistance && rightDistance > 0)
         {
-            isAvoiding = true;
-            hasAvoided = true; // 回避済みに設定
-
-            Vector3 originalTarget = navMeshAgent.destination;
-
-            Vector3 rightDirection = Vector3.Cross(Vector3.up, directionToEnemy).normalized;
-            Vector3 leftDirection = Vector3.Cross(directionToEnemy, Vector3.up).normalized;
-
-            Vector3 chosenDirection = (Vector3.Distance(player.transform.position, transform.position + rightDirection) >
-                                       Vector3.Distance(player.transform.position, transform.position + leftDirection))
-                                       ? rightDirection : leftDirection;
-
-            Vector3 sideStepPosition = transform.position + chosenDirection;
-
-            if (NavMesh.SamplePosition(sideStepPosition, out NavMeshHit hit, 1.0f, NavMesh.AllAreas))
-            {
-                navMeshAgent.SetDestination(hit.position);
-                StartCoroutine(ReturnToOriginalTarget(originalTarget));
-            }
-            else
-            {
-                isAvoiding = false;
-            }
+            chosenPosition = rightHit.position;
         }
+        else if (leftDistance > 0)
+        {
+            chosenPosition = leftHit.position;
+        }
+        else
+        {
+            // 両方向が無効の場合は回避しない
+            return;
+        }
+
+        // 回避フラグを設定して回避
+        isAvoiding = true;
+        hasAvoided = true;
+
+        navMeshAgent.SetDestination(chosenPosition);
+
+        // 元の目標に戻る処理を開始
+        StartCoroutine(ReturnToOriginalTarget(currentTargetPosition));
     }
+
+
 
     IEnumerator ReturnToOriginalTarget(Vector3 originalTarget)
     {
