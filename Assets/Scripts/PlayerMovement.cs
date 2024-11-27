@@ -68,10 +68,16 @@ public class PlayerMovement : MonoBehaviour
 
     private void Update()
     {
+        // ガード処理を常に呼び出す
         HandleGuardInput();
-        UpdateAnimationState();
-        CheckForEnemiesWithRaycast();
 
+        // 状態によって移動入力を無効化
+        if (!canMove || isFalling || isGuarding || !isWalking)
+        {
+            return;
+        }
+
+        // 他の入力処理（移動、Q/Eなど）
         movementInputValue = Input.GetAxis("Horizontal");
         Vector3 movement = transform.right * movementInputValue * moveSpeed * Time.deltaTime;
         rb.MovePosition(rb.position + movement);
@@ -80,22 +86,22 @@ public class PlayerMovement : MonoBehaviour
         {
             if (currentQActionCoroutine != null)
             {
-                StopCoroutine(currentQActionCoroutine); // 既にコルーチンが動いていれば停止
+                StopCoroutine(currentQActionCoroutine);
             }
-
-            currentQActionCoroutine = StartCoroutine(HandleQAction()); // 新しくコルーチンを開始
+            currentQActionCoroutine = StartCoroutine(HandleQAction());
         }
 
         if (canUseE && Input.GetKeyDown(KeyCode.E))
         {
             if (currentEActionCoroutine != null)
             {
-                StopCoroutine(currentEActionCoroutine); // 既にコルーチンが動いていれば停止
+                StopCoroutine(currentEActionCoroutine);
             }
-
-            currentEActionCoroutine = StartCoroutine(HandleEAction()); // 新しくコルーチンを開始
+            currentEActionCoroutine = StartCoroutine(HandleEAction());
         }
     }
+
+
 
     private void CheckForEnemiesWithRaycast()
     {
@@ -131,50 +137,55 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
+        // 重力を適用
         rb.AddForce(new Vector3(0f, gravity, 0f));
 
-        if (canMove)
+        if (!canMove || isFalling || isGuarding || !isWalking) // 状態を確認して移動を無効化
         {
-            float currentSpeed = isRotating ? moveSpeed * 0.5f : moveSpeed; // 回転中は速度を半分に
-            Vector3 forwardDirection = transform.forward * currentSpeed * Time.fixedDeltaTime;
-            rb.MovePosition(rb.position + forwardDirection);
+            return;
+        }
 
-            if (!flag) return;
+        float currentSpeed = isRotating ? moveSpeed * 0.5f : moveSpeed; // 回転中は速度を半分に
+        Vector3 forwardDirection = transform.forward * currentSpeed * Time.fixedDeltaTime;
+        rb.MovePosition(rb.position + forwardDirection);
 
-            if (isWalking)
-            {
-                float currentLeftRightSpeed = isRotating ? leftRightSpeed * 0.5f : leftRightSpeed;
-                if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
-                {
-                    Vector3 leftDirection = -transform.right * currentLeftRightSpeed * Time.fixedDeltaTime;
-                    rb.MovePosition(rb.position + leftDirection);
-                }
+        float currentLeftRightSpeed = isRotating ? leftRightSpeed * 0.5f : leftRightSpeed;
+        if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow) || Input.GetAxis("Horizontal") < 0)
+        {
+            Vector3 leftDirection = -transform.right * currentLeftRightSpeed * Time.fixedDeltaTime;
+            rb.MovePosition(rb.position + leftDirection);
+        }
 
-                if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
-                {
-                    Vector3 rightDirection = transform.right * currentLeftRightSpeed * Time.fixedDeltaTime;
-                    rb.MovePosition(rb.position + rightDirection);
-                }
-            }
+        if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow) || Input.GetAxis("Horizontal") > 0)
+        {
+            Vector3 rightDirection = transform.right * currentLeftRightSpeed * Time.fixedDeltaTime;
+            rb.MovePosition(rb.position + rightDirection);
         }
     }
+
 
     private void HandleGuardInput()
     {
-        if (canGuard && !isFalling) // こけている間はガードを無効化
+        // ガード可能かつ転倒していない場合にのみ処理
+        if (canGuard && !isFalling)
         {
-            if (Input.GetKeyDown(KeyCode.F) || Input.GetKeyDown("joystick button 0")) // Fキーが押されたとき
+            // ガード開始
+            if (Input.GetKeyDown(KeyCode.F) || Input.GetKeyDown("joystick button 0"))
             {
                 isGuarding = true;
                 canMove = false; // 移動を禁止
+                animator.SetBool("Guard", true); // ガードアニメーションを開始
             }
-            else if (Input.GetKeyUp(KeyCode.F) || Input.GetKeyUp("joystick button 0")) // Fキーが離されたとき
+            // ガード解除
+            else if (Input.GetKeyUp(KeyCode.F) || Input.GetKeyUp("joystick button 0"))
             {
                 isGuarding = false;
                 canMove = true; // 移動を許可
+                animator.SetBool("Guard", false); // ガードアニメーションを終了
             }
         }
     }
+
 
 
     private void UpdateAnimationState()
@@ -268,16 +279,21 @@ public class PlayerMovement : MonoBehaviour
 
     private IEnumerator IdleCoroutine()
     {
+        canMove = false;
+        isWalking = false;
+        canGuard = false; // ガードを無効化
         animator.SetBool("Idle", true);
+
         yield return new WaitForSeconds(3.3f);
 
         animator.SetBool("Idle", false);
         animator.SetTrigger("Walk");
         canMove = true;
         isWalking = true;
-        canGuard = true;
-
+        canGuard = true; // ガードを再び有効化
     }
+
+
 
     private IEnumerator HandleQAction()
     {
@@ -412,7 +428,7 @@ public class PlayerMovement : MonoBehaviour
             yield return null;
         }
 
-        // Reset Q action availability after falling
+        // 転倒後の状態をリセット
         isUsingQ = false;
         isUsingE = false;
 
@@ -421,6 +437,7 @@ public class PlayerMovement : MonoBehaviour
         isWalking = true;
         isFalling = false;
     }
+
 
     private IEnumerator CameraShake()
     {

@@ -1474,7 +1474,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -64, y: 930}
+  m_AnchoredPosition: {x: -64, y: 105}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1292944223
@@ -1531,11 +1531,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce56288b9bc8a2f4bba12827d647100a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textTransform: {fileID: 1292944222}
-  speed: 500
-  stopPositionY: 105
+  uiText: {fileID: 1292944223}
+  fadeDuration: 2
   objectsToActivate:
   - {fileID: 745854064}
+  activationDelay: 0.5
+  maxScale: 1.2
 --- !u!1 &1382119291
 GameObject:
   m_ObjectHideFlags: 0
