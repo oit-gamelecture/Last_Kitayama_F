@@ -43,6 +43,7 @@ public class EnemyManager : MonoBehaviour
     void GenerateObstacleOnNavMesh()
     {
         float yPos = Target.position.y;
+        float zPos = Target.position.z;
         Vector3 spawnPosition = Target.position + Target.forward * obstacleDistance;
 
         // 各範囲でそれぞれの障害物リストから生成
@@ -79,10 +80,21 @@ public class EnemyManager : MonoBehaviour
         if (yPos < -10f)
         {
             // y < -10 の場合の生成
-            float zPos1 = Random.Range(-20f, -17f);
-            float zPos2 = Random.Range(-13f, -16f);
-            GenerateFromList(new Vector3(spawnPosition.x, spawnPosition.y, zPos1), obstacles);
-            GenerateFromList(new Vector3(spawnPosition.x, spawnPosition.y, zPos2), obstaclesList2);
+            //左ルート
+            if (zPos > -100f)
+            {
+                float zPos1 = Random.Range(-20f, -17f);
+                float zPos2 = Random.Range(-13f, -16f);
+                GenerateFromList(new Vector3(spawnPosition.x, spawnPosition.y, zPos1), obstacles);
+                GenerateFromList(new Vector3(spawnPosition.x, spawnPosition.y, zPos2), obstaclesList2);
+            }
+            else//右ルート
+            {
+                float zPos1 = Random.Range(-231f, -227f);
+                float zPos2 = Random.Range(-222f, -226f);
+                GenerateFromList(new Vector3(spawnPosition.x, spawnPosition.y + 0.5f, zPos1), obstacles);
+                GenerateFromList(new Vector3(spawnPosition.x, spawnPosition.y + 0.5f, zPos2), obstaclesList2);
+            }
         }
     }
 

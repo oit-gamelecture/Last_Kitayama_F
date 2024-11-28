@@ -3970,7 +3970,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &138154620
 Transform:
@@ -18061,7 +18061,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!65 &555878241
 BoxCollider:
@@ -18143,7 +18143,7 @@ Transform:
   m_GameObject: {fileID: 555878240}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 60.83, y: -20, z: -226.3}
+  m_LocalPosition: {x: 60.83, y: -19.723, z: -226.3}
   m_LocalScale: {x: 15, y: 1, z: 85}
   m_ConstrainProportionsScale: 0
   m_Children: []
