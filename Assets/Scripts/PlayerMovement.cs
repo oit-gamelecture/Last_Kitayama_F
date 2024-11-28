@@ -82,7 +82,7 @@ public class PlayerMovement : MonoBehaviour
         Vector3 movement = transform.right * movementInputValue * moveSpeed * Time.deltaTime;
         rb.MovePosition(rb.position + movement);
 
-        if (canUseQ && Input.GetKeyDown(KeyCode.Q))
+        if (canUseQ && Input.GetKeyDown(KeyCode.Q) || Input.GetKeyDown("joystick button 4"))
         {
             if (currentQActionCoroutine != null)
             {
@@ -91,7 +91,7 @@ public class PlayerMovement : MonoBehaviour
             currentQActionCoroutine = StartCoroutine(HandleQAction());
         }
 
-        if (canUseE && Input.GetKeyDown(KeyCode.E))
+        if (canUseE && Input.GetKeyDown(KeyCode.E) || Input.GetKeyDown("joystick button 5"))
         {
             if (currentEActionCoroutine != null)
             {
