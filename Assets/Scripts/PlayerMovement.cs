@@ -43,6 +43,9 @@ public class PlayerMovement : MonoBehaviour
     private bool canUseQ = false; // Qキーが使用可能かどうか
     private bool isUsingQ = false; // Qキー処理中かどうか
     private Coroutine currentQActionCoroutine;
+    private bool canUseE = false;
+    private bool isUsingE = false;
+    private Coroutine currentEActionCoroutine;
 
     [Header("Raycast 設定")]
     public float raycastDistance = 5.0f; // Rayの距離
@@ -70,14 +73,24 @@ public class PlayerMovement : MonoBehaviour
         UpdateAnimationState();
         CheckForEnemiesWithRaycast();
 
-        if (canUseQ && Input.GetKeyDown(KeyCode.Q))
+        if (canUseQ && Input.GetKeyDown(KeyCode.JoystickButton4)) // joystickbutton4 for Q
         {
             if (currentQActionCoroutine != null)
             {
-                StopCoroutine(currentQActionCoroutine); // 既にコルーチンが動いていれば停止
+                StopCoroutine(currentQActionCoroutine);
             }
 
-            currentQActionCoroutine = StartCoroutine(HandleQAction()); // 新しくコルーチンを開始
+            currentQActionCoroutine = StartCoroutine(HandleQAction());
+        }
+
+        if (canUseE && Input.GetKeyDown(KeyCode.JoystickButton5)) // joystickbutton5 for E
+        {
+            if (currentEActionCoroutine != null)
+            {
+                StopCoroutine(currentEActionCoroutine);
+            }
+
+            currentEActionCoroutine = StartCoroutine(HandleEAction());
         }
     }
 
@@ -95,6 +108,7 @@ public class PlayerMovement : MonoBehaviour
 
         // どちらかに敵がいればQキーを有効化
         canUseQ = hitLeftEnemy || hitRightEnemy;
+        canUseE = hitRightEnemy || hitRightEnemy;
 
         Debug.DrawRay(raycastOriginLeft.position, transform.forward * raycastDistance, Color.red);
         Debug.DrawRay(raycastOriginRight.position, transform.forward * raycastDistance, Color.red);
@@ -118,7 +132,7 @@ public class PlayerMovement : MonoBehaviour
 
         if (canMove)
         {
-            float currentSpeed = isRotating ? moveSpeed * 0.5f : moveSpeed; // 回転中は速度を半分に
+            float currentSpeed = isRotating ? moveSpeed * 0.5f : moveSpeed;
             Vector3 forwardDirection = transform.forward * currentSpeed * Time.fixedDeltaTime;
             rb.MovePosition(rb.position + forwardDirection);
 
@@ -127,34 +141,28 @@ public class PlayerMovement : MonoBehaviour
             if (isWalking)
             {
                 float currentLeftRightSpeed = isRotating ? leftRightSpeed * 0.5f : leftRightSpeed;
-                if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
-                {
-                    Vector3 leftDirection = -transform.right * currentLeftRightSpeed * Time.fixedDeltaTime;
-                    rb.MovePosition(rb.position + leftDirection);
-                }
 
-                if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
-                {
-                    Vector3 rightDirection = transform.right * currentLeftRightSpeed * Time.fixedDeltaTime;
-                    rb.MovePosition(rb.position + rightDirection);
-                }
+                // XboxコントローラーのX-Axisを使用して左右移動
+                float horizontalInput = Input.GetAxis("Horizontal"); // X-Axisの入力値を取得
+                Vector3 leftRightDirection = transform.right * horizontalInput * currentLeftRightSpeed * Time.fixedDeltaTime;
+                rb.MovePosition(rb.position + leftRightDirection);
             }
         }
     }
 
     private void HandleGuardInput()
     {
-        if (canGuard)
+        if (canGuard && !isFalling)
         {
-            if (Input.GetKeyDown(KeyCode.F)) // Fキーが押されたとき
+            if (Input.GetKeyDown(KeyCode.JoystickButton0)) // joystickbutton0 for guard
             {
                 isGuarding = true;
-                canMove = false; // 移動を禁止
+                canMove = false;
             }
-            else if (Input.GetKeyUp(KeyCode.F)) // Fキーが離されたとき
+            else if (Input.GetKeyUp(KeyCode.JoystickButton0)) // joystickbutton0 release
             {
                 isGuarding = false;
-                canMove = true; // 移動を許可
+                canMove = true;
             }
         }
     }
@@ -296,6 +304,56 @@ public class PlayerMovement : MonoBehaviour
 
         // コルーチンが終了した時にnullにリセット
         currentQActionCoroutine = null;
+    }
+
+    private IEnumerator HandleEAction()
+    {
+        if (isUsingE) yield break; // 処理中の場合はスキップ
+
+        isUsingE = true;
+        bool originalCanMove = canMove; // 元のcanMove状態を保存
+        canMove = true; // 前方移動は維持
+
+        isWalking = false; // 左右移動無効化
+        isGuarding = false; // ガード無効化
+
+        // 左に移動
+        float elapsedTime = 0f;
+        while (elapsedTime < 0.5f) // 1秒間左移動
+        {
+            Vector3 rightDirection = transform.right * avoidSpeed * Time.fixedDeltaTime;
+            rb.MovePosition(rb.position + rightDirection);
+
+            // 前方移動を維持
+            Vector3 forwardDirection = transform.forward * avoidMoveSpeed * Time.fixedDeltaTime;
+            rb.MovePosition(rb.position + forwardDirection);
+
+            elapsedTime += Time.fixedDeltaTime;
+            yield return new WaitForFixedUpdate();
+        }
+
+        // 右に戻る
+        elapsedTime = 0f;
+        while (elapsedTime < 0.5f) // 1秒間右移動
+        {
+            Vector3 leftDirection = -transform.right * avoidSpeed * Time.fixedDeltaTime;
+            rb.MovePosition(rb.position + leftDirection);
+
+            // 前方移動を維持
+            Vector3 forwardDirection = transform.forward * avoidMoveSpeed * Time.fixedDeltaTime;
+            rb.MovePosition(rb.position + forwardDirection);
+
+            elapsedTime += Time.fixedDeltaTime;
+            yield return new WaitForFixedUpdate();
+        }
+
+        // 状態を元に戻す
+        isUsingE = false;
+        canMove = originalCanMove; // 元のcanMove状態を復元
+        isWalking = true; // 左右移動を再び有効化
+
+        // コルーチンが終了した時にnullにリセット
+        currentEActionCoroutine = null;
     }
 
 
