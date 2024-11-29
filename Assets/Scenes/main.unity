@@ -56313,7 +56313,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a9f1a918267b6244e9198cf81ac60523, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  countdown: 25
+  countdown: 90
   countdownTime: 3
   countSound: {fileID: 8300000, guid: fba1518fb4a516d47821cc24ce4a32f1, type: 3}
   warningImage: {fileID: 1179211336}
