@@ -5,10 +5,10 @@ using System.Collections;
 public class ClearTime : MonoBehaviour
 {
     public Text clearTimeText;    // 経過時間を表示するテキスト
-    public Text valueText1;
-    public Text valueText2;
-    public Text valueText3;
-    public Text valueText4;
+    public Image valueText1;
+    public Image valueText2;
+    public Image valueText3;
+    public Image valueText4;
     public float animationDuration = 2.0f;  // アニメーションの再生時間
     public float delayBeforeStart = 5.0f;  // 表示を遅らせる時間（秒）
     public float delayBeforeStart1 = 5.0f;
