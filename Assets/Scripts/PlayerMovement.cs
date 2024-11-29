@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.UI;
 
 public class PlayerMovement : MonoBehaviour
@@ -310,10 +311,15 @@ public class PlayerMovement : MonoBehaviour
 
     private IEnumerator HandleFalling()
     {
+        var gamepad = Gamepad.current;
+
         isWalking = false;
         canMove = false;
         isFalling = true;
         animator.SetTrigger("Falling");
+        gamepad.SetMotorSpeeds(0.0f, 1.0f);
+        yield return new WaitForSeconds(0.3f);
+        gamepad.SetMotorSpeeds(0.0f, 0.0f);
         yield return new WaitForSeconds(0.5f);
 
         Vector3 reverseDirection = -transform.forward;
