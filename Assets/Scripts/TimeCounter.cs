@@ -15,6 +15,9 @@ public class TimeCounter : MonoBehaviour
     private float scaleSpeed = 2.0f; // 拡大縮小速度
     private Vector3 originalScale; // 元のスケールを保存
 
+    public Image warningImage; // 震えるイメージ
+    private Vector2 originalImagePosition; // イメージの元の位置を保存
+
     AudioSource audioSource;
 
     //時間を表示するText型の変数
@@ -34,6 +37,11 @@ public class TimeCounter : MonoBehaviour
         StartCoroutine(StartCountdown());
         timeText.enabled = false;
         originalScale = timeText.transform.localScale; // 初期スケールを保存
+
+        if (warningImage != null)
+        {
+            originalImagePosition = warningImage.rectTransform.anchoredPosition;
+        }
 
     }
 
@@ -62,6 +70,7 @@ public class TimeCounter : MonoBehaviour
             {
                 isWarning = true;
                 StartCoroutine(WarningEffect());
+                StartCoroutine(ShakeImage());
             }
         }
 
@@ -104,4 +113,27 @@ public class TimeCounter : MonoBehaviour
         }
     }
 
+    IEnumerator ShakeImage()
+    {
+        float shakeAmount = 15f; // 回転の振れ幅（角度）
+        float shakeSpeed = 0.03f; // 振動のスピード（秒間隔）
+        while (countdown > 0)
+        {
+            if (warningImage != null)
+            {
+                // ランダムな左右移動
+                float randomAngle = Random.Range(-shakeAmount, shakeAmount);
+                warningImage.rectTransform.localRotation = Quaternion.Euler(0, 0, randomAngle);
+
+            }
+            yield return new WaitForSeconds(shakeSpeed); // 震えのスピード
+        }
+
+        // 震え終了後に元の位置に戻す
+        if (warningImage != null)
+        {
+            warningImage.rectTransform.localRotation = Quaternion.identity;
+        }
+
+    }
 }

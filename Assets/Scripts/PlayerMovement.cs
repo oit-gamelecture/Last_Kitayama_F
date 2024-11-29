@@ -317,10 +317,6 @@ public class PlayerMovement : MonoBehaviour
         canMove = false;
         isFalling = true;
         animator.SetTrigger("Falling");
-        gamepad.SetMotorSpeeds(0.0f, 1.0f);
-        yield return new WaitForSeconds(0.3f);
-        gamepad.SetMotorSpeeds(0.0f, 0.0f);
-        yield return new WaitForSeconds(0.5f);
 
         Vector3 reverseDirection = -transform.forward;
         float moveDuration = 0.6f;
