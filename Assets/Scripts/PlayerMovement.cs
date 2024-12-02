@@ -73,7 +73,7 @@ public class PlayerMovement : MonoBehaviour
         UpdateAnimationState();
         CheckForEnemiesWithRaycast();
 
-        if (canUseQ && Input.GetKeyDown(KeyCode.JoystickButton4)) // joystickbutton4 for Q
+        if (canUseQ && Input.GetKeyDown(KeyCode.JoystickButton4) || canUseQ && Input.GetKeyDown(KeyCode.Q)) // joystickbutton4 for Q
         {
             if (currentQActionCoroutine != null)
             {
@@ -83,7 +83,7 @@ public class PlayerMovement : MonoBehaviour
             currentQActionCoroutine = StartCoroutine(HandleQAction());
         }
 
-        if (canUseE && Input.GetKeyDown(KeyCode.JoystickButton5)) // joystickbutton5 for E
+        if (canUseE && Input.GetKeyDown(KeyCode.JoystickButton5) || canUseE && Input.GetKeyDown(KeyCode.E)) // joystickbutton5 for E
         {
             if (currentEActionCoroutine != null)
             {
@@ -154,15 +154,29 @@ public class PlayerMovement : MonoBehaviour
     {
         if (canGuard && !isFalling)
         {
-            if (Input.GetKeyDown(KeyCode.JoystickButton0)) // joystickbutton0 for guard
+            if (Input.GetKeyDown(KeyCode.JoystickButton0) ) // joystickbutton0 for guard
             {
                 isGuarding = true;
                 canMove = false;
             }
-            else if (Input.GetKeyUp(KeyCode.JoystickButton0)) // joystickbutton0 release
+            else if (Input.GetKeyUp(KeyCode.JoystickButton0) ) // joystickbutton0 release
             {
                 isGuarding = false;
                 canMove = true;
+            }
+        }
+
+        if (canGuard && !isFalling) // こけている間はガードを無効化
+        {
+            if (Input.GetKeyDown(KeyCode.F)) // Fキーが押されたとき
+            {
+                isGuarding = true;
+                canMove = false; // 移動を禁止
+            }
+            else if (Input.GetKeyUp(KeyCode.F)) // Fキーが離されたとき
+            {
+                isGuarding = false;
+                canMove = true; // 移動を許可
             }
         }
     }
