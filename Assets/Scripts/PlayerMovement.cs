@@ -418,7 +418,7 @@ public class PlayerMovement : MonoBehaviour
         animator.SetTrigger("Falling");
 
         Vector3 reverseDirection = -transform.forward;
-        float moveDuration = 0.6f;
+        float moveDuration = 1.6f;
         float elapsedTime = 0f;
 
         animator.SetTrigger("GetUp");
