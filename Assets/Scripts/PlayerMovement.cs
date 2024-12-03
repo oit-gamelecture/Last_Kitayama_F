@@ -206,17 +206,23 @@ public class PlayerMovement : MonoBehaviour
         {
             if (isGuarding) return; // ガード中は処理をスキップ
 
-            // Qキー処理中の場合、強制的にコルーチンを停止してノックバック処理に移行
-            if (isUsingQ)
+            // QキーまたはEキー処理中の場合、強制的にコルーチンを停止してノックバック処理に移行
+            if (isUsingQ || isUsingE)
             {
-                // Qキー処理中ならそのコルーチンを停止
-                if (currentQActionCoroutine != null)
+                if (isUsingQ && currentQActionCoroutine != null)
                 {
                     StopCoroutine(currentQActionCoroutine);
-                    currentQActionCoroutine = null; // コルーチン参照をリセット
+                    currentQActionCoroutine = null;
+                    isUsingQ = false;
                 }
 
-                // ノックバック処理に移行
+                if (isUsingE && currentEActionCoroutine != null)
+                {
+                    StopCoroutine(currentEActionCoroutine);
+                    currentEActionCoroutine = null;
+                    isUsingE = false;
+                }
+
                 StartCoroutine(HandleFalling());
                 return; // それ以上の処理をスキップ
             }
@@ -281,92 +287,110 @@ public class PlayerMovement : MonoBehaviour
         isWalking = false; // 左右移動無効化
         isGuarding = false; // ガード無効化
 
-        // 左に移動
         float elapsedTime = 0f;
-        while (elapsedTime < 0.5f) // 1秒間左移動
+        while (elapsedTime < 0.5f)
         {
             Vector3 leftDirection = -transform.right * avoidSpeed * Time.fixedDeltaTime;
             rb.MovePosition(rb.position + leftDirection);
 
-            // 前方移動を維持
             Vector3 forwardDirection = transform.forward * avoidMoveSpeed * Time.fixedDeltaTime;
             rb.MovePosition(rb.position + forwardDirection);
 
             elapsedTime += Time.fixedDeltaTime;
+
+            // 敵との衝突を確認し、処理を中断
+            if (isFalling)
+            {
+                isUsingQ = false;
+                yield break;
+            }
+
             yield return new WaitForFixedUpdate();
         }
 
-        // 右に戻る
         elapsedTime = 0f;
-        while (elapsedTime < 0.5f) // 1秒間右移動
+        while (elapsedTime < 0.5f)
         {
             Vector3 rightDirection = transform.right * avoidSpeed * Time.fixedDeltaTime;
             rb.MovePosition(rb.position + rightDirection);
 
-            // 前方移動を維持
             Vector3 forwardDirection = transform.forward * avoidMoveSpeed * Time.fixedDeltaTime;
             rb.MovePosition(rb.position + forwardDirection);
 
             elapsedTime += Time.fixedDeltaTime;
+
+            if (isFalling)
+            {
+                isUsingQ = false;
+                yield break;
+            }
+
             yield return new WaitForFixedUpdate();
         }
 
-        // 状態を元に戻す
         isUsingQ = false;
-        canMove = originalCanMove; // 元のcanMove状態を復元
-        isWalking = true; // 左右移動を再び有効化
+        canMove = originalCanMove;
+        isWalking = true;
 
-        // コルーチンが終了した時にnullにリセット
         currentQActionCoroutine = null;
     }
 
+
     private IEnumerator HandleEAction()
     {
-        if (isUsingE) yield break; // 処理中の場合はスキップ
+        if (isUsingE) yield break;
 
         isUsingE = true;
-        bool originalCanMove = canMove; // 元のcanMove状態を保存
-        canMove = true; // 前方移動は維持
+        bool originalCanMove = canMove;
+        canMove = true;
 
-        isWalking = false; // 左右移動無効化
-        isGuarding = false; // ガード無効化
+        isWalking = false;
+        isGuarding = false;
 
-        // 左に移動
         float elapsedTime = 0f;
-        while (elapsedTime < 0.5f) // 1秒間左移動
+        while (elapsedTime < 0.5f)
         {
             Vector3 rightDirection = transform.right * avoidSpeed * Time.fixedDeltaTime;
             rb.MovePosition(rb.position + rightDirection);
 
-            // 前方移動を維持
             Vector3 forwardDirection = transform.forward * avoidMoveSpeed * Time.fixedDeltaTime;
             rb.MovePosition(rb.position + forwardDirection);
 
             elapsedTime += Time.fixedDeltaTime;
+
+            if (isFalling)
+            {
+                isUsingE = false;
+                yield break;
+            }
+
             yield return new WaitForFixedUpdate();
         }
 
-        // 右に戻る
         elapsedTime = 0f;
-        while (elapsedTime < 0.5f) // 1秒間右移動
+        while (elapsedTime < 0.5f)
         {
             Vector3 leftDirection = -transform.right * avoidSpeed * Time.fixedDeltaTime;
             rb.MovePosition(rb.position + leftDirection);
 
-            // 前方移動を維持
             Vector3 forwardDirection = transform.forward * avoidMoveSpeed * Time.fixedDeltaTime;
             rb.MovePosition(rb.position + forwardDirection);
 
             elapsedTime += Time.fixedDeltaTime;
+
+            if (isFalling)
+            {
+                isUsingE = false;
+                yield break;
+            }
+
             yield return new WaitForFixedUpdate();
         }
 
-        // 状態を元に戻す
         isUsingE = false;
-        canMove = originalCanMove; // 元のcanMove状態を復元
-        isWalking = true; // 左右移動を再び有効化
+        canMove = originalCanMove;
+        isWalking = true;
 
-        // コルーチンが終了した時にnullにリセット
         currentEActionCoroutine = null;
     }
 
