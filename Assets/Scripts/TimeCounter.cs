@@ -28,6 +28,9 @@ public class TimeCounter : MonoBehaviour
     //タイマー非表示
     private bool countStart = false;
 
+    public AudioSource bgmSource; // BGM用のAudioSource
+    public float fastForwardPitch = 1.5f; // 早送り時のピッチ
+    private float normalPitch; // 通常時のピッチ
     void Start()
     {
         audioSource = GetComponent<AudioSource>();
@@ -49,6 +52,7 @@ public class TimeCounter : MonoBehaviour
             warningText.enabled = false;
         }
 
+
     }
 
     //3秒後にタイマースタート
@@ -65,13 +69,9 @@ public class TimeCounter : MonoBehaviour
         if (countStart)
         {
             timeText.enabled = true;
-            //時間をカウントダウンする
             countdown -= Time.deltaTime;
-
-            //時間を表示する
             timeText.text = countdown.ToString("f2");
 
-            // 警告状態のチェック
             if (countdown <= 20f && !isWarning)
             {
                 isWarning = true;
@@ -83,14 +83,26 @@ public class TimeCounter : MonoBehaviour
                     warningText.enabled = true;
                     StartCoroutine(WarningTextEffect());
                 }
+
+                // BGMの早送りを開始
+                if (bgmSource != null)
+                {
+                    bgmSource.pitch = fastForwardPitch;
+                }
             }
         }
 
-        //countdownが0以下になったとき
         if (countdown <= 0)
         {
             countdown = 0;
             countStart = false;
+
+            // ピッチをリセット
+            if (bgmSource != null)
+            {
+                bgmSource.pitch = normalPitch;
+            }
+
             SceneManager.LoadScene("over scene");
         }
     }
