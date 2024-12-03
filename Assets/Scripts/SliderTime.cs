@@ -14,7 +14,6 @@ public class SliderTime : MonoBehaviour
     private GameObject player; // プレイヤーオブジェクトの参照 (シリアライズ)
 
     private PlayerMovement playerMovement; // PlayerMovementスクリプトの参照
-    private bool isPausedAfterFalling = false; // 転倒復帰後の待機中フラグ
 
     void Start()
     {
@@ -41,17 +40,10 @@ public class SliderTime : MonoBehaviour
 
     void Update()
     {
-        // プレイヤーが転倒中ならスライダーの進行を停止
-        if (playerMovement != null && playerMovement.isFalling)
+        // プレイヤーが転倒中またはガード中ならスライダーの進行を停止
+        if (playerMovement != null && (playerMovement.isFalling || playerMovement.isGuarding))
         {
-            Debug.Log("プレイヤー転倒中: スライダー停止");
-            return;
-        }
-
-        // 転倒復帰後の0.5秒間はスライダーを停止
-        if (isPausedAfterFalling)
-        {
-            Debug.Log("転倒復帰後の待機中...");
+            Debug.Log("スライダー停止: プレイヤーが転倒中またはガード中");
             return;
         }
 
@@ -71,18 +63,5 @@ public class SliderTime : MonoBehaviour
         {
             Debug.Log("タイマーが最大に達しました！");
         }
-    }
-
-    // 転倒復帰後にスライダーを停止する処理を呼び出す
-    public void HandlePostFallPause()
-    {
-        StartCoroutine(PostFallPauseCoroutine());
-    }
-
-    IEnumerator PostFallPauseCoroutine()
-    {
-        isPausedAfterFalling = true; // 転倒復帰後の待機開始
-        yield return new WaitForSeconds(0.5f); // 0.5秒待機
-        isPausedAfterFalling = false; // 待機終了
     }
 }

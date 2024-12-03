@@ -23,7 +23,7 @@ public class PlayerMovement : MonoBehaviour
     private bool canMove = false;
     public bool isFalling = false;
     private bool isWalking = false;
-    private bool isGuarding = false; // ガード状態を管理
+    public bool isGuarding = false; // ガード状態を管理
     private bool flag = true;
     private bool isRotating = false;
     private bool canGuard = false;
