@@ -11,6 +11,11 @@ public class Pause : MonoBehaviour
     public Button titleButton;
 
     private bool isPaused = false;
+    public bool IsPaused
+    {
+        get { return isPaused; }
+    }
+
 
     void Start()
     {
