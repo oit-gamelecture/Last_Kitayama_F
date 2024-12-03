@@ -27,6 +27,9 @@ public class PlayerMovement : MonoBehaviour
     private bool flag = true;
     private bool isRotating = false;
     private bool canGuard = false;
+    private bool isCameraShaking = false; // カメラシェイクの状態を追跡
+    private Vector3 initialCameraPosition; // カメラの初期位置を記録
+
 
     public Image blackOverlay;
     public float delayBeforeHiding = 3.3f;
@@ -436,18 +439,25 @@ public class PlayerMovement : MonoBehaviour
 
     private IEnumerator CameraShake()
     {
+        // すでにシェイク中なら新しいシェイクを無視
+        if (isCameraShaking) yield break;
+
+        isCameraShaking = true;
+        initialCameraPosition = cameraTransform.localPosition;
+
         float elapsed = 0f;
-        Vector3 initialPosition = cameraTransform.localPosition;
 
         while (elapsed < shakeDuration)
         {
             Vector3 randomOffset = Random.insideUnitSphere * shakeMagnitude;
-            cameraTransform.localPosition = initialPosition + randomOffset;
+            cameraTransform.localPosition = initialCameraPosition + randomOffset;
 
             elapsed += Time.deltaTime;
             yield return null;
         }
 
-        cameraTransform.localPosition = initialPosition;
+        // シェイク終了後、カメラ位置を正確に初期位置に戻す
+        cameraTransform.localPosition = initialCameraPosition;
+        isCameraShaking = false;
     }
 }
