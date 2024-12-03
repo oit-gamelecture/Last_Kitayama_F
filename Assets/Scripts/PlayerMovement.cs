@@ -209,6 +209,8 @@ public class PlayerMovement : MonoBehaviour
         {
             if (isGuarding) return; // ガード中は処理をスキップ
 
+            Collider enemyCollider = collision.collider;
+
             // QキーまたはEキー処理中の場合、強制的にコルーチンを停止してノックバック処理に移行
             if (isUsingQ || isUsingE)
             {
@@ -226,7 +228,7 @@ public class PlayerMovement : MonoBehaviour
                     isUsingE = false;
                 }
 
-                StartCoroutine(HandleFalling());
+                StartCoroutine(HandleFalling(enemyCollider));
                 return; // それ以上の処理をスキップ
             }
 
@@ -241,7 +243,7 @@ public class PlayerMovement : MonoBehaviour
                 {
                     audioSource.PlayOneShot(slip);
                 }
-                StartCoroutine(HandleFalling());
+                StartCoroutine(HandleFalling(enemyCollider));
             }
 
             StartCoroutine(CameraShake());
@@ -264,6 +266,7 @@ public class PlayerMovement : MonoBehaviour
             Debug.Log("Enemyに衝突しました！");
         }
     }
+
 
 
     private IEnumerator IdleCoroutine()
@@ -408,9 +411,13 @@ public class PlayerMovement : MonoBehaviour
         blackOverlay.gameObject.SetActive(false);
     }
 
-    private IEnumerator HandleFalling()
+    private IEnumerator HandleFalling(Collider enemyCollider)
     {
-        var gamepad = Gamepad.current;
+        // 衝突したenemyの当たり判定を無効化
+        if (enemyCollider != null)
+        {
+            enemyCollider.enabled = false;
+        }
 
         isWalking = false;
         canMove = false;
@@ -435,7 +442,14 @@ public class PlayerMovement : MonoBehaviour
         canMove = true;
         isWalking = true;
         isFalling = false;
+
+        // enemyの当たり判定を再び有効化
+        if (enemyCollider != null)
+        {
+            enemyCollider.enabled = true;
+        }
     }
+
 
     private IEnumerator CameraShake()
     {
