@@ -22,6 +22,7 @@ public class TimeCounter : MonoBehaviour
 
     //時間を表示するText型の変数
     public Text timeText;
+    public Text warningText;
 
 
     //タイマー非表示
@@ -41,6 +42,11 @@ public class TimeCounter : MonoBehaviour
         if (warningImage != null)
         {
             originalImagePosition = warningImage.rectTransform.anchoredPosition;
+        }
+
+        if (warningText != null)
+        {
+            warningText.enabled = false;
         }
 
     }
@@ -71,6 +77,12 @@ public class TimeCounter : MonoBehaviour
                 isWarning = true;
                 StartCoroutine(WarningEffect());
                 StartCoroutine(ShakeImage());
+
+                if (warningText != null)
+                {
+                    warningText.enabled = true;
+                    StartCoroutine(WarningTextEffect());
+                }
             }
         }
 
@@ -143,5 +155,35 @@ public class TimeCounter : MonoBehaviour
             warningImage.rectTransform.localRotation = Quaternion.identity;
         }
 
+    }
+
+    IEnumerator WarningTextEffect()
+    {
+        Color originalColor = warningText.color; // 初期カラーを保存
+        Color warningColor = Color.red; // 警告カラー
+        Vector3 originalScale = warningText.transform.localScale; // 初期スケールを保存
+        float scaleSpeed = 2.0f; // 拡大縮小速度
+
+        while (countdown > 0) // 残り時間が0になるまでループ
+        {
+            // 拡大 & 色変更
+            for (float t = 0; t < 1; t += Time.deltaTime * scaleSpeed)
+            {
+                warningText.transform.localScale = Vector3.Lerp(originalScale, originalScale * 1.5f, t);
+                warningText.color = Color.Lerp(originalColor, warningColor, t); // 色を赤く
+                yield return null;
+            }
+            // 縮小 & 色変更
+            for (float t = 0; t < 1; t += Time.deltaTime * scaleSpeed)
+            {
+                warningText.transform.localScale = Vector3.Lerp(originalScale * 1.5f, originalScale, t);
+                warningText.color = Color.Lerp(warningColor, originalColor, t); // 色を元に戻す
+                yield return null;
+            }
+        }
+
+        // 残り時間が0になったら非表示
+        warningText.enabled = false;
+        warningText.color = originalColor;
     }
 }
