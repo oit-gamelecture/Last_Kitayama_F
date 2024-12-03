@@ -70,10 +70,12 @@ public class EnemyManager : MonoBehaviour
         if (yPos >= -10f)
         {
             // y >= -10 の場合の生成
-            float xPos1 = Random.Range(103.3f, 106.3f);
-            float xPos2 = Random.Range(107.3f, 110.3f);
+            float xPos1 = Random.Range(100.3f, 106.3f);
+            float xPos2 = Random.Range(107.3f, 112.3f);
             // Z座標が -20 以下の時のみ生成
             if (spawnPosition.z > -30f) return;
+            GenerateFromList(new Vector3(xPos1, spawnPosition.y, spawnPosition.z), obstacles);
+            GenerateFromList(new Vector3(xPos2, spawnPosition.y, spawnPosition.z), obstaclesList2);
             GenerateFromList(new Vector3(xPos1, spawnPosition.y, spawnPosition.z), obstacles);
             GenerateFromList(new Vector3(xPos2, spawnPosition.y, spawnPosition.z), obstaclesList2);
         }
@@ -90,8 +92,10 @@ public class EnemyManager : MonoBehaviour
             }
             else//右ルート
             {
-                float zPos1 = Random.Range(-231f, -227f);
-                float zPos2 = Random.Range(-222f, -226f);
+                float zPos1 = Random.Range(-235f, -227f);
+                float zPos2 = Random.Range(-220f, -226f);
+                GenerateFromList(new Vector3(spawnPosition.x, spawnPosition.y + 0.5f, zPos1), obstacles);
+                GenerateFromList(new Vector3(spawnPosition.x, spawnPosition.y + 0.5f, zPos2), obstaclesList2);
                 GenerateFromList(new Vector3(spawnPosition.x, spawnPosition.y + 0.5f, zPos1), obstacles);
                 GenerateFromList(new Vector3(spawnPosition.x, spawnPosition.y + 0.5f, zPos2), obstaclesList2);
             }
