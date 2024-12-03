@@ -40,13 +40,13 @@ public class VolumeControl : MonoBehaviour
     void HandleButtonSelection()
     {
         // Enterキーで音量調節モードに切り替え
-        if (Input.GetKeyDown(KeyCode.Return) && EventSystem.current.currentSelectedGameObject == volumeButton.gameObject)
+        if ((Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown("joystick button 0")) && EventSystem.current.currentSelectedGameObject == volumeButton.gameObject)
         {
             EnterVolumeAdjustmentMode();
         }
 
         // タイトルシーンに戻る処理
-        if (Input.GetKeyDown(KeyCode.Return) && EventSystem.current.currentSelectedGameObject == titleButton.gameObject)
+        if ((Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown("joystick button 0")) && EventSystem.current.currentSelectedGameObject == titleButton.gameObject)
         {
             SceneManager.LoadScene("Title");
         }
@@ -61,7 +61,7 @@ public class VolumeControl : MonoBehaviour
         AudioListener.volume = volumeSlider.value;
 
         // Enterキーで音量調節モードを終了
-        if (Input.GetKeyDown(KeyCode.Return))
+        if (Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown("joystick button 0"))
         {
             ExitVolumeAdjustmentMode();
         }
