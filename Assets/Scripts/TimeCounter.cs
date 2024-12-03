@@ -96,26 +96,34 @@ public class TimeCounter : MonoBehaviour
 
     IEnumerator WarningEffect()
     {
+        Color originalColor = timeText.color; // 初期カラーを保存
+        Color warningColor = Color.red; // 警告カラー
+
         while (countdown > 0) // 残り時間が0になるまでループ
         {
-            // 拡大
+            // 拡大 & 色変更
             for (float t = 0; t < 1; t += Time.deltaTime * scaleSpeed)
             {
                 timeText.transform.localScale = Vector3.Lerp(originalScale, originalScale * 1.5f, t);
+                timeText.color = Color.Lerp(originalColor, warningColor, t); // 色を徐々に赤く
                 yield return null;
             }
-            // 縮小
+            // 縮小 & 色変更
             for (float t = 0; t < 1; t += Time.deltaTime * scaleSpeed)
             {
                 timeText.transform.localScale = Vector3.Lerp(originalScale * 1.5f, originalScale, t);
+                timeText.color = Color.Lerp(warningColor, originalColor, t); // 色を元に戻す
                 yield return null;
             }
         }
+
+        // 残り時間が0になったら色を元に戻す
+        timeText.color = originalColor;
     }
 
     IEnumerator ShakeImage()
     {
-        float shakeAmount = 15f; // 回転の振れ幅（角度）
+        float shakeAmount = 360f; // 回転の振れ幅（角度）
         float shakeSpeed = 0.03f; // 振動のスピード（秒間隔）
         while (countdown > 0)
         {
