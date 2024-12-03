@@ -41,13 +41,13 @@ public class ComicController : MonoBehaviour
     void Update()
     {
         // Enterキーで次の音声を再生
-        if (Input.GetKeyDown(KeyCode.Return))
+        if (Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown("joystick button 0"))
         {
             ShowNextFrameAndAudio();
         }
 
         // ESCキーで直接ロード画面を表示してシーン遷移
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Escape) || Input.GetKeyDown("joystick button 7"))
         {
             Debug.Log("ESCキーが押されました。ロード画面を表示してメインシーンへ移行します。");
             StartLoadingScene();
