@@ -21,7 +21,7 @@ public class PlayerMovement : MonoBehaviour
     public float movementInputValue;
 
     private bool canMove = false;
-    private bool isFalling = false;
+    public bool isFalling = false;
     private bool isWalking = false;
     private bool isGuarding = false; // ƒK[ƒhó‘Ô‚ğŠÇ—
     private bool flag = true;
