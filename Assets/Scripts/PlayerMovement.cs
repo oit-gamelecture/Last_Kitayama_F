@@ -157,12 +157,12 @@ public class PlayerMovement : MonoBehaviour
     {
         if (canGuard && !isFalling)
         {
-            if (Input.GetKeyDown(KeyCode.JoystickButton0) ) // joystickbutton0 for guard
+            if (Input.GetKeyDown(KeyCode.JoystickButton0)) // joystickbutton0 for guard
             {
                 isGuarding = true;
                 canMove = false;
             }
-            else if (Input.GetKeyUp(KeyCode.JoystickButton0) ) // joystickbutton0 release
+            else if (Input.GetKeyUp(KeyCode.JoystickButton0)) // joystickbutton0 release
             {
                 isGuarding = false;
                 canMove = true;
@@ -211,9 +211,11 @@ public class PlayerMovement : MonoBehaviour
 
             Collider enemyCollider = collision.collider;
 
-            // QキーまたはEキー処理中の場合、強制的にコルーチンを停止してノックバック処理に移行
+            // QキーまたはEキー処理中の場合、エフェクトとコルーチンを確実に実行
             if (isUsingQ || isUsingE)
             {
+                TriggerCollisionEffects();
+
                 if (isUsingQ && currentQActionCoroutine != null)
                 {
                     StopCoroutine(currentQActionCoroutine);
@@ -235,35 +237,39 @@ public class PlayerMovement : MonoBehaviour
             // 通常の衝突処理
             if (!isFalling)
             {
-                if (Random.Range(0f, 1f) < 0.2f)
-                {
-                    audioSource.PlayOneShot(bone);
-                }
-                else
-                {
-                    audioSource.PlayOneShot(slip);
-                }
+                TriggerCollisionEffects();
                 StartCoroutine(HandleFalling(enemyCollider));
             }
 
-            StartCoroutine(CameraShake());
-
-            ContactPoint contact = collision.contacts[0];
-            Vector3 spawnPosition = transform.position;
-            Quaternion spawnRotation = Quaternion.identity;
-
-            if (impactParticlePrefab != null)
-            {
-                spawnPosition += new Vector3(0, 1.0f, 0);
-                ParticleSystem particleInstance = Instantiate(impactParticlePrefab, spawnPosition, spawnRotation);
-
-                float newScale = 8.0f;
-                particleInstance.transform.localScale = new Vector3(newScale, newScale, newScale);
-
-                Destroy(particleInstance.gameObject, particleDuration);
-            }
-
             Debug.Log("Enemyに衝突しました！");
+        }
+    }
+
+    private void TriggerCollisionEffects()
+    {
+        StartCoroutine(CameraShake());
+
+        // ParticleSystemエフェクト生成
+        Vector3 spawnPosition = transform.position + new Vector3(0, 1.0f, 0);
+        Quaternion spawnRotation = Quaternion.identity;
+
+        if (impactParticlePrefab != null)
+        {
+            ParticleSystem particleInstance = Instantiate(impactParticlePrefab, spawnPosition, spawnRotation);
+            float newScale = 8.0f;
+            particleInstance.transform.localScale = new Vector3(newScale, newScale, newScale);
+
+            Destroy(particleInstance.gameObject, particleDuration);
+        }
+
+        // ランダムで効果音を再生
+        if (Random.Range(0f, 1f) < 0.2f)
+        {
+            audioSource.PlayOneShot(bone);
+        }
+        else
+        {
+            audioSource.PlayOneShot(slip);
         }
     }
 
@@ -287,6 +293,7 @@ public class PlayerMovement : MonoBehaviour
         if (isUsingQ) yield break; // 処理中の場合はスキップ
 
         isUsingQ = true;
+        canUseQ = false; // Qキーを一時的に無効化
         bool originalCanMove = canMove; // 元のcanMove状態を保存
         canMove = true; // 前方移動は維持
 
@@ -339,7 +346,12 @@ public class PlayerMovement : MonoBehaviour
         isWalking = true;
 
         currentQActionCoroutine = null;
+
+        // Qキーを再度有効化する前に1秒間待機
+        yield return new WaitForSeconds(1.0f);
+        canUseQ = true; // Qキーを再び有効化
     }
+
 
 
     private IEnumerator HandleEAction()
