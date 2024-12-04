@@ -216,7 +216,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_EffectColor: {r: 0, g: 0, b: 0, a: 1}
-  m_EffectDistance: {x: 5, y: -5}
+  m_EffectDistance: {x: 3, y: -3}
   m_UseGraphicAlpha: 1
 --- !u!1 &30948036
 GameObject:
@@ -587,7 +587,7 @@ Transform:
   m_GameObject: {fileID: 237930772}
   serializedVersion: 2
   m_LocalRotation: {x: 0.176896, y: -0.46601692, z: 0.09760588, w: 0.8613995}
-  m_LocalPosition: {x: 373.9, y: 211.8, z: -382.1}
+  m_LocalPosition: {x: 358.2, y: 198.5, z: -377.9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3936,7 +3936,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_EffectColor: {r: 0, g: 0, b: 0, a: 1}
-  m_EffectDistance: {x: 5, y: -5}
+  m_EffectDistance: {x: 3, y: -3}
   m_UseGraphicAlpha: 1
 --- !u!1 &1701454175
 GameObject:
@@ -5304,7 +5304,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6851559339329222866, guid: 3c4ad94ac26a83e4f936bc1a4db58dc6, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 148.4
+      value: 137.9
       objectReference: {fileID: 0}
     - target: {fileID: 6851559339329222866, guid: 3c4ad94ac26a83e4f936bc1a4db58dc6, type: 3}
       propertyPath: m_LocalPosition.z
