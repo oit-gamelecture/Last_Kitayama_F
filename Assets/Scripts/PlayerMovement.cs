@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Runtime.CompilerServices;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
@@ -33,6 +34,9 @@ public class PlayerMovement : MonoBehaviour
 
     public Image blackOverlay;
     public float delayBeforeHiding = 3.3f;
+    public GameObject runSlider;
+    public GameObject guardUI;
+    public GameObject timeCounter;
 
     [Header("‰æ–Ê—h‚ê")]
     public Transform cameraTransform;
@@ -66,8 +70,12 @@ public class PlayerMovement : MonoBehaviour
         blackOverlay.color = color;
 
         blackOverlay.gameObject.SetActive(true);
+        runSlider.gameObject.SetActive(false);
+        guardUI.SetActive(false);
+        timeCounter.SetActive(false);
         StartCoroutine(IdleCoroutine());
         StartCoroutine(HideOverlayAfterDelay(delayBeforeHiding));
+        StartCoroutine(HideUIAfterDelay(delayBeforeHiding));
     }
 
     private void Update()
@@ -421,6 +429,15 @@ public class PlayerMovement : MonoBehaviour
         color.a = 0f;
         blackOverlay.color = color;
         blackOverlay.gameObject.SetActive(false);
+    }
+
+    private IEnumerator HideUIAfterDelay(float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        runSlider.gameObject.SetActive(true);
+        guardUI.gameObject.SetActive(true);
+        timeCounter.gameObject.SetActive(true);
+
     }
 
     private IEnumerator HandleFalling(Collider enemyCollider)
