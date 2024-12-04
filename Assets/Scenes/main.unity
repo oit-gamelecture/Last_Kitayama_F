@@ -56240,6 +56240,9 @@ MonoBehaviour:
   isGuarding: 0
   blackOverlay: {fileID: 748281277}
   delayBeforeHiding: 3.3
+  runSlider: {fileID: 1106742931}
+  guardUI: {fileID: 1558869554}
+  timeCounter: {fileID: 1267843201}
   cameraTransform: {fileID: 1031197565}
   shakeDuration: 1
   shakeMagnitude: 0.2
