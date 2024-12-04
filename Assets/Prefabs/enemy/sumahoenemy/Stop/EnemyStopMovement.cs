@@ -8,7 +8,6 @@ public class EnemyStopMovement : MonoBehaviour
     public Animator enemyAnimator;
     public float normalSpeed = 3.0f;
     public float retreatSpeed = 6.0f;
-    public float detectionRadius = 10.0f;
 
     private bool isFalling = false;
     private bool isStopped = false;
@@ -17,6 +16,11 @@ public class EnemyStopMovement : MonoBehaviour
     private Vector3 currentTargetPosition;
 
     private Transform playerTransform;
+
+    // ’âŽ~‹——£‚Ì”ÍˆÍiƒ‰ƒ“ƒ_ƒ€‚É‘I‚Î‚ê‚éj
+    private float detectionRadius;
+
+    private float[] detectionRadiusOptions = new float[] { 5.0f, 10.0f, 15.0f }; // 3’iŠK‚Ì‹——£
 
     void Start()
     {
@@ -40,6 +44,8 @@ public class EnemyStopMovement : MonoBehaviour
         {
             playerTransform = player.transform;
         }
+
+        SetRandomDetectionRadius(); // ’âŽ~‹——£‚ðƒ‰ƒ“ƒ_ƒ€‚ÉÝ’è
     }
 
     void Update()
@@ -96,22 +102,18 @@ public class EnemyStopMovement : MonoBehaviour
 
         if (yPosition >= 0)
         {
-            // ‚‚³ 0 ˆÈã‚Ìê‡
             currentTargetPosition = new Vector3(Random.Range(3f, -6f), 1, 20);
         }
         else if (yPosition >= -6 && yPosition < 0)
         {
-            // ‚‚³ -6 ` 0 ‚Ìê‡
             currentTargetPosition = new Vector3(0, -4, Random.Range(-106f, -113f));
         }
         else if (yPosition >= -11 && yPosition < -6)
         {
-            // ‚‚³ -11 ` -6 ‚Ìê‡
             currentTargetPosition = new Vector3(Random.Range(103.3f, 110f), -9.4f, -120);
         }
         else
         {
-            // ‚‚³ -11 ˆÈ‰º‚Ìê‡
             currentTargetPosition = new Vector3(120, -14.4f, Random.Range(-20f, -13f));
         }
     }
@@ -119,6 +121,12 @@ public class EnemyStopMovement : MonoBehaviour
     void ToggleTargetPosition()
     {
         SetRandomizedTargetBasedOnHeight();
+    }
+
+    void SetRandomDetectionRadius()
+    {
+        detectionRadius = detectionRadiusOptions[Random.Range(0, detectionRadiusOptions.Length)];
+        Debug.Log($"V‚µ‚¢’âŽ~‹——£: {detectionRadius}");
     }
 
     void OnCollisionEnter(Collision collision)
