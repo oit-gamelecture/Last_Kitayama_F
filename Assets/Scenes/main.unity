@@ -63495,6 +63495,7 @@ GameObject:
   - component: {fileID: 2071997830}
   - component: {fileID: 2071997832}
   - component: {fileID: 2071997831}
+  - component: {fileID: 2071997833}
   m_Layer: 5
   m_Name: karidenn
   m_TagString: Untagged
@@ -63559,6 +63560,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2071997829}
   m_CullTransparentMesh: 1
+--- !u!114 &2071997833
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2071997829}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
+  m_EffectDistance: {x: 3, y: -3}
+  m_UseGraphicAlpha: 1
 --- !u!4 &2075105871 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1312927617013298549, guid: b82fc49d7dea47e4289941f073321aa5, type: 3}
