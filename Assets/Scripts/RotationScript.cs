@@ -9,6 +9,7 @@ public class RotationScript : MonoBehaviour
     private AudioSource audioSource;      // オーディオソース
     private int entryCount = 0;           // プレイヤーが侵入した回数
     private bool isRotating = false;
+    private bool enterObject = true;      // 回転制御用フラグ
 
     private void Start()
     {
@@ -21,7 +22,7 @@ public class RotationScript : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player") && !isRotating)
+        if (other.CompareTag("Player") && enterObject && !isRotating)
         {
             StartCoroutine(RotatePlayer(other.transform, -90f));
             PlayerMovement playerMovement = other.GetComponent<PlayerMovement>();
@@ -39,7 +40,6 @@ public class RotationScript : MonoBehaviour
             }
         }
     }
-
 
     private void OnTriggerExit(Collider other)
     {
@@ -78,10 +78,12 @@ public class RotationScript : MonoBehaviour
         playerTransform.rotation = endRotation;
         isRotating = false;
 
+        // 回転終了時にenterObjectをfalseに設定
+        enterObject = false;
+
         if (playerMovement != null)
         {
             playerMovement.SetRotating(false); // 回転終了を通知
         }
     }
-
 }

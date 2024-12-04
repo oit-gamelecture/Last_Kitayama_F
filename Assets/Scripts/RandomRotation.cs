@@ -9,6 +9,7 @@ public class RandomRotation : MonoBehaviour
     private AudioSource audioSource;      // AudioSource component
     private int entryCount = 0;           // Counter for how many times the player has entered the trigger
     private bool isRotating = false;      // Flag to check if the player is currently rotating
+    private bool enterObject = true;
 
     private void Start()
     {
@@ -21,7 +22,7 @@ public class RandomRotation : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player") && !isRotating)
+        if (other.CompareTag("Player") && !isRotating && enterObject)
         {
             // Randomly choose whether to rotate right (90 degrees) or left (-90 degrees)
             float rotationDirection = Random.Range(0f, 1f) > 0.5f ? 90f : -90f;
@@ -79,6 +80,7 @@ public class RandomRotation : MonoBehaviour
 
         playerTransform.rotation = endRotation;
         isRotating = false;
+        enterObject = false;
 
         if (playerMovement != null)
         {

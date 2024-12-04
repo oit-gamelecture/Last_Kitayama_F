@@ -9,6 +9,7 @@ public class RotationRightScript : MonoBehaviour
     private AudioSource audioSource;      // オーディオソース
     private int entryCount = 0;           // プレイヤーが侵入した回数
     private bool isRotating = false;
+    private bool enterObject = true;
 
     private void Start()
     {
@@ -21,7 +22,7 @@ public class RotationRightScript : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player") && !isRotating)
+        if (other.CompareTag("Player") && !isRotating && enterObject)
         {
             StartCoroutine(RotatePlayer(other.transform, 90f));
             PlayerMovement playerMovement = other.GetComponent<PlayerMovement>();
@@ -77,6 +78,7 @@ public class RotationRightScript : MonoBehaviour
 
         playerTransform.rotation = endRotation;
         isRotating = false;
+        enterObject = false;
 
         if (playerMovement != null)
         {
