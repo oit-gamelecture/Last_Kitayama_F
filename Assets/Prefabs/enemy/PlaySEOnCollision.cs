@@ -5,12 +5,17 @@ public class PlaySEOnCollision : MonoBehaviour
 {
     public List<AudioClip> seClips = new List<AudioClip>(); // 再生するSEのリスト
     private AudioSource audioSource;
+
+    [SerializeField]
+    private float volume = 1.0f; // 音量をInspectorで設定可能
+
     private bool hasPlayed = false;
 
     void Start()
     {
+        // AudioSourceを追加し、初期設定
         audioSource = gameObject.AddComponent<AudioSource>();
-        audioSource.volume = 1.0f;
+        audioSource.volume = volume; // Inspectorで設定した音量を適用
     }
 
     void OnCollisionEnter(Collision collision)
