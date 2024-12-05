@@ -7,10 +7,16 @@ public class LoadingScene : MonoBehaviour
 {
     [SerializeField] private GameObject _loadingUI; // ロード画面UI
     [SerializeField] private Slider _slider;       // スライダー
+    [SerializeField] private GameObject _player;  // プレイヤー
 
     public void LoadNextScene()
     {
-        _loadingUI.SetActive(true); // ロード画面を表示
+        // プレイヤーを非表示
+        _player.SetActive(false);
+
+        // ロード画面を表示
+        _loadingUI.SetActive(true);
+
         StartCoroutine(LoadScene());
     }
 

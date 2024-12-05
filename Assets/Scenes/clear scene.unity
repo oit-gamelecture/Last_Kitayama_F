@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641275, b: 0.5748172, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -529,7 +529,7 @@ RectTransform:
   m_Father: {fileID: 1092484046}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -1073,6 +1073,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _loadingUI: {fileID: 1842492371}
   _slider: {fileID: 1136622587}
+  _player: {fileID: 1890540169}
 --- !u!4 &348184278
 Transform:
   m_ObjectHideFlags: 0
@@ -1121,7 +1122,7 @@ RectTransform:
   m_Father: {fileID: 379674966}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 5, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -1689,13 +1690,13 @@ RectTransform:
   - {fileID: 1402178693}
   - {fileID: 1434025802}
   - {fileID: 1533052837}
-  - {fileID: 1842492372}
   - {fileID: 1201035416}
   - {fileID: 1156749788}
   - {fileID: 1247244232}
   - {fileID: 333659886}
   - {fileID: 1565889980}
   - {fileID: 1999711971}
+  - {fileID: 1842492372}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
