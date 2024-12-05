@@ -21,7 +21,7 @@ public class VolumeControl : MonoBehaviour
         EventSystem.current.SetSelectedGameObject(volumeButton.gameObject);
 
         // スライダーを非表示にして無効化
-        volumeSlider.gameObject.SetActive(false);
+        volumeSlider.interactable = false;
         volumeSlider.value = AudioListener.volume;
     }
 
@@ -72,7 +72,7 @@ public class VolumeControl : MonoBehaviour
         isAdjustingVolume = true;
 
         // スライダーを表示して選択
-        volumeSlider.gameObject.SetActive(true);
+        volumeSlider.interactable = true;
         EventSystem.current.SetSelectedGameObject(volumeSlider.gameObject);
 
         // 他のボタンを無効化
@@ -85,8 +85,8 @@ public class VolumeControl : MonoBehaviour
         isAdjustingVolume = false;
 
         // スライダーを非表示にしてリセット
-        volumeSlider.gameObject.SetActive(false);
 
+        volumeSlider.interactable = false;
         // 他のボタンを再び有効化
         volumeButton.interactable = true;
         titleButton.interactable = true;
