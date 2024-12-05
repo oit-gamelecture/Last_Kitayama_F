@@ -155,8 +155,8 @@ public class EnemyManager : MonoBehaviour
         }
         else if (yPos >= -6f)
         {
-            minObstacleInterval = 1.0f;
-            maxObstacleInterval = 1.5f;
+            minObstacleInterval = 1.8f;
+            maxObstacleInterval = 2.2f;
         }
         else if (yPos >= -10f)
         {
