@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -47,6 +48,10 @@ public class PlayerMovement : MonoBehaviour
     public ParticleSystem impactParticlePrefab;
     public float particleDuration = 2f;
 
+    [Header("改札ゲート回転設定")]
+    public List<Transform> rotatePositive90Objects; // Y軸に90度回転させるオブジェクトのリスト
+    public List<Transform> rotateNegative90Objects; // Y軸に-90度回転させるオブジェクトのリスト
+
     private bool canUseQ = false; // Qキーが使用可能かどうか
     private bool isUsingQ = false; // Qキー処理中かどうか
     private Coroutine currentQActionCoroutine;
@@ -76,6 +81,7 @@ public class PlayerMovement : MonoBehaviour
         StartCoroutine(IdleCoroutine());
         StartCoroutine(HideOverlayAfterDelay(delayBeforeHiding));
         StartCoroutine(HideUIAfterDelay(delayBeforeHiding));
+        StartCoroutine(PassGateDelay(delayBeforeHiding));
     }
 
     private void Update()
@@ -295,6 +301,33 @@ public class PlayerMovement : MonoBehaviour
         canGuard = true;
 
     }
+
+    private IEnumerator PassGateDelay(float delay)
+    {
+        // 指定時間待機
+        yield return new WaitForSeconds(delay);
+
+        // Y軸に90度回転させるオブジェクトを順に処理
+        foreach (Transform obj in rotatePositive90Objects)
+        {
+            if (obj != null) // nullチェック
+            {
+                obj.rotation = Quaternion.Euler(obj.rotation.eulerAngles + new Vector3(0, 90, 0));
+            }
+        }
+
+        // Y軸に-90度回転させるオブジェクトを順に処理
+        foreach (Transform obj in rotateNegative90Objects)
+        {
+            if (obj != null) // nullチェック
+            {
+                obj.rotation = Quaternion.Euler(obj.rotation.eulerAngles + new Vector3(0, -90, 0));
+            }
+        }
+
+        Debug.Log("回転完了");
+    }
+
 
     private IEnumerator HandleQAction()
     {
