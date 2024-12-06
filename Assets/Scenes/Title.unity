@@ -1709,6 +1709,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _loadingUI: {fileID: 779017256}
   _slider: {fileID: 1760902790}
+  _player: {fileID: 972200950}
 --- !u!4 &1466882718
 Transform:
   m_ObjectHideFlags: 0
