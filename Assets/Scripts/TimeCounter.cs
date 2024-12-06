@@ -69,7 +69,15 @@ public class TimeCounter : MonoBehaviour
         if (countStart)
         {
             timeText.enabled = true;
+
+            // 残り時間を減少させ、0より小さくならないようにする
             countdown -= Time.deltaTime;
+            if (countdown < 0)
+            {
+                countdown = 0; // マイナス値を防ぐ
+                countStart = false; // カウントダウンを停止
+            }
+
             timeText.text = countdown.ToString("f2");
 
             if (countdown <= 20f && !isWarning)
@@ -90,22 +98,24 @@ public class TimeCounter : MonoBehaviour
                     bgmSource.pitch = fastForwardPitch;
                 }
             }
-        }
 
-        if (countdown <= 0)
-        {
-            countdown = 0;
-            countStart = false;
-
-            // ピッチをリセット
-            if (bgmSource != null)
+            if (countdown <= 0)
             {
-                bgmSource.pitch = normalPitch;
-            }
+                // 残り時間がゼロのとき、シーンを切り替える
+                countdown = 0;
+                countStart = false;
 
-            SceneManager.LoadScene("over scene");
+                // BGMのピッチをリセット
+                if (bgmSource != null)
+                {
+                    bgmSource.pitch = normalPitch;
+                }
+
+                SceneManager.LoadScene("over scene");
+            }
         }
     }
+
 
     public void SaveElapsedTime()
     {
